@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Limet_Maxence_CodagePion\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C62490A0-4329-420A-976F-F80287E5F2A9}|Limet_Maxence_CodagePion.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\limet_maxence_codagepion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C62490A0-4329-420A-976F-F80287E5F2A9}|Limet_Maxence_CodagePion.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C62490A0-4329-420A-976F-F80287E5F2A9}|Limet_Maxence_CodagePion.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\limet_maxence_codagepion\\classe\\point.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C62490A0-4329-420A-976F-F80287E5F2A9}|Limet_Maxence_CodagePion.csproj|solutionrelative:classe\\point.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C62490A0-4329-420A-976F-F80287E5F2A9}|Limet_Maxence_CodagePion.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\limet_maxence_codagepion\\classe\\plateau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C62490A0-4329-420A-976F-F80287E5F2A9}|Limet_Maxence_CodagePion.csproj|solutionrelative:classe\\plateau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C62490A0-4329-420A-976F-F80287E5F2A9}|Limet_Maxence_CodagePion.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\limet_maxence_codagepion\\classe\\pion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C62490A0-4329-420A-976F-F80287E5F2A9}|Limet_Maxence_CodagePion.csproj|solutionrelative:classe\\pion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C62490A0-4329-420A-976F-F80287E5F2A9}|Limet_Maxence_CodagePion.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\limet_maxence_codagepion\\classe\\paquetcarte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C62490A0-4329-420A-976F-F80287E5F2A9}|Limet_Maxence_CodagePion.csproj|solutionrelative:classe\\paquetcarte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C62490A0-4329-420A-976F-F80287E5F2A9}|Limet_Maxence_CodagePion.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\limet_maxence_codagepion\\classe\\joueur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C62490A0-4329-420A-976F-F80287E5F2A9}|Limet_Maxence_CodagePion.csproj|solutionrelative:classe\\joueur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C62490A0-4329-420A-976F-F80287E5F2A9}|Limet_Maxence_CodagePion.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\limet_maxence_codagepion\\classe\\de.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C62490A0-4329-420A-976F-F80287E5F2A9}|Limet_Maxence_CodagePion.csproj|solutionrelative:classe\\de.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C62490A0-4329-420A-976F-F80287E5F2A9}|Limet_Maxence_CodagePion.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\limet_maxence_codagepion\\classe\\carte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C62490A0-4329-420A-976F-F80287E5F2A9}|Limet_Maxence_CodagePion.csproj|solutionrelative:classe\\carte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "De.cs",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Limet_Maxence_CodagePion\\Classe\\De.cs",
+              "RelativeDocumentMoniker": "Classe\\De.cs",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Limet_Maxence_CodagePion\\Classe\\De.cs",
+              "RelativeToolTip": "Classe\\De.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:52:30.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Joueur.cs",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Limet_Maxence_CodagePion\\Classe\\Joueur.cs",
+              "RelativeDocumentMoniker": "Classe\\Joueur.cs",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Limet_Maxence_CodagePion\\Classe\\Joueur.cs",
+              "RelativeToolTip": "Classe\\Joueur.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:48:58.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Point.cs",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Limet_Maxence_CodagePion\\Classe\\Point.cs",
+              "RelativeDocumentMoniker": "Classe\\Point.cs",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Limet_Maxence_CodagePion\\Classe\\Point.cs",
+              "RelativeToolTip": "Classe\\Point.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:48:49.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PaquetCarte.cs",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Limet_Maxence_CodagePion\\Classe\\PaquetCarte.cs",
+              "RelativeDocumentMoniker": "Classe\\PaquetCarte.cs",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Limet_Maxence_CodagePion\\Classe\\PaquetCarte.cs",
+              "RelativeToolTip": "Classe\\PaquetCarte.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:48:36.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Carte.cs",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Limet_Maxence_CodagePion\\Classe\\Carte.cs",
+              "RelativeDocumentMoniker": "Classe\\Carte.cs",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Limet_Maxence_CodagePion\\Classe\\Carte.cs",
+              "RelativeToolTip": "Classe\\Carte.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:48:20.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Plateau.cs",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Limet_Maxence_CodagePion\\Classe\\Plateau.cs",
+              "RelativeDocumentMoniker": "Classe\\Plateau.cs",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Limet_Maxence_CodagePion\\Classe\\Plateau.cs",
+              "RelativeToolTip": "Classe\\Plateau.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAmwE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:45:38.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Pion.cs",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Limet_Maxence_CodagePion\\Classe\\Pion.cs",
+              "RelativeDocumentMoniker": "Classe\\Pion.cs",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Limet_Maxence_CodagePion\\Classe\\Pion.cs",
+              "RelativeToolTip": "Classe\\Pion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:41:27.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Limet_Maxence_CodagePion\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Limet_Maxence_CodagePion\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T09:40:25.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
