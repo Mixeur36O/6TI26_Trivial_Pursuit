@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="assets\Pion_Bleu.png" />
+    <None Remove="assets\Pion_Jaune.png" />
+    <None Remove="assets\Pion_Mauve.png" />
+    <None Remove="assets\Pion_Orange.png" />
+    <None Remove="assets\Pion_Rouge.png" />
+    <None Remove="assets\Pion_Vert.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="classe\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="assets\Pion_Bleu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="assets\Pion_Jaune.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="assets\Pion_Mauve.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="assets\Pion_Orange.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="assets\Pion_Rouge.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="assets\Pion_Vert.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
