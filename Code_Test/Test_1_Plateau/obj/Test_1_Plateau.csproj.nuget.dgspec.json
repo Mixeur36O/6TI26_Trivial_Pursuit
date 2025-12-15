@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Test\\Test_1_Plateau\\Test_1_Plateau.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Test\\Test_1_Plateau\\Test_1_Plateau.csproj",
         "packagesPath": "C:\\Users\\200040\\.nuget\\packages\\",
         "outputPath": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Test\\Test_1_Plateau\\obj\\",
+=======
+    "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Test\\Test_1_Plateau\\Test_1_Plateau.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Test\\Test_1_Plateau\\Test_1_Plateau.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Test\\Test_1_Plateau\\Test_1_Plateau.csproj",
+        "projectName": "Test_1_Plateau",
+        "projectPath": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Test\\Test_1_Plateau\\Test_1_Plateau.csproj",
+        "packagesPath": "C:\\Users\\Max\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Test\\Test_1_Plateau\\obj\\",
+>>>>>>> dbad133c56bafe551179d7d86be623b8c6c853e6
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,6 +64,12 @@
       "frameworks": {
         "net10.0-windows7.0": {
           "targetAlias": "net10.0-windows",
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[9.5.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

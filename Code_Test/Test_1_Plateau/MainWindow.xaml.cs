@@ -13,6 +13,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Test_1_Plateau.Views;
+using System.Data;
+using MySql.Data.MySqlClient;
+using System.Diagnostics;
 
 
 namespace Test_1_Plateau
@@ -74,13 +77,12 @@ namespace Test_1_Plateau
         }
         public void Btn_Play(object sender, RoutedEventArgs e)
         {
-            this.Content = null;
             this.Content = new Pseudo();
         }
 
         public void Btn_Para(object sender, RoutedEventArgs e)
         {
-            this.main.Navigate(new Uri("Views/Paramètre.xaml", UriKind.Relative));
+            this.Content = new Paramètre();
 
         }
 
@@ -89,5 +91,6 @@ namespace Test_1_Plateau
             this.Close();
         }
 
+       
     }
 }

@@ -10,7 +10,6 @@
     <Grid x:Name="grdMain">
         <DockPanel>
             <Frame x:Name="main" NavigationUIVisibility="Hidden" />
-            
         </DockPanel>
     </Grid>
 </Window>
