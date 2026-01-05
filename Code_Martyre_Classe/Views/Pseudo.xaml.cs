@@ -22,7 +22,7 @@ namespace Code_Martyre_Classe.Views
     public partial class Pseudo : Page
     {
         TextBlock[] txtBCouleur = new TextBlock[6];
-        int colorChang = 0;
+
         int itxtBCL = 1;
         public Pseudo()
         {
@@ -108,12 +108,17 @@ namespace Code_Martyre_Classe.Views
                 btnchangC[iBChang].Content = ">";
                 btnchangC[iBChang].Height = 50;
                 btnchangC[iBChang].Width = 50;
-                btnchangC[iBChang].Click += new RoutedEventHandler(Btn_ChangeColor);
                 grdPseudo.Children.Add(btnchangC[iBChang]);
                 Grid.SetColumn(btnchangC[iBChang], 1);
                 Grid.SetRow(btnchangC[iBChang], iBChCL);
                 iBChCL += 2;
             }
+            btnchangC[0].Click += new RoutedEventHandler(Btn_ChangeColor);
+            //btnchangC[1].Click += new RoutedEventHandler(Btn_ChangeColor1);
+            //btnchangC[2].Click += new RoutedEventHandler(Btn_ChangeColor2);
+            //btnchangC[3].Click += new RoutedEventHandler(Btn_ChangeColor3);
+
+
 
 
             //TextBox
@@ -147,56 +152,214 @@ namespace Code_Martyre_Classe.Views
         }
         public void Btn_ChangeColor(object sender, RoutedEventArgs e)
         {
-
-            for (int itxtBoxC = 0; itxtBoxC < 6; itxtBoxC++)
+            int colorChang = 0;
+            if (colorChang == 0)
             {
-                if (itxtBoxC == 0)
-                {
-                    txtBCouleur[itxtBoxC].Text = "Rouge";
-                    txtBCouleur[itxtBoxC].Background = Brushes.Red;
-                    Grid.SetColumn(txtBCouleur[itxtBoxC], 0);
-                    Grid.SetRow(txtBCouleur[itxtBoxC], 1);
-                }
-                else if (itxtBoxC == 1)
-                {
-                    txtBCouleur[itxtBoxC].Text = "Bleu";
-                    txtBCouleur[itxtBoxC].Background = Brushes.Blue;
-                    Grid.SetColumn(txtBCouleur[itxtBoxC], 0);
-                    Grid.SetRow(txtBCouleur[itxtBoxC], 1);
-                }
-                else if (itxtBoxC == 2)
-                {
-                    txtBCouleur[itxtBoxC].Text = "Vert";
-                    txtBCouleur[itxtBoxC].Background = Brushes.Green;
-                    Grid.SetColumn(txtBCouleur[itxtBoxC], 0);
-                    Grid.SetRow(txtBCouleur[itxtBoxC], 1);
-                }
-                else if (itxtBoxC == 3)
-                {
-                    txtBCouleur[itxtBoxC].Text = "Jaune";
-                    txtBCouleur[itxtBoxC].Background = Brushes.Yellow;
-                    Grid.SetColumn(txtBCouleur[itxtBoxC], 0);
-                    Grid.SetRow(txtBCouleur[itxtBoxC], 1);
-                }
-                else if (itxtBoxC == 4)
-                {
-                    txtBCouleur[itxtBoxC].Text = "Orange";
-                    txtBCouleur[itxtBoxC].Background = Brushes.Orange;
-                    Grid.SetColumn(txtBCouleur[itxtBoxC], 0);
-                    Grid.SetRow(txtBCouleur[itxtBoxC], 1);
-                }
-                else if (itxtBoxC == 5)
-                {
-                    txtBCouleur[itxtBoxC].Text = "Mauve";
-                    txtBCouleur[itxtBoxC].Background = Brushes.Purple;
-                    Grid.SetColumn(txtBCouleur[itxtBoxC], 0);
-                    Grid.SetRow(txtBCouleur[itxtBoxC], 1);
-                    itxtBoxC = 0;
-                }
+                txtBCouleur[colorChang].Text = "Rouge";
+                txtBCouleur[colorChang].Background = Brushes.Red;
+                Grid.SetColumn(txtBCouleur[colorChang], 0);
+                Grid.SetRow(txtBCouleur[colorChang], 1);
+                colorChang += 1;
             }
-        }
+            else if (colorChang == 1)
+            {
+                txtBCouleur[colorChang].Text = "Bleu";
+                txtBCouleur[colorChang].Background = Brushes.Blue;
+                Grid.SetColumn(txtBCouleur[colorChang], 0);
+                Grid.SetRow(txtBCouleur[colorChang], 1);
+                colorChang += 1;
+            }
+            else if (colorChang == 2)
+            {
+                txtBCouleur[colorChang].Text = "Vert";
+                txtBCouleur[colorChang].Background = Brushes.Green;
+                Grid.SetColumn(txtBCouleur[colorChang], 0);
+                Grid.SetRow(txtBCouleur[colorChang], 1);
+                colorChang += 1;
+            }
+            else if (colorChang == 3)
+            {
+                txtBCouleur[colorChang].Text = "Jaune";
+                txtBCouleur[colorChang].Background = Brushes.Yellow;
+                Grid.SetColumn(txtBCouleur[colorChang], 0);
+                Grid.SetRow(txtBCouleur[colorChang], 1);
+                colorChang += 1;
+            }
+            else if (colorChang == 4)
+            {
+                txtBCouleur[colorChang].Text = "Orange";
+                txtBCouleur[colorChang].Background = Brushes.Orange;
+                Grid.SetColumn(txtBCouleur[colorChang], 0);
+                Grid.SetRow(txtBCouleur[colorChang], 1);
+                colorChang += 1;
+            }
+            else if (colorChang == 5)
+            {
+                txtBCouleur[colorChang].Text = "Mauve";
+                txtBCouleur[colorChang].Background = Brushes.Purple;
+                Grid.SetColumn(txtBCouleur[colorChang], 0);
+                Grid.SetRow(txtBCouleur[colorChang], 1);
+            }
 
-        
+        }
+        //public void Btn_ChangeColor1(object sender, RoutedEventArgs e)
+        //{
+        //    int colorChang = 0;
+        //    if (colorChang == 0)
+        //    {
+        //        txtBCouleur[colorChang].Text = "Rouge";
+        //        txtBCouleur[colorChang].Background = Brushes.Red;
+        //        Grid.SetColumn(txtBCouleur[colorChang], 0);
+        //        Grid.SetRow(txtBCouleur[colorChang], 3);
+        //        colorChang += 1;
+        //    }
+        //    else if (colorChang == 1)
+        //    {
+        //        txtBCouleur[colorChang].Text = "Bleu";
+        //        txtBCouleur[colorChang].Background = Brushes.Blue;
+        //        Grid.SetColumn(txtBCouleur[colorChang], 0);
+        //        Grid.SetRow(txtBCouleur[colorChang], 3);
+        //        colorChang += 1;
+        //    }
+        //    else if (colorChang == 2)
+        //    {
+        //        txtBCouleur[colorChang].Text = "Vert";
+        //        txtBCouleur[colorChang].Background = Brushes.Green;
+        //        Grid.SetColumn(txtBCouleur[colorChang], 0);
+        //        Grid.SetRow(txtBCouleur[colorChang], 3);
+        //        colorChang += 1;
+        //    }
+        //    else if (colorChang == 3)
+        //    {
+        //        txtBCouleur[colorChang].Text = "Jaune";
+        //        txtBCouleur[colorChang].Background = Brushes.Yellow;
+        //        Grid.SetColumn(txtBCouleur[colorChang], 0);
+        //        Grid.SetRow(txtBCouleur[colorChang], 3);
+        //        colorChang += 1;
+        //    }
+        //    else if (colorChang == 4)
+        //    {
+        //        txtBCouleur[colorChang].Text = "Orange";
+        //        txtBCouleur[colorChang].Background = Brushes.Orange;
+        //        Grid.SetColumn(txtBCouleur[colorChang], 0);
+        //        Grid.SetRow(txtBCouleur[colorChang], 3);
+        //        colorChang += 1;
+        //    }
+        //    else if (colorChang == 5)
+        //    {
+        //        txtBCouleur[colorChang].Text = "Mauve";
+        //        txtBCouleur[colorChang].Background = Brushes.Purple;
+        //        Grid.SetColumn(txtBCouleur[colorChang], 0);
+        //        Grid.SetRow(txtBCouleur[colorChang], 3);
+        //    }
+
+        //}
+        //public void Btn_ChangeColor2(object sender, RoutedEventArgs e)
+        //{
+        //    int colorChang = 0;
+        //    if (colorChang == 0)
+        //    {
+        //        txtBCouleur[colorChang].Text = "Rouge";
+        //        txtBCouleur[colorChang].Background = Brushes.Red;
+        //        Grid.SetColumn(txtBCouleur[colorChang], 0);
+        //        Grid.SetRow(txtBCouleur[colorChang], 5);
+        //        colorChang += 1;
+        //    }
+        //    else if (colorChang == 1)
+        //    {
+        //        txtBCouleur[colorChang].Text = "Bleu";
+        //        txtBCouleur[colorChang].Background = Brushes.Blue;
+        //        Grid.SetColumn(txtBCouleur[colorChang], 0);
+        //        Grid.SetRow(txtBCouleur[colorChang], 5);
+        //        colorChang += 1;
+        //    }
+        //    else if (colorChang == 2)
+        //    {
+        //        txtBCouleur[colorChang].Text = "Vert";
+        //        txtBCouleur[colorChang].Background = Brushes.Green;
+        //        Grid.SetColumn(txtBCouleur[colorChang], 0);
+        //        Grid.SetRow(txtBCouleur[colorChang], 5);
+        //        colorChang += 1;
+        //    }
+        //    else if (colorChang == 3)
+        //    {
+        //        txtBCouleur[colorChang].Text = "Jaune";
+        //        txtBCouleur[colorChang].Background = Brushes.Yellow;
+        //        Grid.SetColumn(txtBCouleur[colorChang], 0);
+        //        Grid.SetRow(txtBCouleur[colorChang], 5);
+        //        colorChang += 1;
+        //    }
+        //    else if (colorChang == 4)
+        //    {
+        //        txtBCouleur[colorChang].Text = "Orange";
+        //        txtBCouleur[colorChang].Background = Brushes.Orange;
+        //        Grid.SetColumn(txtBCouleur[colorChang], 0);
+        //        Grid.SetRow(txtBCouleur[colorChang], 5);
+        //        colorChang += 1;
+        //    }
+        //    else if (colorChang == 5)
+        //    {
+        //        txtBCouleur[colorChang].Text = "Mauve";
+        //        txtBCouleur[colorChang].Background = Brushes.Purple;
+        //        Grid.SetColumn(txtBCouleur[colorChang], 0);
+        //        Grid.SetRow(txtBCouleur[colorChang], 5);
+        //    }
+
+        //}
+        //public void Btn_ChangeColor3(object sender, RoutedEventArgs e)
+        //{
+        //    int colorChang = 0;
+        //    if (colorChang == 0)
+        //    {
+        //        txtBCouleur[colorChang].Text = "Rouge";
+        //        txtBCouleur[colorChang].Background = Brushes.Red;
+        //        Grid.SetColumn(txtBCouleur[colorChang], 0);
+        //        Grid.SetRow(txtBCouleur[colorChang], 7);
+        //        colorChang += 1;
+        //    }
+        //    else if (colorChang == 1)
+        //    {
+        //        txtBCouleur[colorChang].Text = "Bleu";
+        //        txtBCouleur[colorChang].Background = Brushes.Blue;
+        //        Grid.SetColumn(txtBCouleur[colorChang], 0);
+        //        Grid.SetRow(txtBCouleur[colorChang], 7);
+        //        colorChang += 1;
+        //    }
+        //    else if (colorChang == 2)
+        //    {
+        //        txtBCouleur[colorChang].Text = "Vert";
+        //        txtBCouleur[colorChang].Background = Brushes.Green;
+        //        Grid.SetColumn(txtBCouleur[colorChang], 0);
+        //        Grid.SetRow(txtBCouleur[colorChang], 7);
+        //        colorChang += 1;
+        //    }
+        //    else if (colorChang == 3)
+        //    {
+        //        txtBCouleur[colorChang].Text = "Jaune";
+        //        txtBCouleur[colorChang].Background = Brushes.Yellow;
+        //        Grid.SetColumn(txtBCouleur[colorChang], 0);
+        //        Grid.SetRow(txtBCouleur[colorChang], 7);
+        //        colorChang += 1;
+        //    }
+        //    else if (colorChang == 4)
+        //    {
+        //        txtBCouleur[colorChang].Text = "Orange";
+        //        txtBCouleur[colorChang].Background = Brushes.Orange;
+        //        Grid.SetColumn(txtBCouleur[colorChang], 0);
+        //        Grid.SetRow(txtBCouleur[colorChang], 7);
+        //        colorChang += 1;
+        //    }
+        //    else if (colorChang == 5)
+        //    {
+        //        txtBCouleur[colorChang].Text = "Mauve";
+        //        txtBCouleur[colorChang].Background = Brushes.Purple;
+        //        Grid.SetColumn(txtBCouleur[colorChang], 0);
+        //        Grid.SetRow(txtBCouleur[colorChang], 7);
+        //    }
+
+        //}
+
+
     }
-   
+
 }
