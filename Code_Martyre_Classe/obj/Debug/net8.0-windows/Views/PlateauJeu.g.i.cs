@@ -61,7 +61,7 @@ namespace Code_Martyre_Classe.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Code_Martyre_Classe;component/views/plateaujeu.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Code_Martyre_Classe;V1.0.0.0;component/views/plateaujeu.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\PlateauJeu.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

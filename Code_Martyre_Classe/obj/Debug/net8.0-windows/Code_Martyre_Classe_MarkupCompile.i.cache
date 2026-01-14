@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 C:\Users\Max\Downloads\Ecole\6TTI\Informatique\TFE\6TI26_Trivial_Pursuit\Code_Martyre_Classe\App.xaml
-5-1920404055
+6-98805762
 
-17-765655568
-198338916705
-MainWindow.xaml;Views\Acceuil.xaml;Views\Parametre.xaml;Views\PlateauJeu.xaml;Views\Pseudo.xaml;
+18-252937194
+206-785160388
+MainWindow.xaml;Views\Acceuil.xaml;Views\AfficheCarte.xaml;Views\Parametre.xaml;Views\PlateauJeu.xaml;Views\Pseudo.xaml;
 
 False
 

@@ -10,6 +10,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data;
+using MySql.Data.MySqlClient;
+using System.Diagnostics;
+
 
 namespace Code_Martyre_Classe
 {
@@ -83,6 +87,5 @@ namespace Code_Martyre_Classe
         {
             this.Close();
         }
-
     }
 }

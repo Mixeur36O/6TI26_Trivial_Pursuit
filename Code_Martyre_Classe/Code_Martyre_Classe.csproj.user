@@ -5,6 +5,9 @@
     <Compile Update="Views\Acceuil.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\AfficheCarte.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Parametre.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

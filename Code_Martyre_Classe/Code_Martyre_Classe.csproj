@@ -19,6 +19,11 @@
 
   <ItemGroup>
     <Folder Include="classe\" />
+    <Folder Include="Config\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="9.5.0" />
   </ItemGroup>
 
   <ItemGroup>

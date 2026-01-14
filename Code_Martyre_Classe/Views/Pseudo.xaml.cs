@@ -13,6 +13,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data;
+using MySql.Data.MySqlClient;
+using System.Diagnostics;
+
 
 namespace Code_Martyre_Classe.Views
 {
@@ -42,6 +46,8 @@ namespace Code_Martyre_Classe.Views
             int itxtBL = 0;
             int itxtB = 0;
             int iBChCL = 1;
+            MySqlConnection maConnection = new MySqlConnection(DefinirCheminBD());
+            DataSet infos = new DataSet();
             Joueur joueur = new Joueur("", 4);
             TextBlock[] txtBTxtpseudo = new TextBlock[joueur.NbrJoueur];
             TextBox[] txtPseudo = new TextBox[joueur.NbrJoueur];
@@ -63,6 +69,8 @@ namespace Code_Martyre_Classe.Views
                 rowDef[iL] = new RowDefinition();
                 grdPseudo.RowDefinitions.Add(rowDef[iL]);
             }
+
+
 
             //TxtBlock pseudo
             for (int itxtBP = 0; itxtBP < joueur.NbrJoueur; itxtBP++)
@@ -149,6 +157,7 @@ namespace Code_Martyre_Classe.Views
             Grid.SetRow(btnJouer, 8);
         }
 
+        //BDD
         public void Btn_GoPlateau(object sender, RoutedEventArgs e)
         {
             MainWindow pseudo = (MainWindow)App.Current.MainWindow;
@@ -352,7 +361,7 @@ namespace Code_Martyre_Classe.Views
                 Grid.SetRow(txtBCouleur[colorChang3], 7);
                 colorChang3 += 1;
             }
-            else if (colorChang == 4)
+            else if (colorChang3 == 4)
             {
                 txtBCouleur[colorChang3].Text = "Orange";
                 txtBCouleur[colorChang3].Background = Brushes.Orange;
@@ -371,6 +380,18 @@ namespace Code_Martyre_Classe.Views
 
         }
 
+        static string DefinirCheminBD() // détermine la chaîne de connexion
+        {
+            try
+            {
+                return "server=localhost;database=projet_tfe;port=3306;User Id=root;password=root";
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+                throw;
+            }
+        }
 
     }
 
