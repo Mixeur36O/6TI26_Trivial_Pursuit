@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace Limet_Maxence_CodagePion.Classe
 {
-    internal class Carte : Pion
+    internal class Carte
     {
         //Attributs
         private string _question;
 
         //Propriétées
-        public string Couleur
+        public string Question
         {
-            get { return _couleur; }
+            get { return _question; }
         }
 
         public string question
@@ -23,7 +23,7 @@ namespace Limet_Maxence_CodagePion.Classe
         }
 
         //Constructeur
-        public Carte(string couleur, string question) : base (couleur)
+        public Carte(string couleur, string question)/* string couleur*//*base (couleur)*/
         {
             _question = question;
         }
