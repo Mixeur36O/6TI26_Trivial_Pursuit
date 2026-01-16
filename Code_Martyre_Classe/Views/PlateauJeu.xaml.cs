@@ -17,7 +17,6 @@ using System.Data;
 using MySql.Data.MySqlClient;
 using System.Diagnostics;
 
-
 namespace Code_Martyre_Classe.Views
 {
     /// <summary>
@@ -26,7 +25,7 @@ namespace Code_Martyre_Classe.Views
     public partial class PlateauJeu : Page
     {
         TextBlock[,] txtBlock = new TextBlock[13, 13];
-        TextBlock[] txtBCarte = new TextBlock[6];
+        Button[] txtBCarte = new Button[6];
         TextBlock[] txtBPseudo = new TextBlock[4];
         TextBlock txtDe = new TextBlock();
         De cDe = new De(6);
@@ -119,37 +118,42 @@ namespace Code_Martyre_Classe.Views
             //Coter des Cartes
             for (int iCarte = 0; iCarte < txtBCarte.Length; iCarte++)
             {
-                txtBCarte[iCarte] = new TextBlock();
+                txtBCarte[iCarte] = new Button();
                 if (iCarte == 0)
                 {
                     txtBCarte[iCarte].Background = Brushes.Red;
-                    txtBCarte[iCarte].Text = "MATH";
-
+                    txtBCarte[iCarte].Content = "MATH";
+                    txtBCarte[iCarte].Click += new RoutedEventHandler(CarteMath_Click);
                 }
                 else if (iCarte == 1)
                 {
-                    txtBCarte[iCarte].Text = "FRANCAIS";
+                    txtBCarte[iCarte].Content = "FRANCAIS";
                     txtBCarte[iCarte].Background = Brushes.Blue;
+                    txtBCarte[iCarte].Click += new RoutedEventHandler(CarteFr_Click);
                 }
                 else if (iCarte == 2)
                 {
-                    txtBCarte[iCarte].Text = "GEO";
+                    txtBCarte[iCarte].Content = "GEO";
                     txtBCarte[iCarte].Background = Brushes.Yellow;
+                    txtBCarte[iCarte].Click += new RoutedEventHandler(CarteGeo_Click);
                 }
                 else if (iCarte == 3)
                 {
-                    txtBCarte[iCarte].Text = "HISTOIRE";
+                    txtBCarte[iCarte].Content = "HISTOIRE";
                     txtBCarte[iCarte].Background = Brushes.Orange;
+                    txtBCarte[iCarte].Click += new RoutedEventHandler(CarteHist_Click);
                 }
                 else if (iCarte == 4)
                 {
-                    txtBCarte[iCarte].Text = "ANGLAIS";
+                    txtBCarte[iCarte].Content = "ANGLAIS";
                     txtBCarte[iCarte].Background = Brushes.Purple;
+                    txtBCarte[iCarte].Click += new RoutedEventHandler(CarteAng_Click);
                 }
                 else if (iCarte == 5)
                 {
-                    txtBCarte[iCarte].Text = "SCIENCE";
+                    txtBCarte[iCarte].Content = "SCIENCE";
                     txtBCarte[iCarte].Background = Brushes.Green;
+                    txtBCarte[iCarte].Click += new RoutedEventHandler(CarteSc_Click);
                 }
                 txtBCarte[iCarte].FontSize = 36;
                 txtBCarte[iCarte].FontWeight = FontWeights.Bold;
@@ -227,6 +231,37 @@ namespace Code_Martyre_Classe.Views
         {
             cDe.Btn_DonneUnNbrAleaD();
             txtDe.Text = $"{cDe.Face}";
+        }
+
+        public void CarteMath_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow plateau = (MainWindow)App.Current.MainWindow;
+            plateau.Content = new AfficheCarte.CMath();
+        }
+        public void CarteFr_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow plateau = (MainWindow)App.Current.MainWindow;
+            plateau.Content = new AfficheCarte.CFr();
+        }
+        public void CarteGeo_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow plateau = (MainWindow)App.Current.MainWindow;
+            plateau.Content = new AfficheCarte.CGeo();
+        }
+        public void CarteHist_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow plateau = (MainWindow)App.Current.MainWindow;
+            plateau.Content = new AfficheCarte.CHist();
+        }
+        public void CarteAng_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow plateau = (MainWindow)App.Current.MainWindow;
+            plateau.Content = new AfficheCarte.CAng();
+        }
+        public void CarteSc_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow plateau = (MainWindow)App.Current.MainWindow;
+            plateau.Content = new AfficheCarte.CSc();
         }
 
     }
