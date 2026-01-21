@@ -594,23 +594,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Max\\.nuget\\packages\\": {},
+    "C:\\Users\\200040\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\Code_Martyre_Classe.csproj",
+      "projectUniqueName": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\Code_Martyre_Classe.csproj",
       "projectName": "Code_Martyre_Classe",
-      "projectPath": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\Code_Martyre_Classe.csproj",
-      "packagesPath": "C:\\Users\\Max\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\obj\\",
+      "projectPath": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\Code_Martyre_Classe.csproj",
+      "packagesPath": "C:\\Users\\200040\\.nuget\\packages\\",
+      "outputPath": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Max\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\200040\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

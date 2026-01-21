@@ -20,20 +20,25 @@ namespace Limet_Maxence_CodagePion.Classe
             set { _pseudo = value; }
         }
 
-        public int NbrJoueur
-        {
-            get { return _nbrJoueur; }
-            set { _nbrJoueur = value; }
-        }
 
 
         //Construct
-        public Joueur(string pseudo, int nbrJoueur)
+        public Joueur(string pseudo)
         { 
             _pseudo = pseudo;
-            _nbrJoueur = nbrJoueur;
         }
 
         //Méthode
+        public void PlayerAug()
+        {
+            _nbrJoueur += 1;
+        }
+
+        public void PlayerDec()
+        {
+            _nbrJoueur -= 1;
+        }
+
+
     }
 }

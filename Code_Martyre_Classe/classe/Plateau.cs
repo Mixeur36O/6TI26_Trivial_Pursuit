@@ -11,6 +11,7 @@ namespace Limet_Maxence_CodagePion.Classe
         //Attributs
         private PaquetCarte _paquetCartes;
         private Joueur _joueurs;
+        private int _nbrJoueurs;
         private De _leDe;
         private Pion _pions;
         private Point _points;
@@ -41,15 +42,23 @@ namespace Limet_Maxence_CodagePion.Classe
             set { _points = value; }
         }
 
-        //Constructeur
-        public Plateau(PaquetCarte paquetCarte, Joueur joueurs, De leDe, Pion pions, Point points)
+        public int NbrJoueur
         {
-            _paquetCartes = paquetCarte;
-            _joueurs = joueurs;
-            _leDe = leDe;
-            _pions = pions;
-            _points = points;
+            get { return _nbrJoueurs; }
+            set { _nbrJoueurs = value; }
         }
+
+
+
+        //Constructeur
+        //public Plateau(PaquetCarte paquetCarte, Joueur joueurs, De leDe, Pion pions, Point points)
+        //{
+        //    _paquetCartes = paquetCarte;
+        //    _joueurs = joueurs;
+        //    _leDe = leDe;
+        //    _pions = pions;
+        //    _points = points;
+        //}
 
         //Méthodes
         public void LancerDe()
@@ -64,6 +73,17 @@ namespace Limet_Maxence_CodagePion.Classe
             }
 
         }
+
+        public void PlayerInc()
+        {
+
+        }
+
+        public void PlayerDec()
+        {
+
+        }
+
         
         //public bool VerifEntre()
         //{ 
