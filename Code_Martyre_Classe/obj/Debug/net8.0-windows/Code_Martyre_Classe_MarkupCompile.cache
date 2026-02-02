@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\Max\Downloads\Ecole\6TTI\Informatique\TFE\6TI26_Trivial_Pursuit\Code_Martyre_Classe\obj\Debug\net8.0-windows\
+H:\6TTI\TFE\6TI26_Trivial_Pursuit\Code_Martyre_Classe\obj\Debug\net8.0-windows\
 Code_Martyre_Classe
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-C:\Users\Max\Downloads\Ecole\6TTI\Informatique\TFE\6TI26_Trivial_Pursuit\Code_Martyre_Classe\App.xaml
+H:\6TTI\TFE\6TI26_Trivial_Pursuit\Code_Martyre_Classe\App.xaml
 111797151430
 
-21-774476839
-206-785160388
+22-1523780990
+206-136088864
 MainWindow.xaml;Views\Acceuil.xaml;Views\AfficheCarte\CAng.xaml;Views\AfficheCarte\CFr.xaml;Views\AfficheCarte\CGeo.xaml;Views\AfficheCarte\CHist.xaml;Views\AfficheCarte\CMath.xaml;Views\AfficheCarte\CSc.xaml;Views\Parametre.xaml;Views\PlateauJeu.xaml;Views\Pseudo.xaml;
 
 False

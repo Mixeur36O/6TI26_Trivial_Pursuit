@@ -47,11 +47,17 @@ namespace Code_Martyre_Classe.Views
             int itxtBL = 0;
             int itxtB = 0;
             int iBChCL = 1;
-            MySqlConnection maConnection = new MySqlConnection(DefinirCheminBD());
+            //MySqlConnection maConnection = new MySqlConnection(DefinirCheminBD());
             DataSet infos = new DataSet();
+<<<<<<< HEAD
             Plateau plat = new Plateau();
             TextBlock[] txtBTxtpseudo = new TextBlock[plat.NbrJoueur];
             TextBox[] txtPseudo = new TextBox[plat.NbrJoueur];
+=======
+            Joueur joueur = new Joueur("");
+            TextBlock[] txtBTxtpseudo = new TextBlock[joueur.NbrJoueur];
+            TextBox[] txtPseudo = new TextBox[joueur.NbrJoueur];
+>>>>>>> 11be9d2c315736f734541120d29a24459551633d
             Button btnJouer = new Button();
             Button[] btnchangC = new Button[plat.NbrJoueur];
             ColumnDefinition[] colDef = new ColumnDefinition[2];
@@ -128,9 +134,13 @@ namespace Code_Martyre_Classe.Views
                 Grid.SetRow(btnchangC[iBChang], iBChCL);
                 iBChCL += 2;
             }
+<<<<<<< HEAD
             //btnchangC[1].Click += new RoutedEventHandler(Btn_ChangeColor1);
             //btnchangC[2].Click += new RoutedEventHandler(Btn_ChangeColor2);
             //btnchangC[3].Click += new RoutedEventHandler(Btn_ChangeColor3);
+=======
+            
+>>>>>>> 11be9d2c315736f734541120d29a24459551633d
 
 
 
@@ -379,6 +389,7 @@ namespace Code_Martyre_Classe.Views
         //        colorChang3 = 0;
         //    }
 
+<<<<<<< HEAD
         //}
 
         static string DefinirCheminBD() // détermine la chaîne de connexion
@@ -394,6 +405,8 @@ namespace Code_Martyre_Classe.Views
             }
         }
 
+=======
+        }
+>>>>>>> 11be9d2c315736f734541120d29a24459551633d
     }
 
-}

@@ -16,6 +16,7 @@ using System.Windows.Shapes;
 using System.Data;
 using MySql.Data.MySqlClient;
 using System.Diagnostics;
+using Code_Martyre_Classe.Config;
 
 
 namespace Code_Martyre_Classe.Views
@@ -28,7 +29,10 @@ namespace Code_Martyre_Classe.Views
         TextBlock txtB = new TextBlock();
         int nbrDepart = 2;
         Joueur joueur = new Joueur("");
+<<<<<<< HEAD
         Plateau plat = new Plateau();
+=======
+>>>>>>> 11be9d2c315736f734541120d29a24459551633d
         public Parametre()
         {
             InitializeComponent();
@@ -37,6 +41,7 @@ namespace Code_Martyre_Classe.Views
         public void PrepareInterface()
         {
             //Variables
+            
             Button[] button = new Button[3];
             ColumnDefinition[] colDef = new ColumnDefinition[3];
             RowDefinition[] rowDef = new RowDefinition[3];
@@ -122,7 +127,12 @@ namespace Code_Martyre_Classe.Views
             {
                 txtB.Text = $"{nbrDepart - 1}";
                 nbrDepart += -1;
+<<<<<<< HEAD
                 plat.PlayerDec();
+=======
+                joueur.NbrJoueur = nbrDepart;
+                joueur.PlayerDec();
+>>>>>>> 11be9d2c315736f734541120d29a24459551633d
             }
         }
 
@@ -137,7 +147,12 @@ namespace Code_Martyre_Classe.Views
             {
                 txtB.Text = $"{nbrDepart + 1}";
                 nbrDepart += +1;
+<<<<<<< HEAD
                 plat.PlayerInc();
+=======
+                joueur.NbrJoueur = nbrDepart;
+                joueur.PlayerAug();
+>>>>>>> 11be9d2c315736f734541120d29a24459551633d
             }
         }
 
