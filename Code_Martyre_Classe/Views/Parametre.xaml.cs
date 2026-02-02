@@ -13,10 +13,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Data;
-using MySql.Data.MySqlClient;
-using System.Diagnostics;
-
 
 namespace Code_Martyre_Classe.Views
 {
@@ -40,7 +36,19 @@ namespace Code_Martyre_Classe.Views
             ColumnDefinition[] colDef = new ColumnDefinition[3];
             RowDefinition[] rowDef = new RowDefinition[3];
             TextBlock txtJ = new TextBlock();
-            grdPara.Background = Brushes.Gray;
+
+
+            Color[] colors = {
+                Color.FromRgb(79, 70, 229) //Couleur Bleu
+            };
+
+
+            grdPara.Background = new LinearGradientBrush(
+                    Color.FromRgb(30, 30, 60),
+                    Color.FromRgb(15, 15, 30),
+                    new System.Windows.Point(0, 0),
+                    new System.Windows.Point(0, 1)
+                );
 
             //Faire la grille
             for (int iGrille = 0; iGrille < 3; iGrille++)
@@ -58,6 +66,8 @@ namespace Code_Martyre_Classe.Views
                 button[iButton].Height = 50;
                 button[iButton].Width = 50;
                 button[iButton].FontSize = 20;
+                button[iButton].Background = new SolidColorBrush(colors[0]);
+                button[iButton].Foreground = Brushes.Red;
                 button[iButton].FontWeight = FontWeights.Bold;
                 grdPara.Children.Add(button[iButton]);
                 if (iButton == 0)
@@ -94,6 +104,7 @@ namespace Code_Martyre_Classe.Views
             txtB.HorizontalAlignment = HorizontalAlignment.Center;
             txtB.VerticalAlignment = VerticalAlignment.Center;
             txtB.FontSize = 30;
+            txtB.Foreground = Brushes.Red;
             txtB.FontWeight = FontWeights.Bold;
             grdPara.Children.Add(txtB);
             Grid.SetColumn(txtB, 1);
@@ -105,6 +116,7 @@ namespace Code_Martyre_Classe.Views
             txtJ.VerticalAlignment = VerticalAlignment.Center;
             txtJ.FontSize = 30;
             txtJ.FontWeight = FontWeights.Bold;
+            txtJ.Foreground = Brushes.Red;
             grdPara.Children.Add(txtJ);
             Grid.SetColumn(txtJ, 0);
             Grid.SetColumnSpan(txtJ, 3);

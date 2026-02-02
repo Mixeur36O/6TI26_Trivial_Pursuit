@@ -9,6 +9,6 @@
       Title="PlateauJeu">
 
     <Grid x:Name="grdPlateau">
-        <Frame x:Name="plateau" NavigationUIVisibility="Hidden" />
+        
     </Grid>
 </Page>

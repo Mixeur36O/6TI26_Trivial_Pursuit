@@ -29,7 +29,7 @@ namespace Limet_Maxence_CodagePion.Classe
 
         //Construct
         public Joueur(string pseudo, int nbrJoueur)
-        { 
+        {
             _pseudo = pseudo;
             _nbrJoueur = nbrJoueur;
         }
