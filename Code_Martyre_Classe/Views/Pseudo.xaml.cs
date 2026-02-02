@@ -26,8 +26,8 @@ namespace Code_Martyre_Classe.Views
     /// </summary>
     public partial class Pseudo : Page
     {
-        TextBlock[] txtBCouleur = new TextBlock[6];
-
+        TextBlock[] txtBCouleur = new TextBlock[Plateau.nbrJoueur];
+        int btnChangeCou = 0;
         int itxtBCL = 1;
         int colorChang = 0;
         int colorChang1 = 0;
@@ -49,17 +49,10 @@ namespace Code_Martyre_Classe.Views
             int iBChCL = 1;
             //MySqlConnection maConnection = new MySqlConnection(DefinirCheminBD());
             DataSet infos = new DataSet();
-<<<<<<< HEAD
-            Plateau plat = new Plateau();
-            TextBlock[] txtBTxtpseudo = new TextBlock[plat.NbrJoueur];
-            TextBox[] txtPseudo = new TextBox[plat.NbrJoueur];
-=======
-            Joueur joueur = new Joueur("");
-            TextBlock[] txtBTxtpseudo = new TextBlock[joueur.NbrJoueur];
-            TextBox[] txtPseudo = new TextBox[joueur.NbrJoueur];
->>>>>>> 11be9d2c315736f734541120d29a24459551633d
+            TextBlock[] txtBTxtpseudo = new TextBlock[Plateau.nbrJoueur];
+            TextBox[] txtPseudo = new TextBox[Plateau.nbrJoueur];
             Button btnJouer = new Button();
-            Button[] btnchangC = new Button[plat.NbrJoueur];
+            Button[] btnchangC = new Button[Plateau.nbrJoueur];
             ColumnDefinition[] colDef = new ColumnDefinition[2];
             RowDefinition[] rowDef = new RowDefinition[9];
             grdPseudo.Background = Brushes.Gray;
@@ -80,7 +73,7 @@ namespace Code_Martyre_Classe.Views
 
 
             //TxtBlock pseudo
-            for (int itxtBP = 0; itxtBP < plat.NbrJoueur; itxtBP++)
+            for (int itxtBP = 0; itxtBP < Plateau.nbrJoueur; itxtBP++)
             {
                 txtBTxtpseudo[itxtBP] = new TextBlock();
                 if (itxtBP == 0)
@@ -108,45 +101,41 @@ namespace Code_Martyre_Classe.Views
             }
 
             //TextBlock couleur en dessous des pseudo
-            for (int itxtBoxC = 0; itxtBoxC < 4; itxtBoxC++)
+            for (int itxtBoxC = 0; itxtBoxC < 6; itxtBoxC++)
             {
-                txtBCouleur[itxtBoxC] = new TextBlock();
-                txtBCouleur[itxtBoxC].Text = "Couleur";
-                txtBCouleur[itxtBoxC].Height = 80;
-                txtBCouleur[itxtBoxC].Width = 100;
-                grdPseudo.Children.Add(txtBCouleur[itxtBoxC]);
-                Grid.SetColumn(txtBCouleur[itxtBoxC], 0);
-                Grid.SetRow(txtBCouleur[itxtBoxC], itxtBCL);
-                itxtBCL += 2;
+
             }
 
             //Button switch color
 
-            for (int iBChang = 0; iBChang < plat.NbrJoueur; iBChang++)
+            for (int iBChang = 0; iBChang < Plateau.nbrJoueur; iBChang++)
             {
                 btnchangC[iBChang] = new Button();
                 btnchangC[iBChang].Content = ">";
                 btnchangC[iBChang].Height = 50;
                 btnchangC[iBChang].Width = 50;
-                btnchangC[iBChang].Click += new RoutedEventHandler(Btn_ChangeColor);
+                if (btnChangeCou == 0)
+                {
+                    btnchangC[iBChang].Click += new RoutedEventHandler(Btn_ChangeColor);
+                    Grid.SetColumn(txtBCouleur[iBChang], 0);
+                    Grid.SetRow(txtBCouleur[iBChang], itxtBCL);
+                }
                 grdPseudo.Children.Add(btnchangC[iBChang]);
                 Grid.SetColumn(btnchangC[iBChang], 1);
                 Grid.SetRow(btnchangC[iBChang], iBChCL);
                 iBChCL += 2;
+                txtBCouleur[iBChang] = new TextBlock();
+                txtBCouleur[iBChang].Text = "Couleur";
+                txtBCouleur[iBChang].Height = 80;
+                txtBCouleur[iBChang].Width = 100;
+                grdPseudo.Children.Add(txtBCouleur[iBChang]);
+                Grid.SetColumn(txtBCouleur[iBChang], 0);
+                Grid.SetRow(txtBCouleur[iBChang], itxtBCL);
+                itxtBCL += 2;
             }
-<<<<<<< HEAD
-            //btnchangC[1].Click += new RoutedEventHandler(Btn_ChangeColor1);
-            //btnchangC[2].Click += new RoutedEventHandler(Btn_ChangeColor2);
-            //btnchangC[3].Click += new RoutedEventHandler(Btn_ChangeColor3);
-=======
-            
->>>>>>> 11be9d2c315736f734541120d29a24459551633d
-
-
-
 
             //TextBox
-            for (int itxtBox = 0; itxtBox < plat.NbrJoueur; itxtBox++)
+            for (int itxtBox = 0; itxtBox < Plateau.nbrJoueur; itxtBox++)
             {
                 txtPseudo[itxtBox] = new TextBox();
                 //txtPseudo[itxtBox].PreviewTextInput += new TextCompositionEventHandler();
@@ -178,235 +167,75 @@ namespace Code_Martyre_Classe.Views
         public void Btn_ChangeColor(object sender, RoutedEventArgs e)
         {
 
-            
-            if (colorChang == 0)
+            if (Plateau.nbrJoueur == 2)
             {
-                txtBCouleur[colorChang].Text = "Rouge";
-                txtBCouleur[colorChang].Background = Brushes.Red;
-                Grid.SetColumn(txtBCouleur[colorChang], 0);
-                Grid.SetRow(txtBCouleur[colorChang], 1);
-                colorChang += 1;
+                if (colorChang == 0)
+                {
+                    txtBCouleur[colorChang].Text = "Rouge";
+                    txtBCouleur[colorChang].Background = Brushes.Red;
+                    colorChang += 1;
+                }
+                else if (colorChang == 1)
+                {
+                    txtBCouleur[colorChang].Text = "Bleu";
+                    txtBCouleur[colorChang].Background = Brushes.Blue;
+                    colorChang = 0;
+                }
             }
-            else if (colorChang == 1)
-            {
-                txtBCouleur[colorChang].Text = "Bleu";
-                txtBCouleur[colorChang].Background = Brushes.Blue;
-                Grid.SetColumn(txtBCouleur[colorChang], 0);
-                Grid.SetRow(txtBCouleur[colorChang], 1);
-                colorChang += 1;
-            }
-            else if (colorChang == 2)
-            {
-                txtBCouleur[colorChang].Text = "Vert";
-                txtBCouleur[colorChang].Background = Brushes.Green;
-                Grid.SetColumn(txtBCouleur[colorChang], 0);
-                Grid.SetRow(txtBCouleur[colorChang], 1);
-                colorChang += 1;
-            }
-            else if (colorChang == 3)
-            {
-                txtBCouleur[colorChang].Text = "Jaune";
-                txtBCouleur[colorChang].Background = Brushes.Yellow;
-                Grid.SetColumn(txtBCouleur[colorChang], 0);
-                Grid.SetRow(txtBCouleur[colorChang], 1);
-                colorChang += 1;
-            }
-            else if (colorChang == 4)
-            {
-                txtBCouleur[colorChang].Text = "Orange";
-                txtBCouleur[colorChang].Background = Brushes.Orange;
-                Grid.SetColumn(txtBCouleur[colorChang], 0);
-                Grid.SetRow(txtBCouleur[colorChang], 1);
-                colorChang += 1;
-            }
-            else if (colorChang == 5)
-            {
-                txtBCouleur[colorChang].Text = "Mauve";
-                txtBCouleur[colorChang].Background = Brushes.Purple;
-                Grid.SetColumn(txtBCouleur[colorChang], 0);
-                Grid.SetRow(txtBCouleur[colorChang], 1);
-                colorChang = 0;
 
+            else if (Plateau.nbrJoueur == 3)
+            {
+                if (colorChang == 0)
+                {
+                    txtBCouleur[colorChang].Text = "Rouge";
+                    txtBCouleur[colorChang].Background = Brushes.Red;
+                    colorChang += 1;
+                }
+                else if (colorChang == 1)
+                {
+                    txtBCouleur[colorChang].Text = "Bleu";
+                    txtBCouleur[colorChang].Background = Brushes.Blue;
+                    colorChang += 1;
+                }
+                else if (colorChang == 2)
+                {
+                    txtBCouleur[colorChang].Text = "Vert";
+                    txtBCouleur[colorChang].Background = Brushes.Green;
+                    colorChang = 0;
+                }
+            }
+
+            else if (Plateau.nbrJoueur == 4)
+            {
+                if (colorChang == 0)
+                {
+                    txtBCouleur[colorChang].Text = "Rouge";
+                    txtBCouleur[colorChang].Background = Brushes.Red;
+                    colorChang += 1;
+                }
+                else if (colorChang == 1)
+                {
+                    txtBCouleur[colorChang].Text = "Bleu";
+                    txtBCouleur[colorChang].Background = Brushes.Blue;
+                    colorChang += 1;
+                }
+                else if (colorChang == 2)
+                {
+                    txtBCouleur[colorChang].Text = "Vert";
+                    txtBCouleur[colorChang].Background = Brushes.Green;
+                    colorChang += 1;
+                }
+                else if (colorChang == 3)
+                {
+                    txtBCouleur[colorChang].Text = "Jaune";
+                    txtBCouleur[colorChang].Background = Brushes.Yellow;
+                    colorChang = 0;
+                }
             }
 
         }
-        //public void Btn_ChangeColor1(object sender, RoutedEventArgs e)
-        //{
-            
-
-        //    if (colorChang1 == 0)
-        //    {
-        //        txtBCouleur[colorChang1].Text = "Rouge";
-        //        txtBCouleur[colorChang1].Background = Brushes.Red;
-        //        Grid.SetColumn(txtBCouleur[colorChang1], 0);
-        //        Grid.SetRow(txtBCouleur[colorChang1], 3);
-        //        colorChang1 += 1;
-        //    }
-        //    else if (colorChang1 == 1)
-        //    {
-        //        txtBCouleur[colorChang1].Text = "Bleu";
-        //        txtBCouleur[colorChang1].Background = Brushes.Blue;
-        //        Grid.SetColumn(txtBCouleur[colorChang1], 0);
-        //        Grid.SetRow(txtBCouleur[colorChang1], 3);
-        //        colorChang1 += 1;
-        //    }
-        //    else if (colorChang1 == 2)
-        //    {
-        //        txtBCouleur[colorChang1].Text = "Vert";
-        //        txtBCouleur[colorChang1].Background = Brushes.Green;
-        //        Grid.SetColumn(txtBCouleur[colorChang1], 0);
-        //        Grid.SetRow(txtBCouleur[colorChang1], 3);
-        //        colorChang1 += 1;
-        //    }
-        //    else if (colorChang1 == 3)
-        //    {
-        //        txtBCouleur[colorChang1].Text = "Jaune";
-        //        txtBCouleur[colorChang1].Background = Brushes.Yellow;
-        //        Grid.SetColumn(txtBCouleur[colorChang1], 0);
-        //        Grid.SetRow(txtBCouleur[colorChang1], 3);
-        //        colorChang1 += 1;
-        //    }
-        //    else if (colorChang1 == 4)
-        //    {
-        //        txtBCouleur[colorChang1].Text = "Orange";
-        //        txtBCouleur[colorChang1].Background = Brushes.Orange;
-        //        Grid.SetColumn(txtBCouleur[colorChang1], 0);
-        //        Grid.SetRow(txtBCouleur[colorChang1], 3);
-        //        colorChang1 += 1;
-        //    }
-        //    else if (colorChang1 == 5)
-        //    {
-        //        txtBCouleur[colorChang1].Text = "Mauve";
-        //        txtBCouleur[colorChang1].Background = Brushes.Purple;
-        //        Grid.SetColumn(txtBCouleur[colorChang1], 0);
-        //        Grid.SetRow(txtBCouleur[colorChang1], 3);
-        //        colorChang1 = 0;
-        //    }
-
-        //}
-        //public void Btn_ChangeColor2(object sender, RoutedEventArgs e)
-        //{
-            
-        //    if (colorChang2 == 0)
-        //    {
-        //        txtBCouleur[colorChang2].Text = "Rouge";
-        //        txtBCouleur[colorChang2].Background = Brushes.Red;
-        //        Grid.SetColumn(txtBCouleur[colorChang2], 0);
-        //        Grid.SetRow(txtBCouleur[colorChang2], 5);
-        //        colorChang2 += 1;
-        //    }
-        //    else if (colorChang2 == 1)
-        //    {
-        //        txtBCouleur[colorChang2].Text = "Bleu";
-        //        txtBCouleur[colorChang2].Background = Brushes.Blue;
-        //        Grid.SetColumn(txtBCouleur[colorChang2], 0);
-        //        Grid.SetRow(txtBCouleur[colorChang2], 5);
-        //        colorChang2 += 1;
-        //    }
-        //    else if (colorChang2 == 2)
-        //    {
-        //        txtBCouleur[colorChang2].Text = "Vert";
-        //        txtBCouleur[colorChang2].Background = Brushes.Green;
-        //        Grid.SetColumn(txtBCouleur[colorChang2], 0);
-        //        Grid.SetRow(txtBCouleur[colorChang2], 5);
-        //        colorChang2 += 1;
-        //    }
-        //    else if (colorChang2 == 3)
-        //    {
-        //        txtBCouleur[colorChang2].Text = "Jaune";
-        //        txtBCouleur[colorChang2].Background = Brushes.Yellow;
-        //        Grid.SetColumn(txtBCouleur[colorChang2], 0);
-        //        Grid.SetRow(txtBCouleur[colorChang2], 5);
-        //        colorChang2 += 1;
-        //    }
-        //    else if (colorChang2 == 4)
-        //    {
-        //        txtBCouleur[colorChang2].Text = "Orange";
-        //        txtBCouleur[colorChang2].Background = Brushes.Orange;
-        //        Grid.SetColumn(txtBCouleur[colorChang2], 0);
-        //        Grid.SetRow(txtBCouleur[colorChang2], 5);
-        //        colorChang2 += 1;
-        //    }
-        //    else if (colorChang2 == 5)
-        //    {
-        //        txtBCouleur[colorChang2].Text = "Mauve";
-        //        txtBCouleur[colorChang2].Background = Brushes.Purple;
-        //        Grid.SetColumn(txtBCouleur[colorChang2], 0);
-        //        Grid.SetRow(txtBCouleur[colorChang2], 5);
-        //        colorChang2 = 0;
-        //    }
-
-        //}
-        //public void Btn_ChangeColor3(object sender, RoutedEventArgs e)
-        //{
-            
-        //    if (colorChang3 == 0)
-        //    {
-        //        txtBCouleur[colorChang3].Text = "Rouge";
-        //        txtBCouleur[colorChang3].Background = Brushes.Red;
-        //        Grid.SetColumn(txtBCouleur[colorChang3], 0);
-        //        Grid.SetRow(txtBCouleur[colorChang3], 7);
-        //        colorChang3 += 1;
-        //    }
-        //    else if (colorChang3 == 1)
-        //    {
-        //        txtBCouleur[colorChang3].Text = "Bleu";
-        //        txtBCouleur[colorChang3].Background = Brushes.Blue;
-        //        Grid.SetColumn(txtBCouleur[colorChang3], 0);
-        //        Grid.SetRow(txtBCouleur[colorChang3], 7);
-        //        colorChang3 += 1;
-        //    }
-        //    else if (colorChang3 == 2)
-        //    {
-        //        txtBCouleur[colorChang3].Text = "Vert";
-        //        txtBCouleur[colorChang3].Background = Brushes.Green;
-        //        Grid.SetColumn(txtBCouleur[colorChang3], 0);
-        //        Grid.SetRow(txtBCouleur[colorChang3], 7);
-        //        colorChang3 += 1;
-        //    }
-        //    else if (colorChang3 == 3)
-        //    {
-        //        txtBCouleur[colorChang3].Text = "Jaune";
-        //        txtBCouleur[colorChang3].Background = Brushes.Yellow;
-        //        Grid.SetColumn(txtBCouleur[colorChang3], 0);
-        //        Grid.SetRow(txtBCouleur[colorChang3], 7);
-        //        colorChang3 += 1;
-        //    }
-        //    else if (colorChang3 == 4)
-        //    {
-        //        txtBCouleur[colorChang3].Text = "Orange";
-        //        txtBCouleur[colorChang3].Background = Brushes.Orange;
-        //        Grid.SetColumn(txtBCouleur[colorChang3], 0);
-        //        Grid.SetRow(txtBCouleur[colorChang3], 7);
-        //        colorChang3 += 1;
-        //    }
-        //    else if (colorChang3 == 5)
-        //    {
-        //        txtBCouleur[colorChang3].Text = "Mauve";
-        //        txtBCouleur[colorChang3].Background = Brushes.Purple;
-        //        Grid.SetColumn(txtBCouleur[colorChang3], 0);
-        //        Grid.SetRow(txtBCouleur[colorChang3], 7);
-        //        colorChang3 = 0;
-        //    }
-
-<<<<<<< HEAD
-        //}
-
-        static string DefinirCheminBD() // détermine la chaîne de connexion
-        {
-            try
-            {
-                return "server=localhost;database=projet_tfe;port=3306;User Id=root;password=root";
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex.Message);
-                throw;
-            }
-        }
-
-=======
-        }
->>>>>>> 11be9d2c315736f734541120d29a24459551633d
     }
+}
+
+
 

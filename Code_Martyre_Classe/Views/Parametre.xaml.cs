@@ -29,10 +29,8 @@ namespace Code_Martyre_Classe.Views
         TextBlock txtB = new TextBlock();
         int nbrDepart = 2;
         Joueur joueur = new Joueur("");
-<<<<<<< HEAD
-        Plateau plat = new Plateau();
-=======
->>>>>>> 11be9d2c315736f734541120d29a24459551633d
+        
+
         public Parametre()
         {
             InitializeComponent();
@@ -127,12 +125,9 @@ namespace Code_Martyre_Classe.Views
             {
                 txtB.Text = $"{nbrDepart - 1}";
                 nbrDepart += -1;
-<<<<<<< HEAD
-                plat.PlayerDec();
-=======
-                joueur.NbrJoueur = nbrDepart;
-                joueur.PlayerDec();
->>>>>>> 11be9d2c315736f734541120d29a24459551633d
+                Plateau.PlayerDec();
+
+
             }
         }
 
@@ -147,12 +142,9 @@ namespace Code_Martyre_Classe.Views
             {
                 txtB.Text = $"{nbrDepart + 1}";
                 nbrDepart += +1;
-<<<<<<< HEAD
-                plat.PlayerInc();
-=======
-                joueur.NbrJoueur = nbrDepart;
-                joueur.PlayerAug();
->>>>>>> 11be9d2c315736f734541120d29a24459551633d
+
+                Plateau.PlayerInc();
+
             }
         }
 

@@ -19,10 +19,6 @@ namespace Limet_Maxence_CodagePion.Classe
             set { _pseudo = value; }
         }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 11be9d2c315736f734541120d29a24459551633d
 
         //Construct
         public Joueur(string pseudo)
@@ -31,15 +27,6 @@ namespace Limet_Maxence_CodagePion.Classe
         }
 
         //Méthode
-        public void PlayerAug()
-        {
-            _nbrJoueur += 1;
-        }
-
-        public void PlayerDec()
-        {
-            _nbrJoueur -= 1;
-        }
 
 
     }
