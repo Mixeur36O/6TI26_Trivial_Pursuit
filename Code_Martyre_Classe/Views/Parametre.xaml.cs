@@ -27,7 +27,8 @@ namespace Code_Martyre_Classe.Views
     {
         TextBlock txtB = new TextBlock();
         int nbrDepart = 2;
-        Joueur joueur = new Joueur("", 2);
+        Joueur joueur = new Joueur("");
+        Plateau plat = new Plateau();
         public Parametre()
         {
             InitializeComponent();
@@ -112,6 +113,7 @@ namespace Code_Martyre_Classe.Views
         }
         public void Btn_DiminuerJoueur(object sender, RoutedEventArgs e)
         {
+            
             if (nbrDepart == 1)
             {
 
@@ -120,12 +122,13 @@ namespace Code_Martyre_Classe.Views
             {
                 txtB.Text = $"{nbrDepart - 1}";
                 nbrDepart += -1;
-                joueur.NbrJoueur = nbrDepart;
+                plat.PlayerDec();
             }
         }
 
         public void Btn_AugmenterJoueur(object sender, RoutedEventArgs e)
         {
+            
             if (nbrDepart == 4)
             {
 
@@ -134,14 +137,14 @@ namespace Code_Martyre_Classe.Views
             {
                 txtB.Text = $"{nbrDepart + 1}";
                 nbrDepart += +1;
-                joueur.NbrJoueur = nbrDepart;
+                plat.PlayerInc();
             }
         }
 
         public void Btn_Retour(object sender, RoutedEventArgs e)
         {
             MainWindow para = (MainWindow)App.Current.MainWindow;
-            para.Content = new Acceuil();
+            para.Content = new Pseudo();
         }
     }
 }

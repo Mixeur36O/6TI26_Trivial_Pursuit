@@ -29,6 +29,7 @@ namespace Code_Martyre_Classe.Views
         TextBlock[] txtBPseudo = new TextBlock[4];
         TextBlock txtDe = new TextBlock();
         De cDe = new De(6);
+        Plateau plat = new Plateau();
         public PlateauJeu()
         {
             InitializeComponent();
