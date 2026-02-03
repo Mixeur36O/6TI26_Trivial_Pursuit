@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="assets\DE.jpg" />
     <None Remove="assets\Pion_Bleu.png" />
     <None Remove="assets\Pion_Jaune.png" />
     <None Remove="assets\Pion_Mauve.png" />
@@ -26,6 +27,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="assets\DE.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="assets\Pion_Bleu.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>

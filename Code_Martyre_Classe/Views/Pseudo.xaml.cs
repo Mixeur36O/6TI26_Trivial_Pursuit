@@ -114,12 +114,7 @@ namespace Code_Martyre_Classe.Views
                 btnchangC[iBChang].Content = ">";
                 btnchangC[iBChang].Height = 50;
                 btnchangC[iBChang].Width = 50;
-                if (btnChangeCou == 0)
-                {
-                    btnchangC[iBChang].Click += new RoutedEventHandler(Btn_ChangeColor);
-                    Grid.SetColumn(txtBCouleur[iBChang], 0);
-                    Grid.SetRow(txtBCouleur[iBChang], itxtBCL);
-                }
+                btnchangC[iBChang].Click += new RoutedEventHandler(Btn_ChangeColor);
                 grdPseudo.Children.Add(btnchangC[iBChang]);
                 Grid.SetColumn(btnchangC[iBChang], 1);
                 Grid.SetRow(btnchangC[iBChang], iBChCL);
@@ -181,6 +176,18 @@ namespace Code_Martyre_Classe.Views
                     txtBCouleur[colorChang].Background = Brushes.Blue;
                     colorChang = 0;
                 }
+                if (btnChangeCou == 0)
+                {
+                    Grid.SetColumn(txtBCouleur[colorChang], 0);
+                    Grid.SetRow(txtBCouleur[colorChang], 1);
+                    btnChangeCou += 1;
+                }
+                else if (btnChangeCou == 1)
+                {
+                    Grid.SetColumn(txtBCouleur[colorChang], 0);
+                    Grid.SetRow(txtBCouleur[colorChang], 3);
+                    btnChangeCou = 0;
+                }
             }
 
             else if (Plateau.nbrJoueur == 3)
@@ -202,6 +209,24 @@ namespace Code_Martyre_Classe.Views
                     txtBCouleur[colorChang].Text = "Vert";
                     txtBCouleur[colorChang].Background = Brushes.Green;
                     colorChang = 0;
+                }
+                if (btnChangeCou == 0)
+                {
+                    Grid.SetColumn(txtBCouleur[colorChang], 0);
+                    Grid.SetRow(txtBCouleur[colorChang], 1);
+                    btnChangeCou += 1;
+                }
+                else if (btnChangeCou == 1)
+                {
+                    Grid.SetColumn(txtBCouleur[colorChang], 0);
+                    Grid.SetRow(txtBCouleur[colorChang], 3);
+                    btnChangeCou += 1;
+                }
+                else if (btnChangeCou == 2)
+                {
+                    Grid.SetColumn(txtBCouleur[colorChang], 0);
+                    Grid.SetRow(txtBCouleur[colorChang], 5);
+                    btnChangeCou = 0;
                 }
             }
 
@@ -230,6 +255,30 @@ namespace Code_Martyre_Classe.Views
                     txtBCouleur[colorChang].Text = "Jaune";
                     txtBCouleur[colorChang].Background = Brushes.Yellow;
                     colorChang = 0;
+                }
+                if (btnChangeCou == 0)
+                {
+                    Grid.SetColumn(txtBCouleur[colorChang], 0);
+                    Grid.SetRow(txtBCouleur[colorChang], 1);
+                    btnChangeCou += 1;
+                }
+                else if (btnChangeCou == 1)
+                {
+                    Grid.SetColumn(txtBCouleur[colorChang], 0);
+                    Grid.SetRow(txtBCouleur[colorChang], 3);
+                    btnChangeCou += 1;
+                }
+                else if (btnChangeCou == 2)
+                {
+                    Grid.SetColumn(txtBCouleur[colorChang], 0);
+                    Grid.SetRow(txtBCouleur[colorChang], 5);
+                    btnChangeCou += 1;
+                }
+                else if (btnChangeCou == 3)
+                {
+                    Grid.SetColumn(txtBCouleur[colorChang], 0);
+                    Grid.SetRow(txtBCouleur[colorChang], 7);
+                    btnChangeCou = 0;
                 }
             }
 
