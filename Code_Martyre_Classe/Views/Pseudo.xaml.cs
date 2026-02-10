@@ -69,7 +69,7 @@ namespace Code_Martyre_Classe.Views
             for (int itxtBP = 0; itxtBP < joueur.NbrJoueur; itxtBP++)
             {
                 txtBTxtpseudo[itxtBP] = new TextBlock();
-                txtBTxtpseudo[itxtBP].Foreground = Brushes.Aqua;
+                txtBTxtpseudo[itxtBP].Foreground = Brushes.Red;
                 if (itxtBP == 0)
                 {
                     txtBTxtpseudo[itxtBP].Text = "Pseudo1 :";
@@ -98,10 +98,11 @@ namespace Code_Martyre_Classe.Views
             for (int itxtBoxC = 0; itxtBoxC < 4; itxtBoxC++)
             {
                 txtBCouleur[itxtBoxC] = new TextBlock();
+
                 txtBCouleur[itxtBoxC].Text = "Couleur";
                 txtBCouleur[itxtBoxC].Height = 80;
                 txtBCouleur[itxtBoxC].Width = 100;
-                txtBCouleur[itxtBoxC].Foreground = Brushes.Aqua;
+                txtBCouleur[itxtBoxC].Foreground = Brushes.Red;
                 grdPseudo.Children.Add(txtBCouleur[itxtBoxC]);
                 Grid.SetColumn(txtBCouleur[itxtBoxC], 0);
                 Grid.SetRow(txtBCouleur[itxtBoxC], itxtBCL);
@@ -113,7 +114,14 @@ namespace Code_Martyre_Classe.Views
             for (int iBChang = 0; iBChang < joueur.NbrJoueur; iBChang++)
             {
                 btnchangC[iBChang] = new Button();
+                btnchangC[iBChang].Background = new LinearGradientBrush(
+                    Color.FromRgb(30, 30, 60),
+                    Color.FromRgb(15, 15, 30),
+                    new System.Windows.Point(0, 0),
+                    new System.Windows.Point(0, 1)
+                );
                 btnchangC[iBChang].Content = ">";
+                btnchangC[iBChang].Foreground = Brushes.Red;
                 btnchangC[iBChang].Height = 50;
                 btnchangC[iBChang].Width = 50;
                 btnchangC[iBChang].Click += new RoutedEventHandler(Btn_ChangeColor);
@@ -129,8 +137,8 @@ namespace Code_Martyre_Classe.Views
             {
                 txtPseudo[itxtBox] = new TextBox();
                 //txtPseudo[itxtBox].PreviewTextInput += new TextCompositionEventHandler();
-                txtPseudo[itxtBox].Height = 80;
-                txtPseudo[itxtBox].Width = 100;
+                txtPseudo[itxtBox].Height = 40;
+                txtPseudo[itxtBox].Width = 120;
                 grdPseudo.Children.Add(txtPseudo[itxtBox]);
                 Grid.SetColumn(txtPseudo[itxtBox], 1);
                 Grid.SetRow(txtPseudo[itxtBox], itxtB);
@@ -138,6 +146,14 @@ namespace Code_Martyre_Classe.Views
             }
 
             btnJouer.Content = "Confirmer";
+            btnJouer.Foreground = Brushes.Red;
+            btnJouer.Background = new LinearGradientBrush(
+                    Color.FromRgb(30, 30, 60),
+                    Color.FromRgb(15, 15, 30),
+                    new System.Windows.Point(0, 0),
+                    new System.Windows.Point(0, 1)
+            );
+
             btnJouer.Height = 80;
             btnJouer.Width = 150;
             btnJouer.Click += new RoutedEventHandler(Btn_GoPlateau);
@@ -204,7 +220,7 @@ namespace Code_Martyre_Classe.Views
             }
         }
 
-        
+
     }
-   
+
 }

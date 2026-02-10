@@ -34,6 +34,19 @@ namespace Code_Martyre_Classe
                 grdMain.ColumnDefinitions.Add(colDef[iGrille]);
                 grdMain.RowDefinitions.Add(rowDef[iGrille]);
             }
+
+            TextBlock titre = new TextBlock();
+            titre.Text = "Trivial Pursuit";
+            titre.FontSize = 30;
+            titre.Foreground = Brushes.Red;
+            titre.FontWeight = FontWeights.Bold;
+            titre.HorizontalAlignment = HorizontalAlignment.Center;
+            titre.VerticalAlignment = VerticalAlignment.Top;
+            titre.Margin = new Thickness(0, 20, 0, 20);
+            Grid.SetColumn(titre, 1);
+            grdMain.Children.Add(titre);
+            
+
             //Placer les boutons
             for (int iButton = 0; iButton < button.Length; iButton++)
             {

@@ -37,7 +37,7 @@ namespace Code_Martyre_Classe.Views
             RowDefinition[] rowDef = new RowDefinition[3];
            
             //Faire la grille
-            for (int iGrille = 0; iGrille < 3; iGrille++)
+            for (int iGrille = 0; iGrille < 4; iGrille++)
             {
                 colDef[iGrille] = new ColumnDefinition();
                 rowDef[iGrille] = new RowDefinition();
@@ -61,7 +61,7 @@ namespace Code_Martyre_Classe.Views
                 {
                     button[iButton].Content = "Quitter";
                 }
-;
+
                 Color[] colors = {
                 Color.FromRgb(16, 185, 129), // vert pour Jouer
                 Color.FromRgb(79, 70, 229),  // violet pour Paramètre
