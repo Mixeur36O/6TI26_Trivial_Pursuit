@@ -48,7 +48,7 @@ namespace Code_Martyre_Classe.Views
                     Color.FromRgb(15, 15, 30),
                     new System.Windows.Point(0, 0),
                     new System.Windows.Point(0, 1)
-                );
+             );
 
             //Faire la grille
             for (int iGrille = 0; iGrille < 3; iGrille++)

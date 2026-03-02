@@ -90,8 +90,6 @@ namespace Code_Martyre_Classe.Views
             txtDe.Background  = Brushes.Red;
             txtDe.TextAlignment = TextAlignment.Center;
             txtDe.Height = 50;
-           
-            
             grdPlateau.Children.Add(txtDe);
             Grid.SetColumn(txtDe, 15);
             Grid.SetRow(txtDe, 17);
@@ -197,8 +195,6 @@ namespace Code_Martyre_Classe.Views
                         txtBlock[iColonne, iLigne].VerticalAlignment = VerticalAlignment.Center;
                         txtBlock[iColonne, iLigne].HorizontalAlignment = HorizontalAlignment.Center;
                         txtBlock[iColonne, iLigne].Background = Brushes.Transparent; 
-
-
                         txtBlock[iColonne, iLigne].Padding = new Thickness(5);
 
                         if (randomC == 0)

@@ -69,7 +69,7 @@ namespace Code_Martyre_Classe
                 Color.FromRgb(239, 68, 68)   // rouge pour Quitter
                 };
 
-                ZoomPercentageConverter z = new ZoomPercentageConverter();
+
                 button[iButton].Width = 200;
                 button[iButton].Height = 80;
                 button[iButton].Background = new SolidColorBrush(colors[iButton]);
