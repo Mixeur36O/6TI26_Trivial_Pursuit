@@ -1,16 +1,25 @@
-Drop table joueurs;
+Drop table joueur;
 Drop table carte;
+Drop table caseP;
+Drop table couleur;
+Drop table paquetCarte;
+Drop table categorie;
 
 Create table joueur(
 joueurID int not null auto_increment,
 joueurPseudo varchar(30),
 primary key (joueurID));
 
-Create table carte(
+Create table carteQuestion(
 carteID int not null auto_increment,
 carteQuestion varchar(200),
-carteReponse varchar(200),
+
 primary key (carteID));
+
+Create table categorie(
+categorieID int not null auto_increment,
+categorieMatiere varchar(100),
+primary key (categorieID));
 
 Create table caseP(
 casePID int not null auto_increment,
@@ -24,8 +33,11 @@ couleurType varchar(30),
 FOREIGN KEY (carteID) REFERENCES carte (carteID),
 FOREIGN KEY (joueurID) REFERENCES joueur (joueurID));
 
-create table paquetCarte(
-paquetCarteID int not null auto_increment,
-paquetCarteNom varchar(30),
-FOREIGN KEY (carteID) REFERENCES carte (carteID),
-FOREIGN KEY (casePID) REFERENCES caseP (casePID));
+insert into categorie(categorieMatiere)
+values
+('Math'),
+('Fr'),
+('Anglais'),
+('Geo'),
+('Hist'),
+('Sc');

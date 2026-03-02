@@ -1,6 +1,10 @@
-﻿using Limet_Maxence_CodagePion.Classe;
+﻿using Code_Martyre_Classe.Config;
+using Limet_Maxence_CodagePion.Classe;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,9 +17,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Data;
-using MySql.Data.MySqlClient;
-using System.Diagnostics;
 
 namespace Code_Martyre_Classe.Views
 {
@@ -29,7 +30,8 @@ namespace Code_Martyre_Classe.Views
         TextBlock[] txtBPseudo = new TextBlock[4];
         TextBlock txtDe = new TextBlock();
         De cDe = new De(6);
-        
+        connectDB bdd = new connectDB();
+
         public PlateauJeu()
         {
             InitializeComponent();
@@ -93,7 +95,7 @@ namespace Code_Martyre_Classe.Views
                 txtBPseudo[iJoueur] = new TextBlock();
                 if (iJoueur == 0)
                 {
-                    txtBPseudo[iJoueur].Text = pseudo1;
+                    txtBPseudo[iJoueur].Text = bdd.AfficheJoueur();
                 }
                 else if (iJoueur == 1)
                 {

@@ -28,8 +28,10 @@ namespace Code_Martyre_Classe.Views
     public partial class Pseudo : Page
     {
         TextBlock[] txtBCouleur = new TextBlock[Plateau.nbrJoueur];
+        Button confirmation;
+        string pseudoInt = "";
         string pseudoj = "";
-        Joueur joueur;
+        Joueur joueur = new Joueur("");
         int btnChangeCou = 0;
         int itxtBCL = 1;
         int colorChang = 0;
@@ -55,13 +57,13 @@ namespace Code_Martyre_Classe.Views
             TextBox[] txtPseudo = new TextBox[4];
             Button btnJouer = new Button();
             Button[] btnchangC = new Button[Plateau.nbrJoueur];
-            ColumnDefinition[] colDef = new ColumnDefinition[2];
+            ColumnDefinition[] colDef = new ColumnDefinition[3];
             RowDefinition[] rowDef = new RowDefinition[9];
             grdPseudo.Background = Brushes.Gray;
             
 
             //Grille
-            for (int iC = 0; iC < 2; iC++)
+            for (int iC = 0; iC < 3; iC++)
             {
                 colDef[iC] = new ColumnDefinition();
                 grdPseudo.ColumnDefinitions.Add(colDef[iC]);
@@ -119,7 +121,7 @@ namespace Code_Martyre_Classe.Views
                 btnchangC[iBChang].Width = 50;
                 btnchangC[iBChang].Click += new RoutedEventHandler(Btn_ChangeColor);
                 grdPseudo.Children.Add(btnchangC[iBChang]);
-                Grid.SetColumn(btnchangC[iBChang], 1);
+                Grid.SetColumn(btnchangC[iBChang], 2);
                 Grid.SetRow(btnchangC[iBChang], iBChCL);
                 iBChCL += 2;
                 txtBCouleur[iBChang] = new TextBlock();
@@ -138,10 +140,18 @@ namespace Code_Martyre_Classe.Views
                 txtPseudo[itxtBox] = new TextBox();
                 txtPseudo[itxtBox].PreviewTextInput += new TextCompositionEventHandler(AjouterPseudo_Text);
                 txtPseudo[itxtBox].Height = 80;
-                txtPseudo[itxtBox].Width = 100;
+                txtPseudo[itxtBox].Width = 300;
+                confirmation = new Button();
+                confirmation.Height = 50;
+                confirmation.Width = 200;
+                confirmation.Content = "Veuiller confirmer votre pseudo";
                 grdPseudo.Children.Add(txtPseudo[itxtBox]);
                 Grid.SetColumn(txtPseudo[itxtBox], 1);
                 Grid.SetRow(txtPseudo[itxtBox], itxtB);
+                grdPseudo.Children.Add(confirmation);
+                Grid.SetColumn(confirmation, 2);
+                Grid.SetRow(confirmation, itxtB);
+                confirmation.Click += new RoutedEventHandler(AjouterPseudo_Click);
                 itxtB += 2;
             }
 
@@ -150,24 +160,33 @@ namespace Code_Martyre_Classe.Views
             btnJouer.Width = 150;
             btnJouer.Click += new RoutedEventHandler(Btn_GoPlateau);
             grdPseudo.Children.Add(btnJouer);
-            Grid.SetColumn(btnJouer, 0);
-            Grid.SetColumnSpan(btnJouer, 2);
+            Grid.SetColumn(btnJouer, 1);
             Grid.SetRow(btnJouer, 8);
         }
 
         //BDD
         public void Btn_GoPlateau(object sender, RoutedEventArgs e)
         {
-            joueur.AjoutePseudo();
             MainWindow pseudo = (MainWindow)App.Current.MainWindow;
             pseudo.Content = null;
             pseudo.Content = new PlateauJeu();
         }
 
+        public void AjouterPseudo_Click(object sender, RoutedEventArgs e)
+        {
+            joueur.AjoutePseudo();
+            pseudoInt = "";
+            pseudoj = "";
+        }
+
         public void AjouterPseudo_Text(object sender, TextCompositionEventArgs e)
         {
-           pseudoj += e.Text;
-           joueur = new Joueur(pseudoj);
+            
+            pseudoj = e.Text;
+            pseudoInt += pseudoj;
+            joueur.Pseudo = pseudoInt;
+            
+
         }
 
         public void Btn_ChangeColor(object sender, RoutedEventArgs e)

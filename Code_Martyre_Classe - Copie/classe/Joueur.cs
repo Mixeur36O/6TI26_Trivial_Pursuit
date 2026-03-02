@@ -35,6 +35,7 @@ namespace Limet_Maxence_CodagePion.Classe
         {
             bdd.AjouteJoueur(_pseudo);
         }
+        
 
     }
 }
