@@ -95,7 +95,7 @@ namespace Code_Martyre_Classe.Views
                 txtBPseudo[iJoueur] = new TextBlock();
                 if (iJoueur == 0)
                 {
-                    txtBPseudo[iJoueur].Text = bdd.AfficheJoueur();
+                    //txtBPseudo[iJoueur].Text = bdd.AfficheJoueur();
                 }
                 else if (iJoueur == 1)
                 {

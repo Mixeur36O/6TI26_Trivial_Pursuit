@@ -27,7 +27,8 @@ namespace Code_Martyre_Classe.Views
     /// </summary>
     public partial class Pseudo : Page
     {
-        TextBlock[] txtBCouleur = new TextBlock[Plateau.nbrJoueur];
+        TextBlock txtBCouleur = new TextBlock();
+        int nbrPseudo = Plateau.nbrJoueur;
         Button confirmation;
         string pseudoInt = "";
         string pseudoj = "";
@@ -48,112 +49,66 @@ namespace Code_Martyre_Classe.Views
         public void Prepareinterface()
         {
 
-            //Variable 
-            int itxtBL = 0;
-            int itxtB = 0;
-            int iBChCL = 1;
+            //Variable
             DataSet infos = new DataSet();
-            TextBlock[] txtBTxtpseudo = new TextBlock[Plateau.nbrJoueur];
-            TextBox[] txtPseudo = new TextBox[4];
+            TextBlock txtBTxtpseudo = new TextBlock();
+            TextBox txtPseudo = new TextBox();
             Button btnJouer = new Button();
-            Button[] btnchangC = new Button[Plateau.nbrJoueur];
-            ColumnDefinition[] colDef = new ColumnDefinition[3];
-            RowDefinition[] rowDef = new RowDefinition[9];
+            Button btnchangC = new Button();
+            ColumnDefinition[] colDef = new ColumnDefinition[4];
+            RowDefinition[] rowDef = new RowDefinition[4];
             grdPseudo.Background = Brushes.Gray;
             
 
             //Grille
-            for (int iC = 0; iC < 3; iC++)
+            for (int iC = 0; iC < 4; iC++)
             {
                 colDef[iC] = new ColumnDefinition();
                 grdPseudo.ColumnDefinitions.Add(colDef[iC]);
+                rowDef[iC] = new RowDefinition();
+                grdPseudo.RowDefinitions.Add(rowDef[iC]);
 
             }
-            for (int iL = 0; iL < 9; iL++)
-            {
-                rowDef[iL] = new RowDefinition();
-                grdPseudo.RowDefinitions.Add(rowDef[iL]);
-            }
-
-
 
             //TxtBlock pseudo
-            for (int itxtBP = 0; itxtBP < Plateau.nbrJoueur; itxtBP++)
-            {
-                txtBTxtpseudo[itxtBP] = new TextBlock();
-                if (itxtBP == 0)
-                {
-                    txtBTxtpseudo[itxtBP].Text = "Pseudo1 :";
-                }
-                else if (itxtBP == 1)
-                {
-                    txtBTxtpseudo[itxtBP].Text = "Pseudo2 :";
-                }
-                else if (itxtBP == 2)
-                {
-                    txtBTxtpseudo[itxtBP].Text = "Pseudo3 :";
-                }
-                else if (itxtBP == 3)
-                {
-                    txtBTxtpseudo[itxtBP].Text = "Pseudo4 :";
-                }
-                txtBTxtpseudo[itxtBP].HorizontalAlignment = HorizontalAlignment.Center;
-                txtBTxtpseudo[itxtBP].VerticalAlignment = VerticalAlignment.Center;
-                grdPseudo.Children.Add(txtBTxtpseudo[itxtBP]);
-                Grid.SetColumn(txtBTxtpseudo[itxtBP], 0);
-                Grid.SetRow(txtBTxtpseudo[itxtBP], itxtBL);
-                itxtBL += 2;
-            }
 
-            //TextBlock couleur en dessous des pseudo
-            for (int itxtBoxC = 0; itxtBoxC < 6; itxtBoxC++)
-            {
-
-            }
+            txtBTxtpseudo.Text = "Pseudo";
+            txtBTxtpseudo.HorizontalAlignment = HorizontalAlignment.Center;
+            txtBTxtpseudo.VerticalAlignment = VerticalAlignment.Center;
+            grdPseudo.Children.Add(txtBTxtpseudo);
+            Grid.SetColumn(txtBTxtpseudo, 1);
+            Grid.SetRow(txtBTxtpseudo, 1);
 
             //Button switch color
-
-            for (int iBChang = 0; iBChang < Plateau.nbrJoueur; iBChang++)
-            {
-                btnchangC[iBChang] = new Button();
-                btnchangC[iBChang].Content = ">";
-                btnchangC[iBChang].Height = 50;
-                btnchangC[iBChang].Width = 50;
-                btnchangC[iBChang].Click += new RoutedEventHandler(Btn_ChangeColor);
-                grdPseudo.Children.Add(btnchangC[iBChang]);
-                Grid.SetColumn(btnchangC[iBChang], 2);
-                Grid.SetRow(btnchangC[iBChang], iBChCL);
-                iBChCL += 2;
-                txtBCouleur[iBChang] = new TextBlock();
-                txtBCouleur[iBChang].Text = "Couleur";
-                txtBCouleur[iBChang].Height = 80;
-                txtBCouleur[iBChang].Width = 100;
-                grdPseudo.Children.Add(txtBCouleur[iBChang]);
-                Grid.SetColumn(txtBCouleur[iBChang], 0);
-                Grid.SetRow(txtBCouleur[iBChang], itxtBCL);
-                itxtBCL += 2;
-            }
+            btnchangC.Content = ">";
+            btnchangC.Height = 50;
+            btnchangC.Width = 50;
+            btnchangC.Click += new RoutedEventHandler(Btn_ChangeColor);
+            grdPseudo.Children.Add(btnchangC);
+            Grid.SetColumn(btnchangC, 2);
+            Grid.SetRow(btnchangC, 2);
+            txtBCouleur.Text = "Couleur";
+            txtBCouleur.Height = 80;
+            txtBCouleur.Width = 100;
+            grdPseudo.Children.Add(txtBCouleur);
+            Grid.SetColumn(txtBCouleur, 1);
+            Grid.SetRow(txtBCouleur, 2);
 
             //TextBox
-            for (int itxtBox = 0; itxtBox < Plateau.nbrJoueur; itxtBox++)
-            {
-                txtPseudo[itxtBox] = new TextBox();
-                txtPseudo[itxtBox].PreviewTextInput += new TextCompositionEventHandler(AjouterPseudo_Text);
-                txtPseudo[itxtBox].Height = 80;
-                txtPseudo[itxtBox].Width = 300;
-                confirmation = new Button();
-                confirmation.Height = 50;
-                confirmation.Width = 200;
-                confirmation.Content = "Veuiller confirmer votre pseudo";
-                grdPseudo.Children.Add(txtPseudo[itxtBox]);
-                Grid.SetColumn(txtPseudo[itxtBox], 1);
-                Grid.SetRow(txtPseudo[itxtBox], itxtB);
-                grdPseudo.Children.Add(confirmation);
-                Grid.SetColumn(confirmation, 2);
-                Grid.SetRow(confirmation, itxtB);
-                confirmation.Click += new RoutedEventHandler(AjouterPseudo_Click);
-                itxtB += 2;
-            }
+            txtPseudo.PreviewTextInput += new TextCompositionEventHandler(AjouterPseudo_Text);
+            txtPseudo.Height = 80;
+            txtPseudo.Width = 300;
+            confirmation = new Button();
+            confirmation.Height = 50;
+            confirmation.Width = 200;
+            confirmation.Content = "Veuiller confirmer votre pseudo";
+            grdPseudo.Children.Add(txtPseudo);
+            Grid.SetColumn(txtPseudo, 1);
+            Grid.SetRow(txtPseudo, 0);
+            grdPseudo.Children.Add(confirmation);
+            Grid.SetColumn(confirmation, 2);
+            Grid.SetRow(confirmation, 2);
+            confirmation.Click += new RoutedEventHandler(AjouterPseudo_Click);
 
             btnJouer.Content = "Confirmer";
             btnJouer.Height = 80;
@@ -167,9 +122,21 @@ namespace Code_Martyre_Classe.Views
         //BDD
         public void Btn_GoPlateau(object sender, RoutedEventArgs e)
         {
+            MessageBox.Show("CCCC");
+            int nbrPS = 1;
             MainWindow pseudo = (MainWindow)App.Current.MainWindow;
-            pseudo.Content = null;
-            pseudo.Content = new PlateauJeu();
+            if (nbrPS <= nbrPseudo)
+            {
+                nbrPS += 1;
+                pseudo.Content = null;
+                pseudo.Content = new Pseudo();
+            }
+            else
+            {
+                pseudo.Content = null;
+                pseudo.Content = new PlateauJeu();
+            }
+
         }
 
         public void AjouterPseudo_Click(object sender, RoutedEventArgs e)
@@ -196,26 +163,26 @@ namespace Code_Martyre_Classe.Views
             {
                 if (colorChang == 0)
                 {
-                    txtBCouleur[colorChang].Text = "Rouge";
-                    txtBCouleur[colorChang].Background = Brushes.Red;
+                    txtBCouleur.Text = "Rouge";
+                    txtBCouleur.Background = Brushes.Red;
                     colorChang += 1;
                 }
                 else if (colorChang == 1)
                 {
-                    txtBCouleur[colorChang].Text = "Bleu";
-                    txtBCouleur[colorChang].Background = Brushes.Blue;
+                    txtBCouleur.Text = "Bleu";
+                    txtBCouleur.Background = Brushes.Blue;
                     colorChang = 0;
                 }
                 if (btnChangeCou == 0)
                 {
-                    Grid.SetColumn(txtBCouleur[colorChang], 0);
-                    Grid.SetRow(txtBCouleur[colorChang], 1);
+                    Grid.SetColumn(txtBCouleur, 0);
+                    Grid.SetRow(txtBCouleur, 1);
                     btnChangeCou += 1;
                 }
                 else if (btnChangeCou == 1)
                 {
-                    Grid.SetColumn(txtBCouleur[colorChang], 0);
-                    Grid.SetRow(txtBCouleur[colorChang], 3);
+                    Grid.SetColumn(txtBCouleur, 0);
+                    Grid.SetRow(txtBCouleur, 3);
                     btnChangeCou = 0;
                 }
             }
@@ -224,38 +191,38 @@ namespace Code_Martyre_Classe.Views
             {
                 if (colorChang == 0)
                 {
-                    txtBCouleur[colorChang].Text = "Rouge";
-                    txtBCouleur[colorChang].Background = Brushes.Red;
+                    txtBCouleur.Text = "Rouge";
+                    txtBCouleur.Background = Brushes.Red;
                     colorChang += 1;
                 }
                 else if (colorChang == 1)
                 {
-                    txtBCouleur[colorChang].Text = "Bleu";
-                    txtBCouleur[colorChang].Background = Brushes.Blue;
+                    txtBCouleur.Text = "Bleu";
+                    txtBCouleur.Background = Brushes.Blue;
                     colorChang += 1;
                 }
                 else if (colorChang == 2)
                 {
-                    txtBCouleur[colorChang].Text = "Vert";
-                    txtBCouleur[colorChang].Background = Brushes.Green;
+                    txtBCouleur.Text = "Vert";
+                    txtBCouleur.Background = Brushes.Green;
                     colorChang = 0;
                 }
                 if (btnChangeCou == 0)
                 {
-                    Grid.SetColumn(txtBCouleur[colorChang], 0);
-                    Grid.SetRow(txtBCouleur[colorChang], 1);
+                    Grid.SetColumn(txtBCouleur, 0);
+                    Grid.SetRow(txtBCouleur, 1);
                     btnChangeCou += 1;
                 }
                 else if (btnChangeCou == 1)
                 {
-                    Grid.SetColumn(txtBCouleur[colorChang], 0);
-                    Grid.SetRow(txtBCouleur[colorChang], 3);
+                    Grid.SetColumn(txtBCouleur, 0);
+                    Grid.SetRow(txtBCouleur, 3);
                     btnChangeCou += 1;
                 }
                 else if (btnChangeCou == 2)
                 {
-                    Grid.SetColumn(txtBCouleur[colorChang], 0);
-                    Grid.SetRow(txtBCouleur[colorChang], 5);
+                    Grid.SetColumn(txtBCouleur, 0);
+                    Grid.SetRow(txtBCouleur, 5);
                     btnChangeCou = 0;
                 }
             }
@@ -264,50 +231,50 @@ namespace Code_Martyre_Classe.Views
             {
                 if (colorChang == 0)
                 {
-                    txtBCouleur[colorChang].Text = "Rouge";
-                    txtBCouleur[colorChang].Background = Brushes.Red;
+                    txtBCouleur.Text = "Rouge";
+                    txtBCouleur.Background = Brushes.Red;
                     colorChang += 1;
                 }
                 else if (colorChang == 1)
                 {
-                    txtBCouleur[colorChang].Text = "Bleu";
-                    txtBCouleur[colorChang].Background = Brushes.Blue;
+                    txtBCouleur.Text = "Bleu";
+                    txtBCouleur.Background = Brushes.Blue;
                     colorChang += 1;
                 }
                 else if (colorChang == 2)
                 {
-                    txtBCouleur[colorChang].Text = "Vert";
-                    txtBCouleur[colorChang].Background = Brushes.Green;
+                    txtBCouleur.Text = "Vert";
+                    txtBCouleur.Background = Brushes.Green;
                     colorChang += 1;
                 }
                 else if (colorChang == 3)
                 {
-                    txtBCouleur[colorChang].Text = "Jaune";
-                    txtBCouleur[colorChang].Background = Brushes.Yellow;
+                    txtBCouleur.Text = "Jaune";
+                    txtBCouleur.Background = Brushes.Yellow;
                     colorChang = 0;
                 }
                 if (btnChangeCou == 0)
                 {
-                    Grid.SetColumn(txtBCouleur[colorChang], 0);
-                    Grid.SetRow(txtBCouleur[colorChang], 1);
+                    Grid.SetColumn(txtBCouleur, 0);
+                    Grid.SetRow(txtBCouleur, 1);
                     btnChangeCou += 1;
                 }
                 else if (btnChangeCou == 1)
                 {
-                    Grid.SetColumn(txtBCouleur[colorChang], 0);
-                    Grid.SetRow(txtBCouleur[colorChang], 3);
+                    Grid.SetColumn(txtBCouleur, 0);
+                    Grid.SetRow(txtBCouleur, 3);
                     btnChangeCou += 1;
                 }
                 else if (btnChangeCou == 2)
                 {
-                    Grid.SetColumn(txtBCouleur[colorChang], 0);
-                    Grid.SetRow(txtBCouleur[colorChang], 5);
+                    Grid.SetColumn(txtBCouleur, 0);
+                    Grid.SetRow(txtBCouleur, 5);
                     btnChangeCou += 1;
                 }
                 else if (btnChangeCou == 3)
                 {
-                    Grid.SetColumn(txtBCouleur[colorChang], 0);
-                    Grid.SetRow(txtBCouleur[colorChang], 7);
+                    Grid.SetColumn(txtBCouleur, 0);
+                    Grid.SetRow(txtBCouleur, 7);
                     btnChangeCou = 0;
                 }
             }

@@ -15,8 +15,8 @@ namespace Code_Martyre_Classe.Config
         {
             try
             {
-                return "server=localhost;database=projet_tfe;port=3306;User Id=root;password=root";
-                //return "server=10.10.51.98;database=maxence;port=3306;User Id=Maxence;password=root";
+                //return "server=localhost;database=projet_tfe;port=3306;User Id=root;password=root";
+                return "server=10.10.51.98;database=maxence;port=3306;User Id=Maxence;password=root";
             }
             catch (Exception ex)
             {
