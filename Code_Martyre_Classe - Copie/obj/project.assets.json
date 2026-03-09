@@ -72,7 +72,7 @@
           }
         }
       },
-      "MySql.Data/9.5.0": {
+      "MySql.Data/9.6.0": {
         "type": "package",
         "dependencies": {
           "BouncyCastle.Cryptography": "2.6.2",
@@ -349,16 +349,18 @@
         "lib/netstandard2.1/K4os.Hash.xxHash.xml"
       ]
     },
-    "MySql.Data/9.5.0": {
-      "sha512": "pbIrDv7vuvMlok6ldjliFOeb5fpGofAInUhG/8LraQBqT2a2xZTcAVjm/GyfZ9ZyjZeHJLWuMRbe0uI98sCoWg==",
+    "MySql.Data/9.6.0": {
+      "sha512": "jjCXNBxLLQHBcyYyOP4yp5jqljStH2qGFXXg3jBMdwYQk9ihpLH9BXoMyc/J3421pENBDjCf/eGi9Ow0Ib7LUA==",
       "type": "package",
-      "path": "mysql.data/9.5.0",
+      "path": "mysql.data/9.6.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE",
         "README",
         "README.md",
+        "lib/net10.0/MySql.Data.dll",
+        "lib/net10.0/MySql.Data.xml",
         "lib/net462/MySql.Data.dll",
         "lib/net462/MySql.Data.xml",
         "lib/net48/MySql.Data.dll",
@@ -372,7 +374,7 @@
         "lib/netstandard2.1/MySql.Data.dll",
         "lib/netstandard2.1/MySql.Data.xml",
         "logo-mysql-170x115.png",
-        "mysql.data.9.5.0.nupkg.sha512",
+        "mysql.data.9.6.0.nupkg.sha512",
         "mysql.data.nuspec",
         "runtimes/win-x64/native/comerr64.dll",
         "runtimes/win-x64/native/gssapi64.dll",
@@ -590,7 +592,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
-      "MySql.Data >= 9.5.0"
+      "MySql.Data >= 9.6.0"
     ]
   },
   "packageFolders": {
@@ -646,7 +648,7 @@
         "dependencies": {
           "MySql.Data": {
             "target": "Package",
-            "version": "[9.5.0, )"
+            "version": "[9.6.0, )"
           }
         },
         "imports": [
