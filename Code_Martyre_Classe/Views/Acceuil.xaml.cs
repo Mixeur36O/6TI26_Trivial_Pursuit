@@ -35,9 +35,10 @@ namespace Code_Martyre_Classe.Views
             //Variables
             ColumnDefinition[] colDef = new ColumnDefinition[3];
             RowDefinition[] rowDef = new RowDefinition[3];
-           
+            grdMain.Background = Brushes.Gray;
+
             //Faire la grille
-            for (int iGrille = 0; iGrille < 4; iGrille++)
+            for (int iGrille = 0; iGrille < 3; iGrille++)
             {
                 colDef[iGrille] = new ColumnDefinition();
                 rowDef[iGrille] = new RowDefinition();
