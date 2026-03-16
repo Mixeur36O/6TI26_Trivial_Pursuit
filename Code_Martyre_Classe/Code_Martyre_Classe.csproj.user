@@ -5,6 +5,24 @@
     <Compile Update="Views\Acceuil.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\AfficheCarte\CAng.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AfficheCarte\CFr.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AfficheCarte\CGeo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AfficheCarte\CHist.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AfficheCarte\CMath.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AfficheCarte\CSc.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\Parametre.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

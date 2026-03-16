@@ -37,8 +37,8 @@ namespace Code_Martyre_Classe
 
             TextBlock titre = new TextBlock();
             titre.Text = "Trivial Pursuit";
-            titre.FontSize = 30;
-            titre.Foreground = Brushes.Red;
+            titre.FontSize = 40;
+            titre.Foreground = Brushes.White;
             titre.FontWeight = FontWeights.Bold;
             titre.HorizontalAlignment = HorizontalAlignment.Center;
             titre.VerticalAlignment = VerticalAlignment.Top;
@@ -50,6 +50,8 @@ namespace Code_Martyre_Classe
             //Placer les boutons
             for (int iButton = 0; iButton < button.Length; iButton++)
             {
+               
+            
                 button[iButton] = new Button();
                 if (iButton == 0)
                 {
@@ -57,7 +59,7 @@ namespace Code_Martyre_Classe
                 }
                 else if (iButton == 1)
                 {
-                    button[iButton].Content = "Paramètre";
+                    button[iButton].Content = "Paramètres";
                 }
                 else if (iButton == 2)
                 {
@@ -74,7 +76,7 @@ namespace Code_Martyre_Classe
                 button[iButton].Height = 80;
                 button[iButton].Background = new SolidColorBrush(colors[iButton]);
                 button[iButton].Foreground = Brushes.White;
-                button[iButton].FontSize = 18;
+                button[iButton].FontSize = 22;
                 button[iButton].FontWeight = FontWeights.SemiBold;
                 button[iButton].Padding = new Thickness(15, 8, 15, 8);
                 button[iButton].BorderThickness = new Thickness(0);

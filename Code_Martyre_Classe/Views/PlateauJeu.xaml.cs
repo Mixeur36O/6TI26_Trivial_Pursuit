@@ -1,6 +1,10 @@
-﻿using Limet_Maxence_CodagePion.Classe;
+﻿using Code_Martyre_Classe.Config;
+using Limet_Maxence_CodagePion.Classe;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,10 +26,12 @@ namespace Code_Martyre_Classe.Views
     public partial class PlateauJeu : Page
     {
         TextBlock[,] txtBlock = new TextBlock[13, 13];
-        TextBlock[] txtBCarte = new TextBlock[6];
+        Button[] txtBCarte = new Button[6];
         TextBlock[] txtBPseudo = new TextBlock[4];
         TextBlock txtDe = new TextBlock();
         De cDe = new De(6);
+        connectDB bdd = new connectDB();
+
         public PlateauJeu()
         {
             InitializeComponent();
@@ -39,11 +45,11 @@ namespace Code_Martyre_Classe.Views
             int indicateurL = 0;
             int indicateurLC = 0;
             int indicateurLJ = 15;
+            DataSet donnees = new DataSet();
             string pseudo1 = "test1";
             string pseudo2 = "test2";
             string pseudo3 = "test3";
             string pseudo4 = "test4";
-
             Button de = new Button();
             BitmapImage itn = new BitmapImage();
             itn.BeginInit();
@@ -52,14 +58,7 @@ namespace Code_Martyre_Classe.Views
             StackPanel stkBlock = new StackPanel();
             ColumnDefinition[] colDef = new ColumnDefinition[20];
             RowDefinition[] rowDef = new RowDefinition[20];
-
-            grdPlateau.Background = new LinearGradientBrush(
-                    Color.FromRgb(30, 30, 60),
-                    Color.FromRgb(15, 15, 30),
-                    new System.Windows.Point(0, 0),
-                    new System.Windows.Point(0, 1)
-                );
-            Border border = new Border();
+            grdPlateau.Background = Brushes.Gray;
 
             //Faire la grille
             for (int i = 0; i < 20; i++)
@@ -74,9 +73,6 @@ namespace Code_Martyre_Classe.Views
             de.Content = "Lancer le Dé";
             de.FontSize = 25;
             de.FontWeight = FontWeights.Bold;
-            de.Height = 100;
-            de.Width = 300;
-            de.BorderBrush = Brushes.Black;
             de.Click += new RoutedEventHandler(Btn_De);
             grdPlateau.Children.Add(de);
             Grid.SetColumn(de, 17);
@@ -84,37 +80,21 @@ namespace Code_Martyre_Classe.Views
             Grid.SetColumnSpan(de, 3);
             Grid.SetRowSpan(de, 17);
 
-
-            txtDe.FontSize = 20;
+            txtDe.FontSize = 25;
             txtDe.FontWeight = FontWeights.Bold;
-            txtDe.Background  = Brushes.Red;
-            txtDe.TextAlignment = TextAlignment.Center;
-            txtDe.Height = 50;
+            txtDe.Background = Brushes.White;
+            txtDe.HorizontalAlignment = HorizontalAlignment.Center;
+            txtDe.VerticalAlignment = VerticalAlignment.Center;
             grdPlateau.Children.Add(txtDe);
             Grid.SetColumn(txtDe, 15);
             Grid.SetRow(txtDe, 17);
 
 
             //Coter Joueur
-            for (int iJoueur = 0; iJoueur < txtBPseudo.Length; iJoueur++)
+            for (int iJoueur = 0; iJoueur < Plateau.nbrJoueur; iJoueur++)
             {
                 txtBPseudo[iJoueur] = new TextBlock();
-                if (iJoueur == 0)
-                {
-                    txtBPseudo[iJoueur].Text = pseudo1;
-                }
-                else if (iJoueur == 1)
-                {
-                    txtBPseudo[iJoueur].Text = pseudo2;
-                }
-                else if (iJoueur == 2)
-                {
-                    txtBPseudo[iJoueur].Text = pseudo3;
-                }
-                else if (iJoueur == 3)
-                {
-                    txtBPseudo[iJoueur].Text = pseudo4;
-                }
+                txtBPseudo[iJoueur].Text = bdd.AfficheJoueur(donnees);
                 txtBPseudo[iJoueur].FontSize = 35;
                 txtBPseudo[iJoueur].FontWeight = FontWeights.Bold;
                 grdPlateau.Children.Add(txtBPseudo[iJoueur]);
@@ -127,37 +107,42 @@ namespace Code_Martyre_Classe.Views
             //Coter des Cartes
             for (int iCarte = 0; iCarte < txtBCarte.Length; iCarte++)
             {
-                txtBCarte[iCarte] = new TextBlock();
+                txtBCarte[iCarte] = new Button();
                 if (iCarte == 0)
                 {
-                    txtBCarte[iCarte].Background = Brushes.OrangeRed;
-                    txtBCarte[iCarte].Text = "MATH";
-
+                    txtBCarte[iCarte].Background = Brushes.Red;
+                    txtBCarte[iCarte].Content = "MATH";
+                    txtBCarte[iCarte].Click += new RoutedEventHandler(CarteMath_Click);
                 }
                 else if (iCarte == 1)
                 {
-                    txtBCarte[iCarte].Text = "FRANCAIS";
-                    txtBCarte[iCarte].Background = Brushes.RoyalBlue;
+                    txtBCarte[iCarte].Content = "FRANCAIS";
+                    txtBCarte[iCarte].Background = Brushes.Blue;
+                    txtBCarte[iCarte].Click += new RoutedEventHandler(CarteFr_Click);
                 }
                 else if (iCarte == 2)
                 {
-                    txtBCarte[iCarte].Text = "GEO";
+                    txtBCarte[iCarte].Content = "GEO";
                     txtBCarte[iCarte].Background = Brushes.Yellow;
+                    txtBCarte[iCarte].Click += new RoutedEventHandler(CarteGeo_Click);
                 }
                 else if (iCarte == 3)
                 {
-                    txtBCarte[iCarte].Text = "HISTOIRE";
+                    txtBCarte[iCarte].Content = "HISTOIRE";
                     txtBCarte[iCarte].Background = Brushes.Orange;
+                    txtBCarte[iCarte].Click += new RoutedEventHandler(CarteHist_Click);
                 }
                 else if (iCarte == 4)
                 {
-                    txtBCarte[iCarte].Text = "ANGLAIS";
-                    txtBCarte[iCarte].Background = Brushes.MediumPurple;
+                    txtBCarte[iCarte].Content = "ANGLAIS";
+                    txtBCarte[iCarte].Background = Brushes.Purple;
+                    txtBCarte[iCarte].Click += new RoutedEventHandler(CarteAng_Click);
                 }
                 else if (iCarte == 5)
                 {
-                    txtBCarte[iCarte].Text = "SCIENCE";
-                    txtBCarte[iCarte].Background = Brushes.SpringGreen;
+                    txtBCarte[iCarte].Content = "SCIENCE";
+                    txtBCarte[iCarte].Background = Brushes.Green;
+                    txtBCarte[iCarte].Click += new RoutedEventHandler(CarteSc_Click);
                 }
                 txtBCarte[iCarte].FontSize = 36;
                 txtBCarte[iCarte].FontWeight = FontWeights.Bold;
@@ -176,83 +161,157 @@ namespace Code_Martyre_Classe.Views
 
                 for (int iLigne = 0; iLigne < txtBlock.GetLength(1); iLigne++)
                 {
-
                     if (indicateurC == 0 || indicateurL == 0 || indicateurC == 6 || indicateurL == 6 || indicateurC == 12 || indicateurL == 12)
                     {
                         Random rnd = new Random();
                         int randomC = rnd.Next(0, 6);
-                        Border borderCell = new Border();
-
-                        borderCell.BorderBrush = Brushes.Black;
-                        borderCell.BorderThickness = new Thickness(2);
-                        borderCell.CornerRadius = new CornerRadius(10);
-                        borderCell.Margin = new Thickness(2);
-
                         txtBlock[iColonne, iLigne] = new TextBlock();
-                        txtBlock[iColonne, iLigne].FontSize = 18;
-                        txtBlock[iColonne, iLigne].FontWeight = FontWeights.Bold;
-                        txtBlock[iColonne, iLigne].TextAlignment = TextAlignment.Center;
-                        txtBlock[iColonne, iLigne].VerticalAlignment = VerticalAlignment.Center;
-                        txtBlock[iColonne, iLigne].HorizontalAlignment = HorizontalAlignment.Center;
-                        txtBlock[iColonne, iLigne].Background = Brushes.Transparent; 
-                        txtBlock[iColonne, iLigne].Padding = new Thickness(5);
-
+                        txtBlock[iColonne, iLigne].FontSize = 50;
+                        txtBlock[iColonne, iLigne].Height = 90;
+                        txtBlock[iColonne, iLigne].Width = 90;
                         if (randomC == 0)
                         {
-                            borderCell.Background = Brushes.OrangeRed;
-                            txtBlock[iColonne, iLigne].Background = Brushes.OrangeRed;
+                            txtBlock[iColonne, iLigne].Background = Brushes.Red;
                             txtBlock[iColonne, iLigne].Text = "Math";
                         }
                         else if (randomC == 1)
                         {
-                            borderCell.Background = Brushes.RoyalBlue;
-                            txtBlock[iColonne, iLigne].Background =  Brushes.RoyalBlue;
+                            txtBlock[iColonne, iLigne].Background = Brushes.Blue;
                             txtBlock[iColonne, iLigne].Text = "Fr";
                         }
                         else if (randomC == 2)
                         {
-                            borderCell.Background = Brushes.Yellow;
                             txtBlock[iColonne, iLigne].Background = Brushes.Yellow;
                             txtBlock[iColonne, iLigne].Text = "Géo";
                         }
                         else if (randomC == 3)
                         {
-                            borderCell.Background = Brushes.Orange;
                             txtBlock[iColonne, iLigne].Background = Brushes.Orange;
                             txtBlock[iColonne, iLigne].Text = "Hist";
                         }
                         else if (randomC == 4)
                         {
-                            borderCell.Background = Brushes.MediumPurple;
-                            txtBlock[iColonne, iLigne].Background = Brushes.MediumPurple;
+                            txtBlock[iColonne, iLigne].Background = Brushes.Purple;
                             txtBlock[iColonne, iLigne].Text = "Anglais";
                         }
                         else if (randomC == 5)
                         {
-                            borderCell.Background = Brushes.SpringGreen;
-                            txtBlock[iColonne, iLigne].Background = Brushes.SpringGreen;
+                            txtBlock[iColonne, iLigne].Background = Brushes.Green;
                             txtBlock[iColonne, iLigne].Text = "Sc";
                         }
                         txtBlock[iColonne, iLigne].FontSize = 20;
                         txtBlock[iColonne, iLigne].FontWeight = FontWeights.Bold;
 
-                        borderCell.Child = txtBlock[iColonne, iLigne];
-                        Grid.SetColumn(borderCell, indicateurC);
-                        Grid.SetRow(borderCell, indicateurL);
-                        grdPlateau.Children.Add(borderCell);
+
+                        Grid.SetColumn(txtBlock[iColonne, iLigne], indicateurC);
+                        Grid.SetRow(txtBlock[iColonne, iLigne], indicateurL);
+                        grdPlateau.Children.Add(txtBlock[iColonne, iLigne]);
                     }
                     indicateurC += 1;
                 }
                 indicateurC = 0;
                 indicateurL += 1;
             }
+
+
         }
-        
+
         public void Btn_De(object sender, RoutedEventArgs e)
         {
             cDe.Btn_DonneUnNbrAleaD();
             txtDe.Text = $"{cDe.Face}";
         }
 
+        public void CarteMath_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow plateau = (MainWindow)App.Current.MainWindow;
+            plateau.Content = new AfficheCarte.CMath();
+        }
+        public void CarteFr_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow plateau = (MainWindow)App.Current.MainWindow;
+            plateau.Content = new AfficheCarte.CFr();
+        }
+        public void CarteGeo_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow plateau = (MainWindow)App.Current.MainWindow;
+            plateau.Content = new AfficheCarte.CGeo();
+        }
+        public void CarteHist_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow plateau = (MainWindow)App.Current.MainWindow;
+            plateau.Content = new AfficheCarte.CHist();
+        }
+        public void CarteAng_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow plateau = (MainWindow)App.Current.MainWindow;
+            plateau.Content = new AfficheCarte.CAng();
+        }
+        public void CarteSc_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow plateau = (MainWindow)App.Current.MainWindow;
+            plateau.Content = new AfficheCarte.CSc();
+        }
+        ///// <summary>
+        ///// Procédure permettant de lancer un dé, et faire avancer le pion du joueur
+        ///// </summary>
+        ///// <param name="symboleJoueur">Symbole marquant la position du joueur</param>
+        ///// <param name="numeroJoueur">numero du joueur (1 ou 2)</param>
+        ///// <param name="totalJoueur">Compte cumulé des dés sortis</param>
+        ///// <param name="positionPionJoueur">Première place = numéro de ligne, seconde place = numéro de colonne</param>
+        ///// <param name="ancienneValeur">valeur numérique de la case où se trouve le joueur</param>
+        //public void TourJoueur(string symboleJoueur, int numeroJoueur, ref int totalJoueur, ref int[] positionPionJoueur, ref string ancienneValeur)
+        //{
+        //    Random alea = new Random();         // nombre aléatoire
+        //    int taille = btnCases.GetLength(0); // nombre de lignes dans le plateau
+        //    int maxCases = taille * taille;     // nombre de cases maximum
+
+        //    // dé sorti
+        //    int de = alea.Next(1, 7);
+
+        //    // modification de l'interface pour l'affichage du numéro du joueur et du dé
+        //    txtQuiJoue.Text = "Joueur " + numeroJoueur;
+        //    txtDe.Text = "Dé : " + de;
+
+        //    // calcul total déjà parcouru par le joueur
+        //    totalJoueur += de;
+
+        //    // Si on dépasse le nombre total de cases, on fixe à la dernière possible
+        //    if (totalJoueur > maxCases)
+        //    {
+        //        totalJoueur = maxCases;
+        //    }
+
+        //    // Retirer le symbole du joueur à l'ancienne position et faire apparaître le numéro qu'il cachait
+        //    btnCases[positionPionJoueur[0], positionPionJoueur[1]].Content = ancienneValeur;
+        //    btnCases[positionPionJoueur[0], positionPionJoueur[1]].Foreground = Brushes.Black;
+
+        //    // recherche de la nouvelle position du joueur
+        //    int index = totalJoueur - 1;
+
+        //    int ligneDepuisBas = index / taille;
+        //    int colonneDansLigne = index % taille;
+
+        //    positionPionJoueur[0] = taille - 1 - ligneDepuisBas;
+
+        //    bool gaucheVersDroite = ligneDepuisBas % 2 == 0;
+
+        //    positionPionJoueur[1] = gaucheVersDroite
+        //        ? colonneDansLigne
+        //        : taille - 1 - colonneDansLigne;
+
+        //    // Fin de partie
+        //    if (totalJoueur == maxCases)
+        //    {
+        //        txtQuiJoue.Text = "Fin !";
+        //        btnAvancer.IsEnabled = false;
+        //    }
+
+        //    // mémorisation du numéro de la case sur laquelle on va placer le symbole du joueur
+        //    // + affichage de ce symbole
+        //    ancienneValeur = btnCases[positionPionJoueur[0], positionPionJoueur[1]].Content.ToString();
+        //    btnCases[positionPionJoueur[0], positionPionJoueur[1]].Content = symboleJoueur;
+        //    btnCases[positionPionJoueur[0], positionPionJoueur[1]].Foreground = Brushes.Gold;
+        //}
     }
 }

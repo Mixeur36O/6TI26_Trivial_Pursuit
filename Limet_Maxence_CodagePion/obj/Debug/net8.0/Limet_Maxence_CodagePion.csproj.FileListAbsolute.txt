@@ -2,3 +2,8 @@ C:\Users\natha\Desktop\6TI26_Trivial_Pursuit-main\Limet_Maxence_CodagePion\obj\D
 C:\Users\natha\Desktop\6TI26_Trivial_Pursuit-main\Limet_Maxence_CodagePion\obj\Debug\net8.0\Limet_Maxence_CodagePion.AssemblyInfoInputs.cache
 C:\Users\natha\Desktop\6TI26_Trivial_Pursuit-main\Limet_Maxence_CodagePion\obj\Debug\net8.0\Limet_Maxence_CodagePion.AssemblyInfo.cs
 C:\Users\natha\Desktop\6TI26_Trivial_Pursuit-main\Limet_Maxence_CodagePion\obj\Debug\net8.0\Limet_Maxence_CodagePion.csproj.CoreCompileInputs.cache
+C:\Users\natha\Desktop\DesingMartyre\6TI26_Trivial_Pursuit\Limet_Maxence_CodagePion\obj\Debug\net8.0\Limet_Maxence_CodagePion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\natha\Desktop\DesingMartyre\6TI26_Trivial_Pursuit\Limet_Maxence_CodagePion\obj\Debug\net8.0\Limet_Maxence_CodagePion.AssemblyInfoInputs.cache
+C:\Users\natha\Desktop\DesingMartyre\6TI26_Trivial_Pursuit\Limet_Maxence_CodagePion\obj\Debug\net8.0\Limet_Maxence_CodagePion.AssemblyInfo.cs
+C:\Users\natha\Desktop\DesingMartyre\6TI26_Trivial_Pursuit\Limet_Maxence_CodagePion\obj\Debug\net8.0\Limet_Maxence_CodagePion.csproj.CoreCompileInputs.cache
+C:\Users\natha\Desktop\DesingMartyre\6TI26_Trivial_Pursuit\Limet_Maxence_CodagePion\obj\Debug\net8.0\Limet_Maxence_CodagePion.sourcelink.json

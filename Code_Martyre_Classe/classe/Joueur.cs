@@ -1,4 +1,7 @@
-﻿using System;
+﻿
+using Code_Martyre_Classe.Config;
+using Org.BouncyCastle.Tls.Crypto.Impl.BC;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +13,6 @@ namespace Limet_Maxence_CodagePion.Classe
     {
         //Attributs
         private string _pseudo;
-        private int _nbrJoueur;
 
         //Props
 
@@ -20,20 +22,19 @@ namespace Limet_Maxence_CodagePion.Classe
             set { _pseudo = value; }
         }
 
-        public int NbrJoueur
-        {
-            get { return _nbrJoueur; }
-            set { _nbrJoueur = value; }
-        }
-
 
         //Construct
-        public Joueur(string pseudo, int nbrJoueur)
+        public Joueur(string pseudo)
         {
             _pseudo = pseudo;
-            _nbrJoueur = nbrJoueur;
         }
 
+        connectDB bdd = new connectDB();
         //Méthode
+
+        public void AjoutePseudo()
+        {
+            bdd.AjouteJoueur(_pseudo);
+        }
     }
 }

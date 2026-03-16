@@ -1,6 +1,11 @@
-﻿using Limet_Maxence_CodagePion.Classe;
+﻿
+using Google.Protobuf.WellKnownTypes;
+using Limet_Maxence_CodagePion.Classe;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +19,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace Code_Martyre_Classe.Views
 {
     /// <summary>
@@ -21,9 +27,20 @@ namespace Code_Martyre_Classe.Views
     /// </summary>
     public partial class Pseudo : Page
     {
-        TextBlock[] txtBCouleur = new TextBlock[6];
-        int colorChang = 0;
+
+        TextBlock[] txtBCouleur = new TextBlock[Plateau.nbrJoueur];
+        int nbrPseudo = Plateau.nbrJoueur;
+        Button[] confirmation = new Button[Plateau.nbrJoueur];
+        string pseudoInt = "";
+        string pseudoj = "";
+        Joueur joueur = new Joueur("");
+        int btnChangeCou = 0;
         int itxtBCL = 1;
+        int colorChang = 0;
+        int colorChang1 = 0;
+        int colorChang2 = 0;
+        int colorChang3 = 0;
+
         public Pseudo()
         {
             InitializeComponent();
@@ -33,16 +50,16 @@ namespace Code_Martyre_Classe.Views
         public void Prepareinterface()
         {
 
-            //Variable 
+            //Variable
+            DataSet infos = new DataSet();
             int itxtBL = 0;
             int itxtB = 0;
             int iBChCL = 1;
-            Joueur joueur = new Joueur("", 4);
-            TextBlock[] txtBTxtpseudo = new TextBlock[joueur.NbrJoueur];
-            TextBox[] txtPseudo = new TextBox[joueur.NbrJoueur];
+            TextBlock[] txtBTxtpseudo = new TextBlock[Plateau.nbrJoueur];
+            TextBox[] txtPseudo = new TextBox[Plateau.nbrJoueur];
             Button btnJouer = new Button();
-            Button[] btnchangC = new Button[joueur.NbrJoueur];
-            ColumnDefinition[] colDef = new ColumnDefinition[2];
+            Button[] btnchangC = new Button[Plateau.nbrJoueur];
+            ColumnDefinition[] colDef = new ColumnDefinition[3];
             RowDefinition[] rowDef = new RowDefinition[9];
 
             grdPseudo.Background = new LinearGradientBrush(
@@ -53,7 +70,7 @@ namespace Code_Martyre_Classe.Views
             );
 
             //Grille
-            for (int iC = 0; iC < 2; iC++)
+            for (int iC = 0; iC < 3; iC++)
             {
                 colDef[iC] = new ColumnDefinition();
                 grdPseudo.ColumnDefinitions.Add(colDef[iC]);
@@ -66,7 +83,7 @@ namespace Code_Martyre_Classe.Views
             }
 
             //TxtBlock pseudo
-            for (int itxtBP = 0; itxtBP < joueur.NbrJoueur; itxtBP++)
+            for (int itxtBP = 0; itxtBP < Plateau.nbrJoueur; itxtBP++)
             {
                 txtBTxtpseudo[itxtBP] = new TextBlock();
                 txtBTxtpseudo[itxtBP].Foreground = Brushes.Red;
@@ -95,10 +112,9 @@ namespace Code_Martyre_Classe.Views
             }
 
             //TextBlock couleur en dessous des pseudo
-            for (int itxtBoxC = 0; itxtBoxC < 4; itxtBoxC++)
+            for (int itxtBoxC = 0; itxtBoxC < Plateau.nbrJoueur; itxtBoxC++)
             {
                 txtBCouleur[itxtBoxC] = new TextBlock();
-
                 txtBCouleur[itxtBoxC].Text = "Couleur";
                 txtBCouleur[itxtBoxC].Height = 80;
                 txtBCouleur[itxtBoxC].Width = 100;
@@ -111,7 +127,7 @@ namespace Code_Martyre_Classe.Views
 
             //Button switch color
 
-            for (int iBChang = 0; iBChang < joueur.NbrJoueur; iBChang++)
+            for (int iBChang = 0; iBChang < Plateau.nbrJoueur; iBChang++)
             {
                 btnchangC[iBChang] = new Button();
                 btnchangC[iBChang].Background = new LinearGradientBrush(
@@ -124,7 +140,6 @@ namespace Code_Martyre_Classe.Views
                 btnchangC[iBChang].Foreground = Brushes.Red;
                 btnchangC[iBChang].Height = 50;
                 btnchangC[iBChang].Width = 50;
-                btnchangC[iBChang].Click += new RoutedEventHandler(Btn_ChangeColor);
                 grdPseudo.Children.Add(btnchangC[iBChang]);
                 Grid.SetColumn(btnchangC[iBChang], 1);
                 Grid.SetRow(btnchangC[iBChang], iBChCL);
@@ -133,15 +148,23 @@ namespace Code_Martyre_Classe.Views
 
 
             //TextBox
-            for (int itxtBox = 0; itxtBox < joueur.NbrJoueur; itxtBox++)
+            for (nint itxtBox = 0; itxtBox < Plateau.nbrJoueur; itxtBox++)
             {
                 txtPseudo[itxtBox] = new TextBox();
-                //txtPseudo[itxtBox].PreviewTextInput += new TextCompositionEventHandler();
-                txtPseudo[itxtBox].Height = 40;
-                txtPseudo[itxtBox].Width = 120;
+                txtPseudo[itxtBox].PreviewTextInput += new TextCompositionEventHandler(AjouterPseudo_Text);
+                txtPseudo[itxtBox].Height = 80;
+                txtPseudo[itxtBox].Width = 300;
+                confirmation[itxtBox] = new Button();
+                confirmation[itxtBox].Height = 50;
+                confirmation[itxtBox].Width = 200;
+                confirmation[itxtBox].Content = "Veuiller confirmer votre pseudo";
+                confirmation[itxtBox].Click += new RoutedEventHandler(AjouterPseudo_Click);
                 grdPseudo.Children.Add(txtPseudo[itxtBox]);
                 Grid.SetColumn(txtPseudo[itxtBox], 1);
                 Grid.SetRow(txtPseudo[itxtBox], itxtB);
+                grdPseudo.Children.Add(confirmation[itxtBox]);
+                Grid.SetColumn(confirmation[itxtBox], 3);
+                Grid.SetRow(confirmation[itxtBox], itxtB);
                 itxtB += 2;
             }
 
@@ -162,65 +185,28 @@ namespace Code_Martyre_Classe.Views
             Grid.SetColumnSpan(btnJouer, 2);
             Grid.SetRow(btnJouer, 8);
         }
+        public void AjouterPseudo_Click(object sender, RoutedEventArgs e)
+        {
+            joueur.AjoutePseudo();
+            pseudoInt = "";
+            pseudoj = "";
+        }
 
+        public void AjouterPseudo_Text(object sender, TextCompositionEventArgs e)
+        {
+
+            pseudoj = e.Text;
+            pseudoInt += pseudoj;
+            joueur.Pseudo = pseudoInt;
+
+
+        }
         public void Btn_GoPlateau(object sender, RoutedEventArgs e)
         {
             MainWindow pseudo = (MainWindow)App.Current.MainWindow;
             pseudo.Content = null;
             pseudo.Content = new PlateauJeu();
         }
-        public void Btn_ChangeColor(object sender, RoutedEventArgs e)
-        {
-
-            for (int itxtBoxC = 0; itxtBoxC < 6; itxtBoxC++)
-            {
-                if (itxtBoxC == 0)
-                {
-                    txtBCouleur[itxtBoxC].Text = "Rouge";
-                    txtBCouleur[itxtBoxC].Background = Brushes.Red;
-                    Grid.SetColumn(txtBCouleur[itxtBoxC], 0);
-                    Grid.SetRow(txtBCouleur[itxtBoxC], 1);
-                }
-                else if (itxtBoxC == 1)
-                {
-                    txtBCouleur[itxtBoxC].Text = "Bleu";
-                    txtBCouleur[itxtBoxC].Background = Brushes.Blue;
-                    Grid.SetColumn(txtBCouleur[itxtBoxC], 0);
-                    Grid.SetRow(txtBCouleur[itxtBoxC], 1);
-                }
-                else if (itxtBoxC == 2)
-                {
-                    txtBCouleur[itxtBoxC].Text = "Vert";
-                    txtBCouleur[itxtBoxC].Background = Brushes.Green;
-                    Grid.SetColumn(txtBCouleur[itxtBoxC], 0);
-                    Grid.SetRow(txtBCouleur[itxtBoxC], 1);
-                }
-                else if (itxtBoxC == 3)
-                {
-                    txtBCouleur[itxtBoxC].Text = "Jaune";
-                    txtBCouleur[itxtBoxC].Background = Brushes.Yellow;
-                    Grid.SetColumn(txtBCouleur[itxtBoxC], 0);
-                    Grid.SetRow(txtBCouleur[itxtBoxC], 1);
-                }
-                else if (itxtBoxC == 4)
-                {
-                    txtBCouleur[itxtBoxC].Text = "Orange";
-                    txtBCouleur[itxtBoxC].Background = Brushes.Orange;
-                    Grid.SetColumn(txtBCouleur[itxtBoxC], 0);
-                    Grid.SetRow(txtBCouleur[itxtBoxC], 1);
-                }
-                else if (itxtBoxC == 5)
-                {
-                    txtBCouleur[itxtBoxC].Text = "Mauve";
-                    txtBCouleur[itxtBoxC].Background = Brushes.Purple;
-                    Grid.SetColumn(txtBCouleur[itxtBoxC], 0);
-                    Grid.SetRow(txtBCouleur[itxtBoxC], 1);
-                    itxtBoxC = 0;
-                }
-            }
-        }
-
 
     }
-
 }

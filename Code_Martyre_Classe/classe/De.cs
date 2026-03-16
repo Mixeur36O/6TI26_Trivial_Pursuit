@@ -31,6 +31,6 @@ namespace Limet_Maxence_CodagePion.Classe
             _face = rnd.Next(1, 7);
             return _face;
         }
-        
+
     }
 }

@@ -10,10 +10,13 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Effects;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data;
+using MySql.Data.MySqlClient;
+using System.Diagnostics;
+
 
 namespace Code_Martyre_Classe.Views
 {
@@ -62,35 +65,8 @@ namespace Code_Martyre_Classe.Views
                 {
                     button[iButton].Content = "Quitter";
                 }
-
-                Color[] colors = {
-                Color.FromRgb(16, 185, 129), // vert pour Jouer
-                Color.FromRgb(79, 70, 229),  // violet pour Paramètre
-                Color.FromRgb(239, 68, 68)   // rouge pour Quitter
-            }; ZoomPercentageConverter z = new ZoomPercentageConverter();
-
-                button[iButton].Width = 200;
                 button[iButton].Height = 80;
-                button[iButton].Background = new SolidColorBrush(colors[iButton]);
-                button[iButton].Foreground = Brushes.White;
-                button[iButton].FontSize = 18;
-                button[iButton].FontWeight = FontWeights.SemiBold;
-                button[iButton].Padding = new Thickness(15, 8, 15, 8);
-                button[iButton].BorderThickness = new Thickness(0);
-                button[iButton].Cursor = Cursors.Hand;
-                button[iButton].HorizontalAlignment = HorizontalAlignment.Center;
-                button[iButton].VerticalAlignment = VerticalAlignment.Center;
-                button[iButton].Margin = new Thickness(0, 10, 0, 10);
-                button[iButton].FontFamily = new FontFamily("Segoe UI Semibold");
-                button[iButton].Template = CreateRoundedButtonTemplate(20);
-
-                grdMain.Background = new LinearGradientBrush(
-                    Color.FromRgb(30, 30, 60),
-                    Color.FromRgb(15, 15, 30),
-                    new Point(0, 0),
-                    new Point(0, 1)
-                );
-
+                button[iButton].Width = 150;
                 grdMain.Children.Add(button[iButton]);
                 Grid.SetColumnSpan(button[iButton], 3);
                 Grid.SetRow(button[iButton], iButton);
@@ -99,39 +75,25 @@ namespace Code_Martyre_Classe.Views
             button[1].Click += new RoutedEventHandler(Btn_Para);
             button[2].Click += new RoutedEventHandler(Btn_Leave);
         }
-        private ControlTemplate CreateRoundedButtonTemplate(int radius)
-        {
-            var template = new ControlTemplate(typeof(Button));
-
-            var border = new FrameworkElementFactory(typeof(Border));
-            border.SetValue(Border.CornerRadiusProperty, new CornerRadius(radius));
-            border.SetValue(Border.BackgroundProperty, new TemplateBindingExtension(Button.BackgroundProperty));
-            border.SetValue(Border.PaddingProperty, new TemplateBindingExtension(Button.PaddingProperty));
-
-            var presenter = new FrameworkElementFactory(typeof(ContentPresenter));
-            presenter.SetValue(ContentPresenter.HorizontalAlignmentProperty, HorizontalAlignment.Center);
-            presenter.SetValue(ContentPresenter.VerticalAlignmentProperty, VerticalAlignment.Center);
-
-            border.AppendChild(presenter);
-            template.VisualTree = border;
-
-            return template;
-        }
         public void Btn_Play(object sender, RoutedEventArgs e)
         {
             MainWindow acceuil = (MainWindow)App.Current.MainWindow;
             acceuil.Content = new Pseudo();
         }
+
         public void Btn_Para(object sender, RoutedEventArgs e)
         {
             MainWindow acceuil = (MainWindow)App.Current.MainWindow;
             acceuil.Content = new Parametre();
 
         }
+
         public void Btn_Leave(object sender, RoutedEventArgs e)
         {
             MainWindow acceuil = (MainWindow)App.Current.MainWindow;
             acceuil.Close();
         }
+
+
     }
 }

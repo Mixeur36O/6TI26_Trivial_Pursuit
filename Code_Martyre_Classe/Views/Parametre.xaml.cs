@@ -13,6 +13,11 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data;
+using MySql.Data.MySqlClient;
+using System.Diagnostics;
+using Code_Martyre_Classe.Config;
+
 
 namespace Code_Martyre_Classe.Views
 {
@@ -23,7 +28,9 @@ namespace Code_Martyre_Classe.Views
     {
         TextBlock txtB = new TextBlock();
         int nbrDepart = 2;
-        Joueur joueur = new Joueur("", 2);
+        Joueur joueur = new Joueur("");
+
+
         public Parametre()
         {
             InitializeComponent();
@@ -32,23 +39,17 @@ namespace Code_Martyre_Classe.Views
         public void PrepareInterface()
         {
             //Variables
+
             Button[] button = new Button[3];
             ColumnDefinition[] colDef = new ColumnDefinition[3];
             RowDefinition[] rowDef = new RowDefinition[3];
             TextBlock txtJ = new TextBlock();
-
-
-            Color[] colors = {
-                Color.FromRgb(79, 70, 229) //Couleur Bleu
-            };
-
-
             grdPara.Background = new LinearGradientBrush(
                     Color.FromRgb(30, 30, 60),
                     Color.FromRgb(15, 15, 30),
                     new System.Windows.Point(0, 0),
                     new System.Windows.Point(0, 1)
-             );
+            );
 
             //Faire la grille
             for (int iGrille = 0; iGrille < 3; iGrille++)
@@ -66,8 +67,7 @@ namespace Code_Martyre_Classe.Views
                 button[iButton].Height = 50;
                 button[iButton].Width = 50;
                 button[iButton].FontSize = 20;
-                button[iButton].Background = new SolidColorBrush(colors[0]);
-                button[iButton].Foreground = Brushes.Red;
+                button[iButton].Foreground = Brushes.Black;
                 button[iButton].FontWeight = FontWeights.Bold;
                 grdPara.Children.Add(button[iButton]);
                 if (iButton == 0)
@@ -75,6 +75,7 @@ namespace Code_Martyre_Classe.Views
                     button[iButton].Content = "<";
                     Grid.SetColumn(button[iButton], 0);
                     Grid.SetRow(button[iButton], 1);
+                    
                 }
                 else if (iButton == 1)
                 {
@@ -101,10 +102,10 @@ namespace Code_Martyre_Classe.Views
 
             //TextBlock qui montre le nombre de joueur
             txtB.Text = $"{nbrDepart}";
+            txtB.Foreground = Brushes.White;
             txtB.HorizontalAlignment = HorizontalAlignment.Center;
             txtB.VerticalAlignment = VerticalAlignment.Center;
             txtB.FontSize = 30;
-            txtB.Foreground = Brushes.Red;
             txtB.FontWeight = FontWeights.Bold;
             grdPara.Children.Add(txtB);
             Grid.SetColumn(txtB, 1);
@@ -112,11 +113,11 @@ namespace Code_Martyre_Classe.Views
 
             //Text
             txtJ.Text = "Choisissez le nombre de joueur pour votre partie";
+            txtJ.Foreground = Brushes.White;
             txtJ.HorizontalAlignment = HorizontalAlignment.Center;
             txtJ.VerticalAlignment = VerticalAlignment.Center;
             txtJ.FontSize = 30;
             txtJ.FontWeight = FontWeights.Bold;
-            txtJ.Foreground = Brushes.Red;
             grdPara.Children.Add(txtJ);
             Grid.SetColumn(txtJ, 0);
             Grid.SetColumnSpan(txtJ, 3);
@@ -124,6 +125,7 @@ namespace Code_Martyre_Classe.Views
         }
         public void Btn_DiminuerJoueur(object sender, RoutedEventArgs e)
         {
+
             if (nbrDepart == 1)
             {
 
@@ -132,12 +134,15 @@ namespace Code_Martyre_Classe.Views
             {
                 txtB.Text = $"{nbrDepart - 1}";
                 nbrDepart += -1;
-                joueur.NbrJoueur = nbrDepart;
+                Plateau.PlayerDec();
+
+
             }
         }
 
         public void Btn_AugmenterJoueur(object sender, RoutedEventArgs e)
         {
+
             if (nbrDepart == 4)
             {
 
@@ -146,14 +151,16 @@ namespace Code_Martyre_Classe.Views
             {
                 txtB.Text = $"{nbrDepart + 1}";
                 nbrDepart += +1;
-                joueur.NbrJoueur = nbrDepart;
+
+                Plateau.PlayerInc();
+
             }
         }
 
         public void Btn_Retour(object sender, RoutedEventArgs e)
         {
             MainWindow para = (MainWindow)App.Current.MainWindow;
-            para.Content = new Acceuil();
+            para.Content = new Pseudo();
         }
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Limet_Maxence_CodagePion")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+42cb0658cfc49e6ce4e39e79a0e72d960cbe6980")]
 [assembly: System.Reflection.AssemblyProductAttribute("Limet_Maxence_CodagePion")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Limet_Maxence_CodagePion")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
