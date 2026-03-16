@@ -1,7 +1,10 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Code_Martyre_Classe.Views;
+using Limet_Maxence_CodagePion.Classe;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Common;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
@@ -15,8 +18,8 @@ namespace Code_Martyre_Classe.Config
         {
             try
             {
-                return "server=localhost;database=projet_tfe;port=3306;User Id=root;password=root";
-                //return "server=10.10.51.98;database=maxence;port=3306;User Id=Maxence;password=root";
+                //return "server=localhost;database=projet_tfe;port=3306;User Id=root;password=root";
+                return "server=10.10.51.98;database=maxence;port=3306;User Id=Maxence;password=root";
             }
             catch (Exception ex)
             {
@@ -55,14 +58,34 @@ namespace Code_Martyre_Classe.Config
             return ok;
         }
 
-        public string AfficheJoueur(DataSet donnees)
+        public bool PrendrePseudo(out DataSet contenuTable)
         {
-            string infos = "";
-            for (int i = 0; i < donnees.Tables[0].Rows.Count; i++)
+            bool ok = false;
+            MySqlConnection maConnection = new MySqlConnection(DefinirCheminBD());
+            string query = "";
+            try
             {
-                infos += donnees.Tables[0].Rows[i]["joueurPseudo"].ToString() + " | " + "\n";
+                maConnection.Open();
+
+                query = $"SELECT * FROM joueur;";
+
+                MySqlDataAdapter da = new MySqlDataAdapter(query, maConnection);
+                contenuTable = new DataSet();
+                da.Fill(contenuTable, "infoTable");
+
+                maConnection.Close();
+
+                if (contenuTable.Tables[0].Rows.Count >= 1)
+                {
+                    ok = true;
+                }
             }
-            return infos;
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+                throw;
+            }
+            return ok;
         }
     }
 }

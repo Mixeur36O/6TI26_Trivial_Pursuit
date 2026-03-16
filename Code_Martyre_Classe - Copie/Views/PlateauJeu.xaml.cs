@@ -6,10 +6,12 @@ using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -31,11 +33,13 @@ namespace Code_Martyre_Classe.Views
         TextBlock txtDe = new TextBlock();
         De cDe = new De(6);
         connectDB bdd = new connectDB();
+        DataSet donnees = new DataSet();
 
         public PlateauJeu()
         {
             InitializeComponent();
             prepareInterface();
+            this.KeyDown += MainWindow_KeyDown;
         }
 
         public void prepareInterface()
@@ -45,7 +49,7 @@ namespace Code_Martyre_Classe.Views
             int indicateurL = 0;
             int indicateurLC = 0;
             int indicateurLJ = 15;
-            DataSet donnees = new DataSet();
+            
             string pseudo1 = "test1";
             string pseudo2 = "test2";
             string pseudo3 = "test3";
@@ -59,6 +63,7 @@ namespace Code_Martyre_Classe.Views
             ColumnDefinition[] colDef = new ColumnDefinition[20];
             RowDefinition[] rowDef = new RowDefinition[20];
             grdPlateau.Background = Brushes.Gray;
+            
 
             //Faire la grille
             for (int i = 0; i < 20; i++)
@@ -68,7 +73,7 @@ namespace Code_Martyre_Classe.Views
                 grdPlateau.ColumnDefinitions.Add(colDef[i]);
                 grdPlateau.RowDefinitions.Add(rowDef[i]);
             }
-
+            
             //Faire le dé et les chiffres
             de.Content = "Lancer le Dé";
             de.FontSize = 25;
@@ -93,8 +98,10 @@ namespace Code_Martyre_Classe.Views
             //Coter Joueur
             for (int iJoueur = 0; iJoueur < Plateau.nbrJoueur; iJoueur++)
             {
+                string pseudoJ = "";
                 txtBPseudo[iJoueur] = new TextBlock();
-                txtBPseudo[iJoueur].Text = bdd.AfficheJoueur(donnees);
+                bdd.PrendrePseudo(out donnees);
+                txtBPseudo[iJoueur].Text = donnees.Tables[0].Rows[iJoueur]["joueurPseudo"].ToString();
                 txtBPseudo[iJoueur].FontSize = 35;
                 txtBPseudo[iJoueur].FontWeight = FontWeights.Bold;
                 grdPlateau.Children.Add(txtBPseudo[iJoueur]);
@@ -213,9 +220,15 @@ namespace Code_Martyre_Classe.Views
                 indicateurL += 1;
             }
 
-
         }
-        
+        private void MainWindow_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Escape)
+            {
+                MainWindow plateau = (MainWindow)App.Current.MainWindow;
+                plateau.Content = new Acceuil();
+            }
+        }
         public void Btn_De(object sender, RoutedEventArgs e)
         {
             cDe.Btn_DonneUnNbrAleaD();
@@ -252,66 +265,79 @@ namespace Code_Martyre_Classe.Views
             MainWindow plateau = (MainWindow)App.Current.MainWindow;
             plateau.Content = new AfficheCarte.CSc();
         }
-        ///// <summary>
-        ///// Procédure permettant de lancer un dé, et faire avancer le pion du joueur
-        ///// </summary>
-        ///// <param name="symboleJoueur">Symbole marquant la position du joueur</param>
-        ///// <param name="numeroJoueur">numero du joueur (1 ou 2)</param>
-        ///// <param name="totalJoueur">Compte cumulé des dés sortis</param>
-        ///// <param name="positionPionJoueur">Première place = numéro de ligne, seconde place = numéro de colonne</param>
-        ///// <param name="ancienneValeur">valeur numérique de la case où se trouve le joueur</param>
-        //public void TourJoueur(string symboleJoueur, int numeroJoueur, ref int totalJoueur, ref int[] positionPionJoueur, ref string ancienneValeur)
-        //{
-        //    Random alea = new Random();         // nombre aléatoire
-        //    int taille = btnCases.GetLength(0); // nombre de lignes dans le plateau
-        //    int maxCases = taille * taille;     // nombre de cases maximum
 
-        //    // dé sorti
-        //    int de = alea.Next(1, 7);
+       //public string PseudoJ(string pseudoJ)
+       // {
 
-        //    // modification de l'interface pour l'affichage du numéro du joueur et du dé
-        //    txtQuiJoue.Text = "Joueur " + numeroJoueur;
-        //    txtDe.Text = "Dé : " + de;
+       //     bdd.PrendrePseudo(out donnees); 
+       //     for (int i = Plateau.nbrJoueur; i < donnees.Tables[0].Rows.Count; i++)
+       //     {
+       //         pseudoJ = donnees.Tables[0].Rows[i]["joueurPseudo"].ToString();
+       //     }
+       //     return pseudoJ;
+       // }
 
-        //    // calcul total déjà parcouru par le joueur
-        //    totalJoueur += de;
 
-        //    // Si on dépasse le nombre total de cases, on fixe à la dernière possible
-        //    if (totalJoueur > maxCases)
-        //    {
-        //        totalJoueur = maxCases;
-        //    }
+    ///// <summary>
+    ///// Procédure permettant de lancer un dé, et faire avancer le pion du joueur
+    ///// </summary>
+    ///// <param name="symboleJoueur">Symbole marquant la position du joueur</param>
+    ///// <param name="numeroJoueur">numero du joueur (1 ou 2)</param>
+    ///// <param name="totalJoueur">Compte cumulé des dés sortis</param>
+    ///// <param name="positionPionJoueur">Première place = numéro de ligne, seconde place = numéro de colonne</param>
+    ///// <param name="ancienneValeur">valeur numérique de la case où se trouve le joueur</param>
+    //public void TourJoueur(string symboleJoueur, int numeroJoueur, ref int totalJoueur, ref int[] positionPionJoueur, ref string ancienneValeur)
+    //{
+    //    Random alea = new Random();         // nombre aléatoire
+    //    int taille = btnCases.GetLength(0); // nombre de lignes dans le plateau
+    //    int maxCases = taille * taille;     // nombre de cases maximum
 
-        //    // Retirer le symbole du joueur à l'ancienne position et faire apparaître le numéro qu'il cachait
-        //    btnCases[positionPionJoueur[0], positionPionJoueur[1]].Content = ancienneValeur;
-        //    btnCases[positionPionJoueur[0], positionPionJoueur[1]].Foreground = Brushes.Black;
+    //    // dé sorti
+    //    int de = alea.Next(1, 7);
 
-        //    // recherche de la nouvelle position du joueur
-        //    int index = totalJoueur - 1;
+    //    // modification de l'interface pour l'affichage du numéro du joueur et du dé
+    //    txtQuiJoue.Text = "Joueur " + numeroJoueur;
+    //    txtDe.Text = "Dé : " + de;
 
-        //    int ligneDepuisBas = index / taille;
-        //    int colonneDansLigne = index % taille;
+    //    // calcul total déjà parcouru par le joueur
+    //    totalJoueur += de;
 
-        //    positionPionJoueur[0] = taille - 1 - ligneDepuisBas;
+    //    // Si on dépasse le nombre total de cases, on fixe à la dernière possible
+    //    if (totalJoueur > maxCases)
+    //    {
+    //        totalJoueur = maxCases;
+    //    }
 
-        //    bool gaucheVersDroite = ligneDepuisBas % 2 == 0;
+    //    // Retirer le symbole du joueur à l'ancienne position et faire apparaître le numéro qu'il cachait
+    //    btnCases[positionPionJoueur[0], positionPionJoueur[1]].Content = ancienneValeur;
+    //    btnCases[positionPionJoueur[0], positionPionJoueur[1]].Foreground = Brushes.Black;
 
-        //    positionPionJoueur[1] = gaucheVersDroite
-        //        ? colonneDansLigne
-        //        : taille - 1 - colonneDansLigne;
+    //    // recherche de la nouvelle position du joueur
+    //    int index = totalJoueur - 1;
 
-        //    // Fin de partie
-        //    if (totalJoueur == maxCases)
-        //    {
-        //        txtQuiJoue.Text = "Fin !";
-        //        btnAvancer.IsEnabled = false;
-        //    }
+    //    int ligneDepuisBas = index / taille;
+    //    int colonneDansLigne = index % taille;
 
-        //    // mémorisation du numéro de la case sur laquelle on va placer le symbole du joueur
-        //    // + affichage de ce symbole
-        //    ancienneValeur = btnCases[positionPionJoueur[0], positionPionJoueur[1]].Content.ToString();
-        //    btnCases[positionPionJoueur[0], positionPionJoueur[1]].Content = symboleJoueur;
-        //    btnCases[positionPionJoueur[0], positionPionJoueur[1]].Foreground = Brushes.Gold;
-        //}
-    }
+    //    positionPionJoueur[0] = taille - 1 - ligneDepuisBas;
+
+    //    bool gaucheVersDroite = ligneDepuisBas % 2 == 0;
+
+    //    positionPionJoueur[1] = gaucheVersDroite
+    //        ? colonneDansLigne
+    //        : taille - 1 - colonneDansLigne;
+
+    //    // Fin de partie
+    //    if (totalJoueur == maxCases)
+    //    {
+    //        txtQuiJoue.Text = "Fin !";
+    //        btnAvancer.IsEnabled = false;
+    //    }
+
+    //    // mémorisation du numéro de la case sur laquelle on va placer le symbole du joueur
+    //    // + affichage de ce symbole
+    //    ancienneValeur = btnCases[positionPionJoueur[0], positionPionJoueur[1]].Content.ToString();
+    //    btnCases[positionPionJoueur[0], positionPionJoueur[1]].Content = symboleJoueur;
+    //    btnCases[positionPionJoueur[0], positionPionJoueur[1]].Foreground = Brushes.Gold;
+    //}
+}
 }

@@ -1,148 +1,148 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\",
+  "WorkspaceRootPath": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\config\\connectdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:config\\connectdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\plateaujeu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\plateaujeu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\plateaujeu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\classe\\carte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:classe\\carte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\acceuil.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\acceuil.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\pseudo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\pseudo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\classe\\point.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:classe\\point.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\parametre.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\parametre.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\code_martyre_classe.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:code_martyre_classe.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\pseudo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\pseudo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\parametre.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\parametre.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\acceuil.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\acceuil.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\acceuil.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\plateaujeu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\pseudo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\pseudo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\pseudo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\pseudo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\config\\connectdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:config\\connectdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\plateaujeu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\plateaujeu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\classe\\joueur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\classe\\carte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:classe\\carte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\classe\\point.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:classe\\point.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\parametre.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\parametre.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\code_martyre_classe.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:code_martyre_classe.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\parametre.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\parametre.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\classe\\joueur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:classe\\joueur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\classe\\plateau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\classe\\plateau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:classe\\plateau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\acceuil.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\acceuil.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\classe\\de.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\classe\\de.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:classe\\de.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\assets\\de.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\assets\\de.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:assets\\de.jpg||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\classe\\pion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\classe\\pion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:classe\\pion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\affichecarte\\cmath.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\affichecarte\\cmath.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\affichecarte\\cmath.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\affichecarte\\chist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\affichecarte\\chist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\affichecarte\\chist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\affichecarte\\cfr.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\affichecarte\\cfr.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\affichecarte\\cfr.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\affichecarte\\cfr.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\affichecarte\\cfr.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\affichecarte\\cfr.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\classe\\paquetcarte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\classe\\paquetcarte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:classe\\paquetcarte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\affichecarte\\csc.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\affichecarte\\csc.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\affichecarte\\csc.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\affichecarte\\cang.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\affichecarte\\cang.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\affichecarte\\cang.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\affichecarte\\cang.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\affichecarte\\cang.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\affichecarte\\cang.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\affichecarte\\cgeo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\affichecarte\\cgeo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\affichecarte\\cgeo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\affichecarte\\cgeo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\affichecarte\\cgeo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\affichecarte\\cgeo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\affichecarte\\chist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\affichecarte\\chist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\affichecarte\\chist.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\affichecarte\\csc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\affichecarte\\csc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\affichecarte\\csc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\affichecarte\\cmath.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\views\\affichecarte\\cmath.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\affichecarte\\cmath.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\max\\downloads\\ecole\\6tti\\informatique\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\assets\\pion_bleu.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|h:\\6tti\\tfe\\6ti26_trivial_pursuit\\code_martyre_classe - copie\\assets\\pion_bleu.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:assets\\pion_bleu.png||{58961B49-13E0-48C0-9258-13CBC4D40279}"
     },
     {
@@ -156,15 +156,138 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlateauJeu.xaml.cs",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\PlateauJeu.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\PlateauJeu.xaml.cs",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\PlateauJeu.xaml.cs",
+              "RelativeToolTip": "Views\\PlateauJeu.xaml.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAUwOAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-02T09:36:38.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "connectDB.cs",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Config\\connectDB.cs",
+              "RelativeDocumentMoniker": "Config\\connectDB.cs",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Config\\connectDB.cs",
+              "RelativeToolTip": "Config\\connectDB.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAEMAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T10:20:04.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CSc.xaml",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CSc.xaml",
+              "RelativeDocumentMoniker": "Views\\AfficheCarte\\CSc.xaml",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CSc.xaml",
+              "RelativeToolTip": "Views\\AfficheCarte\\CSc.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-02T09:36:38.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Carte.cs",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\classe\\Carte.cs",
+              "RelativeDocumentMoniker": "classe\\Carte.cs",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\classe\\Carte.cs",
+              "RelativeToolTip": "classe\\Carte.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-02T09:36:38.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Pseudo.xaml",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\Pseudo.xaml",
+              "RelativeDocumentMoniker": "Views\\Pseudo.xaml",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\Pseudo.xaml",
+              "RelativeToolTip": "Views\\Pseudo.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-02T09:36:38.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Joueur.cs",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\classe\\Joueur.cs",
+              "RelativeDocumentMoniker": "classe\\Joueur.cs",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\classe\\Joueur.cs",
+              "RelativeToolTip": "classe\\Joueur.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-02T09:36:38.438Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Point.cs",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\classe\\Point.cs",
+              "RelativeDocumentMoniker": "classe\\Point.cs",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\classe\\Point.cs",
+              "RelativeToolTip": "classe\\Point.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-02T09:36:38.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Pseudo.xaml.cs",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\Pseudo.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\Pseudo.xaml.cs",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\Pseudo.xaml.cs",
+              "RelativeToolTip": "Views\\Pseudo.xaml.cs",
+              "ViewState": "AgIAAKcAAAAAAAAAAAAYwHUAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-02T09:36:38.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PlateauJeu.xaml",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\PlateauJeu.xaml",
+              "RelativeDocumentMoniker": "Views\\PlateauJeu.xaml",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\PlateauJeu.xaml",
+              "RelativeToolTip": "Views\\PlateauJeu.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-02T09:36:38.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Acceuil.xaml",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\Acceuil.xaml",
+              "RelativeDocumentMoniker": "Views\\Acceuil.xaml",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\Acceuil.xaml",
+              "RelativeToolTip": "Views\\Acceuil.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-02T09:36:38.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Parametre.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\Parametre.xaml.cs",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\Parametre.xaml.cs",
               "RelativeDocumentMoniker": "Views\\Parametre.xaml.cs",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\Parametre.xaml.cs",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\Parametre.xaml.cs",
               "RelativeToolTip": "Views\\Parametre.xaml.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAlwH8AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -173,46 +296,23 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PlateauJeu.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\PlateauJeu.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\PlateauJeu.xaml.cs",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\PlateauJeu.xaml.cs",
-              "RelativeToolTip": "Views\\PlateauJeu.xaml.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAAAC8AAAAsAAAAAAAAAA==",
+              "Title": "Acceuil.xaml.cs",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\Acceuil.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\Acceuil.xaml.cs",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\Acceuil.xaml.cs",
+              "RelativeToolTip": "Views\\Acceuil.xaml.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowB8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T09:36:38.482Z",
+              "WhenOpened": "2026-02-02T09:36:38.426Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Pseudo.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\Pseudo.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\Pseudo.xaml.cs",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\Pseudo.xaml.cs",
-              "RelativeToolTip": "Views\\Pseudo.xaml.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAYwJAAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T09:36:38.469Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "CSc.xaml",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CSc.xaml",
-              "RelativeDocumentMoniker": "Views\\AfficheCarte\\CSc.xaml",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CSc.xaml",
-              "RelativeToolTip": "Views\\AfficheCarte\\CSc.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-02T09:36:38.376Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 23,
               "Title": "CFr.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CFr.xaml.cs",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CFr.xaml.cs",
               "RelativeDocumentMoniker": "Views\\AfficheCarte\\CFr.xaml.cs",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CFr.xaml.cs",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CFr.xaml.cs",
               "RelativeToolTip": "Views\\AfficheCarte\\CFr.xaml.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAcwFgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -220,92 +320,22 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Pseudo.xaml",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\Pseudo.xaml",
-              "RelativeDocumentMoniker": "Views\\Pseudo.xaml",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\Pseudo.xaml",
-              "RelativeToolTip": "Views\\Pseudo.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-02T09:36:38.486Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "Joueur.cs",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\classe\\Joueur.cs",
-              "RelativeDocumentMoniker": "classe\\Joueur.cs",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\classe\\Joueur.cs",
-              "RelativeToolTip": "classe\\Joueur.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T09:36:38.438Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Point.cs",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\classe\\Point.cs",
-              "RelativeDocumentMoniker": "classe\\Point.cs",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\classe\\Point.cs",
-              "RelativeToolTip": "classe\\Point.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T09:36:38.454Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PlateauJeu.xaml",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\PlateauJeu.xaml",
-              "RelativeDocumentMoniker": "Views\\PlateauJeu.xaml",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\PlateauJeu.xaml",
-              "RelativeToolTip": "Views\\PlateauJeu.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-02T09:36:38.49Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Acceuil.xaml",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\Acceuil.xaml",
-              "RelativeDocumentMoniker": "Views\\Acceuil.xaml",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\Acceuil.xaml",
-              "RelativeToolTip": "Views\\Acceuil.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-02T09:36:38.43Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "Parametre.xaml",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\Parametre.xaml",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\Parametre.xaml",
               "RelativeDocumentMoniker": "Views\\Parametre.xaml",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\Parametre.xaml",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\Parametre.xaml",
               "RelativeToolTip": "Views\\Parametre.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-02-02T09:36:38.494Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "connectDB.cs",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Config\\connectDB.cs",
-              "RelativeDocumentMoniker": "Config\\connectDB.cs",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Config\\connectDB.cs*",
-              "RelativeToolTip": "Config\\connectDB.cs*",
-              "ViewState": "AgIAAB4AAAAAAAAAAAArwDwAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T10:20:04.224Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 19,
               "Title": "DE.jpg - Bitmap [640x640, 24 bits, JPG]",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\assets\\DE.jpg",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\assets\\DE.jpg",
               "RelativeDocumentMoniker": "assets\\DE.jpg",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\assets\\DE.jpg - Bitmap [640x640, 24 bits, JPG]",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\assets\\DE.jpg - Bitmap [640x640, 24 bits, JPG]",
               "RelativeToolTip": "assets\\DE.jpg - Bitmap [640x640, 24 bits, JPG]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
               "WhenOpened": "2026-02-03T10:40:16.58Z",
@@ -315,9 +345,9 @@
               "$type": "Document",
               "DocumentIndex": 22,
               "Title": "CHist.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CHist.xaml.cs",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CHist.xaml.cs",
               "RelativeDocumentMoniker": "Views\\AfficheCarte\\CHist.xaml.cs",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CHist.xaml.cs",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CHist.xaml.cs",
               "RelativeToolTip": "Views\\AfficheCarte\\CHist.xaml.cs",
               "ViewState": "AgIAACgAAAAAAAAAAAAAwEsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -325,24 +355,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Carte.cs",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\classe\\Carte.cs",
-              "RelativeDocumentMoniker": "classe\\Carte.cs",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\classe\\Carte.cs",
-              "RelativeToolTip": "classe\\Carte.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T09:36:38.434Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "Code_Martyre_Classe.csproj",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Code_Martyre_Classe.csproj",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Code_Martyre_Classe.csproj",
               "RelativeDocumentMoniker": "Code_Martyre_Classe.csproj",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Code_Martyre_Classe.csproj",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Code_Martyre_Classe.csproj",
               "RelativeToolTip": "Code_Martyre_Classe.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -350,11 +367,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\MainWindow.xaml.cs",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\MainWindow.xaml.cs",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
               "ViewState": "AgIAAC4AAAAAAAAAAADgv00AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -364,9 +381,9 @@
               "$type": "Document",
               "DocumentIndex": 27,
               "Title": "CAng.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CAng.xaml.cs",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CAng.xaml.cs",
               "RelativeDocumentMoniker": "Views\\AfficheCarte\\CAng.xaml.cs",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CAng.xaml.cs",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CAng.xaml.cs",
               "RelativeToolTip": "Views\\AfficheCarte\\CAng.xaml.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAcwB8AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -374,11 +391,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Plateau.cs",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\classe\\Plateau.cs",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\classe\\Plateau.cs",
               "RelativeDocumentMoniker": "classe\\Plateau.cs",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\classe\\Plateau.cs",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\classe\\Plateau.cs",
               "RelativeToolTip": "classe\\Plateau.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -386,35 +403,21 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\MainWindow.xaml",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\MainWindow.xaml",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-02-02T09:36:38.498Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Acceuil.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\Acceuil.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\Acceuil.xaml.cs",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\Acceuil.xaml.cs",
-              "RelativeToolTip": "Views\\Acceuil.xaml.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAowB8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T09:36:38.426Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\18\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ViewState": "AgIAAAwTAAAAAAAAAAAiwCYTAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
               "WhenOpened": "2026-02-09T10:43:47.37Z"
@@ -423,20 +426,21 @@
               "$type": "Document",
               "DocumentIndex": 17,
               "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\App.xaml",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\App.xaml",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\App.xaml",
               "RelativeToolTip": "App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-09T09:55:55.708Z"
+              "WhenOpened": "2026-02-09T09:55:55.708Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 29,
               "Title": "CGeo.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CGeo.xaml.cs",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CGeo.xaml.cs",
               "RelativeDocumentMoniker": "Views\\AfficheCarte\\CGeo.xaml.cs",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CGeo.xaml.cs",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CGeo.xaml.cs",
               "RelativeToolTip": "Views\\AfficheCarte\\CGeo.xaml.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAmwDUAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -446,9 +450,9 @@
               "$type": "Document",
               "DocumentIndex": 28,
               "Title": "CAng.xaml",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CAng.xaml",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CAng.xaml",
               "RelativeDocumentMoniker": "Views\\AfficheCarte\\CAng.xaml",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CAng.xaml",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CAng.xaml",
               "RelativeToolTip": "Views\\AfficheCarte\\CAng.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-02-02T09:36:38.38Z"
@@ -457,9 +461,9 @@
               "$type": "Document",
               "DocumentIndex": 21,
               "Title": "CMath.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CMath.xaml.cs",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CMath.xaml.cs",
               "RelativeDocumentMoniker": "Views\\AfficheCarte\\CMath.xaml.cs",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CMath.xaml.cs",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CMath.xaml.cs",
               "RelativeToolTip": "Views\\AfficheCarte\\CMath.xaml.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAAowCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -469,9 +473,9 @@
               "$type": "Document",
               "DocumentIndex": 26,
               "Title": "CSc.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CSc.xaml.cs",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CSc.xaml.cs",
               "RelativeDocumentMoniker": "Views\\AfficheCarte\\CSc.xaml.cs",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CSc.xaml.cs",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CSc.xaml.cs",
               "RelativeToolTip": "Views\\AfficheCarte\\CSc.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -481,9 +485,9 @@
               "$type": "Document",
               "DocumentIndex": 31,
               "Title": "CHist.xaml",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CHist.xaml",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CHist.xaml",
               "RelativeDocumentMoniker": "Views\\AfficheCarte\\CHist.xaml",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CHist.xaml",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CHist.xaml",
               "RelativeToolTip": "Views\\AfficheCarte\\CHist.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-02-02T09:36:38.383Z"
@@ -492,9 +496,9 @@
               "$type": "Document",
               "DocumentIndex": 30,
               "Title": "CGeo.xaml",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CGeo.xaml",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CGeo.xaml",
               "RelativeDocumentMoniker": "Views\\AfficheCarte\\CGeo.xaml",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CGeo.xaml",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CGeo.xaml",
               "RelativeToolTip": "Views\\AfficheCarte\\CGeo.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-02-02T09:36:38.387Z"
@@ -503,9 +507,9 @@
               "$type": "Document",
               "DocumentIndex": 24,
               "Title": "CFr.xaml",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CFr.xaml",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CFr.xaml",
               "RelativeDocumentMoniker": "Views\\AfficheCarte\\CFr.xaml",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CFr.xaml",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CFr.xaml",
               "RelativeToolTip": "Views\\AfficheCarte\\CFr.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-02-02T09:36:38.391Z"
@@ -514,9 +518,9 @@
               "$type": "Document",
               "DocumentIndex": 33,
               "Title": "CMath.xaml",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CMath.xaml",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CMath.xaml",
               "RelativeDocumentMoniker": "Views\\AfficheCarte\\CMath.xaml",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CMath.xaml",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Views\\AfficheCarte\\CMath.xaml",
               "RelativeToolTip": "Views\\AfficheCarte\\CMath.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-02-02T09:36:38.395Z"
@@ -525,9 +529,9 @@
               "$type": "Document",
               "DocumentIndex": 34,
               "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\AssemblyInfo.cs",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\AssemblyInfo.cs",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\AssemblyInfo.cs",
               "RelativeToolTip": "AssemblyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -537,9 +541,9 @@
               "$type": "Document",
               "DocumentIndex": 35,
               "Title": "Pion_Bleu.png",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\assets\\Pion_Bleu.png",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\assets\\Pion_Bleu.png",
               "RelativeDocumentMoniker": "assets\\Pion_Bleu.png",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\assets\\Pion_Bleu.png",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\assets\\Pion_Bleu.png",
               "RelativeToolTip": "assets\\Pion_Bleu.png",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
               "WhenOpened": "2026-02-02T09:36:38.403Z"
@@ -549,9 +553,7 @@
               "DocumentIndex": 36,
               "Title": "ResourcePart.cs",
               "DocumentMoniker": "C:\\Users\\200040\\AppData\\Local\\Temp\\.vsdbgsrc\\6b2dfb9d5e4949b718ee78fa9415cabf37518e9447a2764ba224d240518b710f\\ResourcePart.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\200040\\AppData\\Local\\Temp\\.vsdbgsrc\\6b2dfb9d5e4949b718ee78fa9415cabf37518e9447a2764ba224d240518b710f\\ResourcePart.cs",
               "ToolTip": "C:\\Users\\200040\\AppData\\Local\\Temp\\.vsdbgsrc\\6b2dfb9d5e4949b718ee78fa9415cabf37518e9447a2764ba224d240518b710f\\ResourcePart.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\200040\\AppData\\Local\\Temp\\.vsdbgsrc\\6b2dfb9d5e4949b718ee78fa9415cabf37518e9447a2764ba224d240518b710f\\ResourcePart.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-15T08:08:57.099Z"
             },
@@ -559,9 +561,9 @@
               "$type": "Document",
               "DocumentIndex": 25,
               "Title": "PaquetCarte.cs",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\classe\\PaquetCarte.cs",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\classe\\PaquetCarte.cs",
               "RelativeDocumentMoniker": "classe\\PaquetCarte.cs",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\classe\\PaquetCarte.cs",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\classe\\PaquetCarte.cs",
               "RelativeToolTip": "classe\\PaquetCarte.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -571,9 +573,9 @@
               "$type": "Document",
               "DocumentIndex": 20,
               "Title": "Pion.cs",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\classe\\Pion.cs",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\classe\\Pion.cs",
               "RelativeDocumentMoniker": "classe\\Pion.cs",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\classe\\Pion.cs",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\classe\\Pion.cs",
               "RelativeToolTip": "classe\\Pion.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -583,9 +585,9 @@
               "$type": "Document",
               "DocumentIndex": 18,
               "Title": "De.cs",
-              "DocumentMoniker": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\classe\\De.cs",
+              "DocumentMoniker": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\classe\\De.cs",
               "RelativeDocumentMoniker": "classe\\De.cs",
-              "ToolTip": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\classe\\De.cs",
+              "ToolTip": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\classe\\De.cs",
               "RelativeToolTip": "classe\\De.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
