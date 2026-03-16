@@ -596,23 +596,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\200040\\.nuget\\packages\\": {},
+    "C:\\Users\\Max\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Code_Martyre_Classe.csproj",
+      "projectUniqueName": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Code_Martyre_Classe.csproj",
       "projectName": "Code_Martyre_Classe",
-      "projectPath": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Code_Martyre_Classe.csproj",
-      "packagesPath": "C:\\Users\\200040\\.nuget\\packages\\",
-      "outputPath": "H:\\6TTI\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\obj\\",
+      "projectPath": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\Code_Martyre_Classe.csproj",
+      "packagesPath": "C:\\Users\\Max\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Max\\Downloads\\Ecole\\6TTI\\Informatique\\TFE\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe - Copie\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\200040\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Max\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -670,7 +670,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
