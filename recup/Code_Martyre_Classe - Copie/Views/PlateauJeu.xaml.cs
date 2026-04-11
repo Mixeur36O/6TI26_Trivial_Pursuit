@@ -76,7 +76,6 @@ namespace Code_Martyre_Classe.Views
             pionV.BeginInit();
             pionV.UriSource = new Uri("assets/Pion_Vert.png", UriKind.Relative);
             pionV.EndInit();
-
             StackPanel stkBlock = new StackPanel();
             ColumnDefinition[] colDef = new ColumnDefinition[20];
             RowDefinition[] rowDef = new RowDefinition[20];

@@ -12,7 +12,8 @@ namespace Limet_Maxence_CodagePion.Classe
 {
     internal class Point
     {
-        //Attributs 
+        //Attributs
+        private int _point;
 
         //Propriétées
 

@@ -12,6 +12,7 @@ namespace Limet_Maxence_CodagePion.Classe
     {
         //Attributs
         private string _pseudo;
+        private int _id;
 
         //Props
 
@@ -20,7 +21,6 @@ namespace Limet_Maxence_CodagePion.Classe
             get { return _pseudo; }
             set { _pseudo = value; }
         }
-
 
         //Construct
         public Joueur(string pseudo)
