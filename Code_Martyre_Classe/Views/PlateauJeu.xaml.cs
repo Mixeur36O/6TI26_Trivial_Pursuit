@@ -1,15 +1,18 @@
 ﻿using Code_Martyre_Classe.Config;
 using Limet_Maxence_CodagePion.Classe;
 using MySql.Data.MySqlClient;
+using Org.BouncyCastle.Crypto;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -31,78 +34,95 @@ namespace Code_Martyre_Classe.Views
         TextBlock txtDe = new TextBlock();
         De cDe = new De(6);
         connectDB bdd = new connectDB();
+        DataSet donnees = new DataSet();
+
 
         public PlateauJeu()
         {
             InitializeComponent();
             prepareInterface();
+            this.KeyDown += MainWindow_KeyDown;
+        }
+        //Pions
+        public void PositionPion()
+        {
+            int iLigne = 3;
+            int iColonne = 0;
+            for (int i = 0; i < Plateau.nbrJoueur; i++)
+            {
+                    Image imgPion = new Image();
+                    BitmapImage bitmap = new BitmapImage(new Uri("assets/Pion_Bleu.png", UriKind.Relative));
+                    imgPion.Source = bitmap;
+                    imgPion.Width = 60;
+                    imgPion.Height = 60;
+                    Grid.SetRow(imgPion, iLigne);
+                    Grid.SetColumn(imgPion, iColonne);
+                    grdPlateau.Children.Add(imgPion);
+            }
         }
 
         public void prepareInterface()
         {
             //Instancier variables et tableau
-            int indicateurC = 0;
-            int indicateurL = 0;
             int indicateurLC = 0;
             int indicateurLJ = 15;
-            DataSet donnees = new DataSet();
-            string pseudo1 = "test1";
-            string pseudo2 = "test2";
-            string pseudo3 = "test3";
-            string pseudo4 = "test4";
             Button de = new Button();
+            
             BitmapImage itn = new BitmapImage();
             itn.BeginInit();
             itn.UriSource = new Uri("assets/ITN-Logo-quadri-DEF.jpg", UriKind.Relative);
+
+
             itn.EndInit();
             StackPanel stkBlock = new StackPanel();
-            ColumnDefinition[] colDef = new ColumnDefinition[20];
-            RowDefinition[] rowDef = new RowDefinition[20];
-            grdPlateau.Background = Brushes.Gray;
-
-            //Faire la grille
-            for (int i = 0; i < 20; i++)
-            {
-                colDef[i] = new ColumnDefinition();
-                rowDef[i] = new RowDefinition();
-                grdPlateau.ColumnDefinitions.Add(colDef[i]);
-                grdPlateau.RowDefinitions.Add(rowDef[i]);
-            }
+            grdPlateau.Background = new LinearGradientBrush(
+                    Color.FromRgb(30, 30, 60),
+                    Color.FromRgb(15, 15, 30),
+                    new System.Windows.Point(0, 0),
+                    new System.Windows.Point(0, 1)
+            );
 
             //Faire le dé et les chiffres
             de.Content = "Lancer le Dé";
             de.FontSize = 25;
+            de.Height = 100;
+            de.Width = 250;
             de.FontWeight = FontWeights.Bold;
             de.Click += new RoutedEventHandler(Btn_De);
-            grdPlateau.Children.Add(de);
-            Grid.SetColumn(de, 17);
-            Grid.SetRow(de, 17);
-            Grid.SetColumnSpan(de, 3);
-            Grid.SetRowSpan(de, 17);
+            txtDe.Background = new SolidColorBrush(Color.FromArgb(30, 255, 255, 255));
+            txtDe.Foreground = Brushes.White;
+            txtDe.Padding = new Thickness(10);
+            de.Margin = new Thickness(10);
+            txtDe.Margin = new Thickness(10);
+            grdDroite.Children.Add(de);
+
+            // Ajouter un arrondi au txtDe en l'enveloppant dans un Border si nécessaireoueur
 
             txtDe.FontSize = 25;
             txtDe.FontWeight = FontWeights.Bold;
+            txtDe.Foreground = Brushes.Black;
             txtDe.Background = Brushes.White;
             txtDe.HorizontalAlignment = HorizontalAlignment.Center;
             txtDe.VerticalAlignment = VerticalAlignment.Center;
-            grdPlateau.Children.Add(txtDe);
-            Grid.SetColumn(txtDe, 15);
-            Grid.SetRow(txtDe, 17);
+            grdDroite.Children.Add(txtDe);
 
 
-            //Coter Joueur
+
             for (int iJoueur = 0; iJoueur < Plateau.nbrJoueur; iJoueur++)
             {
+                string pseudoJ = "";
                 txtBPseudo[iJoueur] = new TextBlock();
-                txtBPseudo[iJoueur].Text = bdd.AfficheJoueur(donnees);
+                bdd.PrendrePseudo(out donnees);
+                txtBPseudo[iJoueur].Text = donnees.Tables[0].Rows[iJoueur]["joueurPseudo"].ToString();
                 txtBPseudo[iJoueur].FontSize = 35;
+                txtBPseudo[iJoueur].Foreground = Brushes.White;
                 txtBPseudo[iJoueur].FontWeight = FontWeights.Bold;
-                grdPlateau.Children.Add(txtBPseudo[iJoueur]);
-                Grid.SetColumn(txtBPseudo[iJoueur], 0);
-                Grid.SetRow(txtBPseudo[iJoueur], indicateurLJ);
-                Grid.SetColumnSpan(txtBPseudo[iJoueur], 3);
+                grdPseudo.Children.Add(txtBPseudo[iJoueur]);
                 indicateurLJ += 1;
             }
+
+           
+            
 
             //Coter des Cartes
             for (int iCarte = 0; iCarte < txtBCarte.Length; iCarte++)
@@ -144,78 +164,26 @@ namespace Code_Martyre_Classe.Views
                     txtBCarte[iCarte].Background = Brushes.Green;
                     txtBCarte[iCarte].Click += new RoutedEventHandler(CarteSc_Click);
                 }
+
                 txtBCarte[iCarte].FontSize = 36;
+                txtBCarte[iCarte].Margin = new Thickness(5);
                 txtBCarte[iCarte].FontWeight = FontWeights.Bold;
-                grdPlateau.Children.Add(txtBCarte[iCarte]);
-                Grid.SetColumn(txtBCarte[iCarte], 18);
-                Grid.SetRow(txtBCarte[iCarte], indicateurLC);
-                Grid.SetColumnSpan(txtBCarte[iCarte], 2);
-                Grid.SetRowSpan(txtBCarte[iCarte], 2);
+                grdDroite.Children.Add(txtBCarte[iCarte]);
                 indicateurLC += 2;
+
             }
-
-
-            //Plateau de jeu principale
-            for (int iColonne = 0; iColonne < txtBlock.GetLength(0); iColonne++)
-            {
-
-                for (int iLigne = 0; iLigne < txtBlock.GetLength(1); iLigne++)
-                {
-                    if (indicateurC == 0 || indicateurL == 0 || indicateurC == 6 || indicateurL == 6 || indicateurC == 12 || indicateurL == 12)
-                    {
-                        Random rnd = new Random();
-                        int randomC = rnd.Next(0, 6);
-                        txtBlock[iColonne, iLigne] = new TextBlock();
-                        txtBlock[iColonne, iLigne].FontSize = 50;
-                        txtBlock[iColonne, iLigne].Height = 90;
-                        txtBlock[iColonne, iLigne].Width = 90;
-                        if (randomC == 0)
-                        {
-                            txtBlock[iColonne, iLigne].Background = Brushes.Red;
-                            txtBlock[iColonne, iLigne].Text = "Math";
-                        }
-                        else if (randomC == 1)
-                        {
-                            txtBlock[iColonne, iLigne].Background = Brushes.Blue;
-                            txtBlock[iColonne, iLigne].Text = "Fr";
-                        }
-                        else if (randomC == 2)
-                        {
-                            txtBlock[iColonne, iLigne].Background = Brushes.Yellow;
-                            txtBlock[iColonne, iLigne].Text = "Géo";
-                        }
-                        else if (randomC == 3)
-                        {
-                            txtBlock[iColonne, iLigne].Background = Brushes.Orange;
-                            txtBlock[iColonne, iLigne].Text = "Hist";
-                        }
-                        else if (randomC == 4)
-                        {
-                            txtBlock[iColonne, iLigne].Background = Brushes.Purple;
-                            txtBlock[iColonne, iLigne].Text = "Anglais";
-                        }
-                        else if (randomC == 5)
-                        {
-                            txtBlock[iColonne, iLigne].Background = Brushes.Green;
-                            txtBlock[iColonne, iLigne].Text = "Sc";
-                        }
-                        txtBlock[iColonne, iLigne].FontSize = 20;
-                        txtBlock[iColonne, iLigne].FontWeight = FontWeights.Bold;
-
-
-                        Grid.SetColumn(txtBlock[iColonne, iLigne], indicateurC);
-                        Grid.SetRow(txtBlock[iColonne, iLigne], indicateurL);
-                        grdPlateau.Children.Add(txtBlock[iColonne, iLigne]);
-                    }
-                    indicateurC += 1;
-                }
-                indicateurC = 0;
-                indicateurL += 1;
-            }
-
-
         }
+  
 
+
+        private void MainWindow_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Escape)
+            {
+                MainWindow plateau = (MainWindow)App.Current.MainWindow;
+                plateau.Content = new Acceuil();
+            }
+        }
         public void Btn_De(object sender, RoutedEventArgs e)
         {
             cDe.Btn_DonneUnNbrAleaD();
@@ -252,6 +220,19 @@ namespace Code_Martyre_Classe.Views
             MainWindow plateau = (MainWindow)App.Current.MainWindow;
             plateau.Content = new AfficheCarte.CSc();
         }
+
+        //public string PseudoJ(string pseudoJ)
+        // {
+
+        //     bdd.PrendrePseudo(out donnees); 
+        //     for (int i = Plateau.nbrJoueur; i < donnees.Tables[0].Rows.Count; i++)
+        //     {
+        //         pseudoJ = donnees.Tables[0].Rows[i]["joueurPseudo"].ToString();
+        //     }
+        //     return pseudoJ;
+        // }
+
+
         ///// <summary>
         ///// Procédure permettant de lancer un dé, et faire avancer le pion du joueur
         ///// </summary>
@@ -313,5 +294,8 @@ namespace Code_Martyre_Classe.Views
         //    btnCases[positionPionJoueur[0], positionPionJoueur[1]].Content = symboleJoueur;
         //    btnCases[positionPionJoueur[0], positionPionJoueur[1]].Foreground = Brushes.Gold;
         //}
+
+        // Ajoute une image (pion) au Grid à la position ligne/colonne
+  
     }
 }

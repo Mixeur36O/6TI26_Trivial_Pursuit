@@ -5,10 +5,199 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Code_Martyre_Classe.Views"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="800" d:DesignWidth="1500"
       Title="PlateauJeu">
+    <Grid x:Name="grdMain" Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="1000"/>
+            <ColumnDefinition Width="300"/>
+        </Grid.ColumnDefinitions>
 
-    <Grid x:Name="grdPlateau">
+        <StackPanel x:Name="grdPseudo" Grid.Column="0" Background="#222"/>
         
+        <Grid x:Name="grdPlateau" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.Resources>
+                <Style x:Key="CaseStyle" TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                    <Setter Property="Margin" Value="2"/>
+                    <Setter Property="BorderThickness" Value="1.0"/>
+                    <Setter Property="BorderBrush" Value="White"/>
+                    <Setter Property="Height" Value="85"/>
+                    <Setter Property="Width" Value="85"/>
+                </Style>
+
+                <Style x:Key="TextStyle" TargetType="TextBlock">
+                    <Setter Property="FontSize" Value="16"/>
+                    <Setter Property="FontWeight" Value="Bold"/>
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                    <Setter Property="VerticalAlignment" Value="Center"/>
+                </Style>
+            </Grid.Resources>
+            <!--Placement des cases sur le plateau-->
+            <Border Style="{StaticResource CaseStyle}" Background="Red" Grid.Row="0" Grid.Column="1">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Math"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Blue" Grid.Row="0" Grid.Column="4">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Français"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Yellow" Grid.Row="0" Grid.Column="2">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Géo" Foreground="Black"/>
+            </Border>
+
+            <Border Style="{StaticResource CaseStyle}" Background="Purple" Grid.Row="0" Grid.Column="5">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Anglais"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Orange" Grid.Row="0" Grid.Column="3">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Hist"/>
+            </Border>
+
+            <Border Style="{StaticResource CaseStyle}" Background="LightGreen" Grid.Row="0" Grid.Column="0">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Science"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Red" Grid.Row="0" Grid.Column="7">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Math"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Yellow" Grid.Row="0" Grid.Column="9">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Géo" Foreground="Black"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Orange" Grid.Row="1" Grid.Column="9">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Hist"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Blue" Grid.Row="2" Grid.Column="8">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Français"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Purple" Grid.Row="3" Grid.Column="8">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Anglais"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="LightGreen" Grid.Row="0" Grid.Column="6">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Science"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Red" Grid.Row="5" Grid.Column="8">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Math"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Yellow" Grid.Row="6" Grid.Column="9">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Géo" Foreground="Black"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="LightGreen" Grid.Row="4" Grid.Column="8">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Science"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Orange" Grid.Row="7" Grid.Column="8">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Hist"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Blue" Grid.Row="8" Grid.Column="8">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Français"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Purple" Grid.Row="8" Grid.Column="7">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Anglais"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Red" Grid.Row="8" Grid.Column="5">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Math"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Yellow" Grid.Row="8" Grid.Column="4">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Géo" Foreground="Black"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="LightGreen" Grid.Row="8" Grid.Column="6">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Science"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Orange" Grid.Row="8" Grid.Column="3">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Hist"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Blue" Grid.Row="8" Grid.Column="2">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Français"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Purple" Grid.Row="8" Grid.Column="1">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Anglais"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="LightGreen" Grid.Row="8" Grid.Column="0">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Science"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Red" Grid.Row="7" Grid.Column="0">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Math"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Yellow" Grid.Row="6" Grid.Column="0">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Géo" Foreground="Black"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="LightGreen" Grid.Row="5" Grid.Column="0">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Science"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Red" Grid.Row="4" Grid.Column="0">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Math"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Orange" Grid.Row="3" Grid.Column="0">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Hist"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Blue" Grid.Row="2" Grid.Column="0">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Français"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Purple" Grid.Row="1" Grid.Column="0">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Anglais"/>
+            </Border>
+            <!--Placement au mileu du plateau-->
+            <Border Style="{StaticResource CaseStyle}" Background="LightGreen" Grid.Row="1" Grid.Column="4">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Science"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="LightGreen" Grid.Row="7" Grid.Column="4">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Science"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Purple" Grid.Row="2" Grid.Column="4">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Anglais"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Purple" Grid.Row="5" Grid.Column="4">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Anglais"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Orange" Grid.Row="3" Grid.Column="4">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Hist"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Orange" Grid.Row="4" Grid.Column="7">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Hist"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Blue" Grid.Row="4" Grid.Column="5">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Français"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Blue" Grid.Row="4" Grid.Column="1">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Français"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Yellow" Grid.Row="4" Grid.Column="6">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Géo" Foreground="Black"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Yellow" Grid.Row="4" Grid.Column="2">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Géo" Foreground="Black"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Red" Grid.Row="4" Grid.Column="3">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Math"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="Red" Grid.Row="6" Grid.Column="4">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Math"/>
+            </Border>
+            <Border Style="{StaticResource CaseStyle}" Background="White" Grid.Row="4" Grid.Column="4">
+                <TextBlock Style="{StaticResource TextStyle}" Text="Math"/>
+            </Border>
+        </Grid>
+        <StackPanel x:Name="grdDroite" Grid.Column="2" Background="#333"/>
     </Grid>
+
 </Page>

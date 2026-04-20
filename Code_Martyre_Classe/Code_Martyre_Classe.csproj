@@ -15,6 +15,7 @@
     <None Remove="assets\Pion_Orange.png" />
     <None Remove="assets\Pion_Rouge.png" />
     <None Remove="assets\Pion_Vert.png" />
+    <None Remove="téléchargement %283%29.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -44,6 +45,12 @@
     <Resource Include="assets\Pion_Vert.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Page>
   </ItemGroup>
 
 </Project>

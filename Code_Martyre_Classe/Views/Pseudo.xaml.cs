@@ -86,7 +86,8 @@ namespace Code_Martyre_Classe.Views
             for (int itxtBP = 0; itxtBP < Plateau.nbrJoueur; itxtBP++)
             {
                 txtBTxtpseudo[itxtBP] = new TextBlock();
-                txtBTxtpseudo[itxtBP].Foreground = Brushes.Red;
+                txtBTxtpseudo[itxtBP].Foreground = Brushes.White;
+                txtBTxtpseudo[itxtBP].FontSize = 24;
                 if (itxtBP == 0)
                 {
                     txtBTxtpseudo[itxtBP].Text = "Pseudo1 :";
@@ -116,6 +117,7 @@ namespace Code_Martyre_Classe.Views
             {
                 txtBCouleur[itxtBoxC] = new TextBlock();
                 txtBCouleur[itxtBoxC].Text = "Couleur";
+                txtBCouleur[itxtBoxC].FontSize = 22;
                 txtBCouleur[itxtBoxC].Height = 80;
                 txtBCouleur[itxtBoxC].Width = 100;
                 txtBCouleur[itxtBoxC].Foreground = Brushes.Red;
@@ -152,10 +154,11 @@ namespace Code_Martyre_Classe.Views
             {
                 txtPseudo[itxtBox] = new TextBox();
                 txtPseudo[itxtBox].PreviewTextInput += new TextCompositionEventHandler(AjouterPseudo_Text);
-                txtPseudo[itxtBox].Height = 80;
-                txtPseudo[itxtBox].Width = 300;
+                
+                txtPseudo[itxtBox].Height = 40;
+                txtPseudo[itxtBox].Width = 200;
                 confirmation[itxtBox] = new Button();
-                confirmation[itxtBox].Height = 50;
+                confirmation[itxtBox].Height = 40;
                 confirmation[itxtBox].Width = 200;
                 confirmation[itxtBox].Content = "Veuiller confirmer votre pseudo";
                 confirmation[itxtBox].Click += new RoutedEventHandler(AjouterPseudo_Click);
@@ -184,6 +187,7 @@ namespace Code_Martyre_Classe.Views
             Grid.SetColumn(btnJouer, 0);
             Grid.SetColumnSpan(btnJouer, 2);
             Grid.SetRow(btnJouer, 8);
+
         }
         public void AjouterPseudo_Click(object sender, RoutedEventArgs e)
         {
