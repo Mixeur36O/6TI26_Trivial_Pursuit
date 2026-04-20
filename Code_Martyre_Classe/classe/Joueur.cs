@@ -13,6 +13,7 @@ namespace Limet_Maxence_CodagePion.Classe
     {
         //Attributs
         private string _pseudo;
+        private int _id;
 
         //Props
 

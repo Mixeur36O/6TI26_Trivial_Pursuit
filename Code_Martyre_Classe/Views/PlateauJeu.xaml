@@ -9,13 +9,13 @@
       Title="PlateauJeu">
     <Grid x:Name="grdMain" Background="White">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="1000"/>
-            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
         <StackPanel x:Name="grdPseudo" Grid.Column="0" Background="#222"/>
-        
+
         <Grid x:Name="grdPlateau" Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
@@ -196,8 +196,8 @@
             <Border Style="{StaticResource CaseStyle}" Background="White" Grid.Row="4" Grid.Column="4">
                 <TextBlock Style="{StaticResource TextStyle}" Text="Math"/>
             </Border>
+
         </Grid>
         <StackPanel x:Name="grdDroite" Grid.Column="2" Background="#333"/>
     </Grid>
-
 </Page>

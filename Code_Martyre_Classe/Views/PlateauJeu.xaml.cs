@@ -41,18 +41,22 @@ namespace Code_Martyre_Classe.Views
         {
             InitializeComponent();
             prepareInterface();
+            PositionPion();
             this.KeyDown += MainWindow_KeyDown;
         }
+
+
         //Pions
         public void PositionPion()
         {
-            int iLigne = 3;
+            int iLigne = 0;
             int iColonne = 0;
-            for (int i = 0; i < Plateau.nbrJoueur; i++)
+            for (int i = 0; i < 8; i++)
             {
                     Image imgPion = new Image();
-                    BitmapImage bitmap = new BitmapImage(new Uri("assets/Pion_Bleu.png", UriKind.Relative));
+                    BitmapImage bitmap = new BitmapImage(new Uri("/assets/Pion_Bleu.png", UriKind.Relative));
                     imgPion.Source = bitmap;
+                    imgPion.Opacity = 1;
                     imgPion.Width = 60;
                     imgPion.Height = 60;
                     Grid.SetRow(imgPion, iLigne);

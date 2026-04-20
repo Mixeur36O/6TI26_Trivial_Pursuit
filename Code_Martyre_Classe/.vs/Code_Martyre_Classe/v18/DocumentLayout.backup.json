@@ -3,6 +3,34 @@
   "WorkspaceRootPath": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\code_martyre_classe\\views\\affichecarte\\cmath.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\affichecarte\\cmath.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\code_martyre_classe\\views\\affichecarte\\cang.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\affichecarte\\cang.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\code_martyre_classe\\views\\affichecarte\\cfr.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\affichecarte\\cfr.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\code_martyre_classe\\views\\affichecarte\\cfr.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\affichecarte\\cfr.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\code_martyre_classe\\classe\\carte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:classe\\carte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\code_martyre_classe\\config\\connectdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:config\\connectdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\code_martyre_classe\\classe\\joueur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:classe\\joueur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\code_martyre_classe\\views\\plateaujeu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\plateaujeu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -35,36 +63,16 @@
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\pseudo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\code_martyre_classe\\config\\connectdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:config\\connectdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\code_martyre_classe\\views\\parametre.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\parametre.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\code_martyre_classe\\views\\affichecarte\\cmath.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\affichecarte\\cmath.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\code_martyre_classe\\views\\affichecarte\\cgeo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\affichecarte\\cgeo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\code_martyre_classe\\views\\affichecarte\\cfr.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\affichecarte\\cfr.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\code_martyre_classe\\views\\affichecarte\\cang.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\affichecarte\\cang.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\code_martyre_classe\\views\\affichecarte\\cang.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\affichecarte\\cang.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\code_martyre_classe\\views\\affichecarte\\cfr.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\affichecarte\\cfr.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\code_martyre_classe\\views\\affichecarte\\cgeo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -87,20 +95,12 @@
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\affichecarte\\csc.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\code_martyre_classe\\classe\\joueur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:classe\\joueur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\code_martyre_classe\\classe\\plateau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:classe\\plateau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\code_martyre_classe\\classe\\pion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:classe\\pion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\code_martyre_classe\\classe\\carte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:classe\\carte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\code_martyre_classe\\classe\\de.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -129,11 +129,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "PlateauJeu.xaml",
               "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\Views\\PlateauJeu.xaml",
               "RelativeDocumentMoniker": "Views\\PlateauJeu.xaml",
@@ -146,7 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "Pseudo.xaml.cs",
               "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\Views\\Pseudo.xaml.cs",
               "RelativeDocumentMoniker": "Views\\Pseudo.xaml.cs",
@@ -159,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "Pseudo.xaml",
               "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\Views\\Pseudo.xaml",
               "RelativeDocumentMoniker": "Views\\Pseudo.xaml",
@@ -171,13 +171,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "PlateauJeu.xaml.cs",
               "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\Views\\PlateauJeu.xaml.cs",
               "RelativeDocumentMoniker": "Views\\PlateauJeu.xaml.cs",
               "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\Views\\PlateauJeu.xaml.cs",
               "RelativeToolTip": "Views\\PlateauJeu.xaml.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAYwHsAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAAwDQAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-08T07:39:16.134Z",
               "IsPinned": true,
@@ -185,7 +185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "Parametre.xaml",
               "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\Views\\Parametre.xaml",
               "RelativeDocumentMoniker": "Views\\Parametre.xaml",
@@ -197,7 +197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "Parametre.xaml.cs",
               "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\Views\\Parametre.xaml.cs",
               "RelativeDocumentMoniker": "Views\\Parametre.xaml.cs",
@@ -206,12 +206,11 @@
               "ViewState": "AgIAAAYAAAAAAAAAAIAwwC4AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-08T07:42:53.656Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -223,7 +222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
@@ -235,8 +234,32 @@
               "IsPinned": true
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "connectDB.cs",
+              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\Config\\connectDB.cs",
+              "RelativeDocumentMoniker": "Config\\connectDB.cs",
+              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\Config\\connectDB.cs",
+              "RelativeToolTip": "Config\\connectDB.cs",
+              "ViewState": "AgIAANYAAAAAAAAAAAAmwCUBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T09:51:19.941Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Carte.cs",
+              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\classe\\Carte.cs",
+              "RelativeDocumentMoniker": "classe\\Carte.cs",
+              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\classe\\Carte.cs",
+              "RelativeToolTip": "classe\\Carte.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T08:29:59.386Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -244,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "CSc.xaml.cs",
               "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\Views\\AfficheCarte\\CSc.xaml.cs",
               "RelativeDocumentMoniker": "Views\\AfficheCarte\\CSc.xaml.cs",
@@ -256,31 +279,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 1,
               "Title": "CAng.xaml.cs",
               "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\Views\\AfficheCarte\\CAng.xaml.cs",
               "RelativeDocumentMoniker": "Views\\AfficheCarte\\CAng.xaml.cs",
               "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\Views\\AfficheCarte\\CAng.xaml.cs",
               "RelativeToolTip": "Views\\AfficheCarte\\CAng.xaml.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAowDUAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAwIYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T10:00:46.268Z"
+              "WhenOpened": "2026-03-16T10:00:46.268Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
               "Title": "CMath.xaml.cs",
               "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\Views\\AfficheCarte\\CMath.xaml.cs",
               "RelativeDocumentMoniker": "Views\\AfficheCarte\\CMath.xaml.cs",
               "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\Views\\AfficheCarte\\CMath.xaml.cs",
               "RelativeToolTip": "Views\\AfficheCarte\\CMath.xaml.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAYwD4AAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAA8wIoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T10:04:29.235Z"
+              "WhenOpened": "2026-03-16T10:04:29.235Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "CHist.xaml.cs",
               "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\Views\\AfficheCarte\\CHist.xaml.cs",
               "RelativeDocumentMoniker": "Views\\AfficheCarte\\CHist.xaml.cs",
@@ -292,7 +317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "CGeo.xaml.cs",
               "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\Views\\AfficheCarte\\CGeo.xaml.cs",
               "RelativeDocumentMoniker": "Views\\AfficheCarte\\CGeo.xaml.cs",
@@ -304,19 +329,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 2,
               "Title": "CFr.xaml.cs",
               "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\Views\\AfficheCarte\\CFr.xaml.cs",
               "RelativeDocumentMoniker": "Views\\AfficheCarte\\CFr.xaml.cs",
               "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\Views\\AfficheCarte\\CFr.xaml.cs",
               "RelativeToolTip": "Views\\AfficheCarte\\CFr.xaml.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAuwCYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAwHMAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T10:02:34.576Z"
+              "WhenOpened": "2026-03-16T10:02:34.576Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "CSc.xaml",
               "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\Views\\AfficheCarte\\CSc.xaml",
               "RelativeDocumentMoniker": "Views\\AfficheCarte\\CSc.xaml",
@@ -327,7 +353,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "CMath.xaml",
               "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\Views\\AfficheCarte\\CMath.xaml",
               "RelativeDocumentMoniker": "Views\\AfficheCarte\\CMath.xaml",
@@ -338,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "CHist.xaml",
               "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\Views\\AfficheCarte\\CHist.xaml",
               "RelativeDocumentMoniker": "Views\\AfficheCarte\\CHist.xaml",
@@ -349,7 +375,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "CGeo.xaml",
               "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\Views\\AfficheCarte\\CGeo.xaml",
               "RelativeDocumentMoniker": "Views\\AfficheCarte\\CGeo.xaml",
@@ -360,18 +386,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 3,
               "Title": "CFr.xaml",
               "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\Views\\AfficheCarte\\CFr.xaml",
               "RelativeDocumentMoniker": "Views\\AfficheCarte\\CFr.xaml",
               "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\Views\\AfficheCarte\\CFr.xaml",
               "RelativeToolTip": "Views\\AfficheCarte\\CFr.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-16T09:59:01.349Z"
+              "WhenOpened": "2026-03-16T09:59:01.349Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "CAng.xaml",
               "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\Views\\AfficheCarte\\CAng.xaml",
               "RelativeDocumentMoniker": "Views\\AfficheCarte\\CAng.xaml",
@@ -382,19 +409,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "connectDB.cs",
-              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\Config\\connectDB.cs",
-              "RelativeDocumentMoniker": "Config\\connectDB.cs",
-              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\Config\\connectDB.cs",
-              "RelativeToolTip": "Config\\connectDB.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAtwEEAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T09:51:19.941Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Plateau.cs",
               "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\classe\\Plateau.cs",
               "RelativeDocumentMoniker": "classe\\Plateau.cs",
@@ -429,27 +444,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Carte.cs",
-              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\classe\\Carte.cs",
-              "RelativeDocumentMoniker": "classe\\Carte.cs",
-              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\classe\\Carte.cs",
-              "RelativeToolTip": "classe\\Carte.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T08:29:59.386Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 6,
               "Title": "Joueur.cs",
               "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\classe\\Joueur.cs",
               "RelativeDocumentMoniker": "classe\\Joueur.cs",
               "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\classe\\Joueur.cs",
               "RelativeToolTip": "classe\\Joueur.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAIAwwCgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAApwA8AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T08:29:57.882Z"
+              "WhenOpened": "2025-12-08T08:29:57.882Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -465,7 +469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "Pion.cs",
               "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Code_Martyre_Classe\\classe\\Pion.cs",
               "RelativeDocumentMoniker": "classe\\Pion.cs",

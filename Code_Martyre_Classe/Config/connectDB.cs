@@ -85,5 +85,212 @@ namespace Code_Martyre_Classe.Config
             }
             return ok;
         }
+        public bool SuprrimeJoueurTable()
+        {
+            bool ok = false;
+            MySqlConnection maConnection = new MySqlConnection(DefinirCheminBD());
+            string query = "";
+            try
+            {
+                maConnection.Open();
+
+                query = $"DELETE FROM joueur;";
+
+                MySqlCommand insertCommand = new MySqlCommand(query, maConnection);
+
+                if (insertCommand.ExecuteNonQuery() > 1)
+                {
+                    ok = true;
+                }
+                maConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+                throw;
+            }
+            return ok;
+        }
+
+        public bool PrendreQuestionMath(out DataSet contenuTable)
+        {
+            bool ok = false;
+            MySqlConnection maConnection = new MySqlConnection(DefinirCheminBD());
+            string query = "";
+            try
+            {
+                maConnection.Open();
+
+                query = $"SELECT * FROM cartequestion Where categorieID = 1";
+
+                MySqlDataAdapter da = new MySqlDataAdapter(query, maConnection);
+                contenuTable = new DataSet();
+                MySqlCommand insertCommand = new MySqlCommand();
+                da.Fill(contenuTable, "infoTable");
+
+                if (contenuTable.Tables[0].Rows.Count >= 1)
+                {
+                    ok = true;
+                }
+                maConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+                throw;
+            }
+            return ok;
+        }
+
+        public bool PrendreReponseMath(out DataSet contenuTable)
+        {
+            bool ok = false;
+            MySqlConnection maConnection = new MySqlConnection(DefinirCheminBD());
+            string query = "";
+            try
+            {
+                maConnection.Open();
+
+                query = $"SELECT * FROM cartereponse Where categorieID = 1";
+
+                MySqlDataAdapter da = new MySqlDataAdapter(query, maConnection);
+                contenuTable = new DataSet();
+                MySqlCommand insertCommand = new MySqlCommand();
+                da.Fill(contenuTable, "infoTable");
+
+                if (contenuTable.Tables[0].Rows.Count >= 1)
+                {
+                    ok = true;
+                }
+                maConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+                throw;
+            }
+            return ok;
+        }
+
+        public bool PrendreQuestionFr(out DataSet contenuTable)
+        {
+            bool ok = false;
+            MySqlConnection maConnection = new MySqlConnection(DefinirCheminBD());
+            string query = "";
+            try
+            {
+                maConnection.Open();
+
+                query = $"SELECT * FROM cartequestion Where categorieID = 2";
+
+                MySqlDataAdapter da = new MySqlDataAdapter(query, maConnection);
+                contenuTable = new DataSet();
+                MySqlCommand insertCommand = new MySqlCommand();
+                da.Fill(contenuTable, "infoTable");
+
+                if (contenuTable.Tables[0].Rows.Count >= 1)
+                {
+                    ok = true;
+                }
+                maConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+                throw;
+            }
+            return ok;
+        }
+
+        public bool PrendreReponseFr(out DataSet contenuTable)
+        {
+            bool ok = false;
+            MySqlConnection maConnection = new MySqlConnection(DefinirCheminBD());
+            string query = "";
+            try
+            {
+                maConnection.Open();
+
+                query = $"SELECT * FROM cartereponse Where categorieID = 2";
+
+                MySqlDataAdapter da = new MySqlDataAdapter(query, maConnection);
+                contenuTable = new DataSet();
+                MySqlCommand insertCommand = new MySqlCommand();
+                da.Fill(contenuTable, "infoTable");
+
+                if (contenuTable.Tables[0].Rows.Count >= 1)
+                {
+                    ok = true;
+                }
+                maConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+                throw;
+            }
+            return ok;
+        }
+
+        public bool PrendreQuestionEn(out DataSet contenuTable)
+        {
+            bool ok = false;
+            MySqlConnection maConnection = new MySqlConnection(DefinirCheminBD());
+            string query = "";
+            try
+            {
+                maConnection.Open();
+
+                query = $"SELECT * FROM cartequestion Where categorieID = 3";
+
+                MySqlDataAdapter da = new MySqlDataAdapter(query, maConnection);
+                contenuTable = new DataSet();
+                MySqlCommand insertCommand = new MySqlCommand();
+                da.Fill(contenuTable, "infoTable");
+
+                if (contenuTable.Tables[0].Rows.Count >= 1)
+                {
+                    ok = true;
+                }
+                maConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+                throw;
+            }
+            return ok;
+        }
+
+        public bool PrendreReponseEn(out DataSet contenuTable)
+        {
+            bool ok = false;
+            MySqlConnection maConnection = new MySqlConnection(DefinirCheminBD());
+            string query = "";
+            try
+            {
+                maConnection.Open();
+
+                query = $"SELECT * FROM cartereponse Where categorieID = 3";
+
+                MySqlDataAdapter da = new MySqlDataAdapter(query, maConnection);
+                contenuTable = new DataSet();
+                MySqlCommand insertCommand = new MySqlCommand();
+                da.Fill(contenuTable, "infoTable");
+
+                if (contenuTable.Tables[0].Rows.Count >= 1)
+                {
+                    ok = true;
+                }
+                maConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+                throw;
+            }
+            return ok;
+        }
+
     }
 }
