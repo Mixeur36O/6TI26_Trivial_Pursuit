@@ -18,6 +18,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Media.Media3D;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
@@ -35,35 +36,21 @@ namespace Code_Martyre_Classe.Views
         De cDe = new De(6);
         connectDB bdd = new connectDB();
         DataSet donnees = new DataSet();
-
+        Image imgPion = new Image();
+        Button buttonLeave = new Button();
+        private Image[] pions;
+        private int currentPlayerIndex = 0; // Ajout d'un index pour le joueur courant
 
         public PlateauJeu()
         {
             InitializeComponent();
+            pions = new Image[Plateau.nbrJoueur];
             prepareInterface();
-            PositionPion();
-            this.KeyDown += MainWindow_KeyDown;
+            DeplacerPion(imgPion, 0); 
         }
 
+        
 
-        //Pions
-        public void PositionPion()
-        {
-            int iLigne = 0;
-            int iColonne = 0;
-            for (int i = 0; i < 8; i++)
-            {
-                    Image imgPion = new Image();
-                    BitmapImage bitmap = new BitmapImage(new Uri("/assets/Pion_Bleu.png", UriKind.Relative));
-                    imgPion.Source = bitmap;
-                    imgPion.Opacity = 1;
-                    imgPion.Width = 60;
-                    imgPion.Height = 60;
-                    Grid.SetRow(imgPion, iLigne);
-                    Grid.SetColumn(imgPion, iColonne);
-                    grdPlateau.Children.Add(imgPion);
-            }
-        }
 
         public void prepareInterface()
         {
@@ -111,10 +98,8 @@ namespace Code_Martyre_Classe.Views
             grdDroite.Children.Add(txtDe);
 
 
-
             for (int iJoueur = 0; iJoueur < Plateau.nbrJoueur; iJoueur++)
             {
-                string pseudoJ = "";
                 txtBPseudo[iJoueur] = new TextBlock();
                 bdd.PrendrePseudo(out donnees);
                 txtBPseudo[iJoueur].Text = donnees.Tables[0].Rows[iJoueur]["joueurPseudo"].ToString();
@@ -125,8 +110,19 @@ namespace Code_Martyre_Classe.Views
                 indicateurLJ += 1;
             }
 
-           
-            
+            //Pions des joueurs
+
+            for (int i = 0; i < Plateau.nbrJoueur; i++)
+            {
+                Image nouveauPion = new Image();
+                nouveauPion.Source = new BitmapImage(new Uri("/assets/Pion_Bleu.png", UriKind.Relative));
+                nouveauPion.Width = 60;
+                nouveauPion.Height = 60;
+                imgPion = nouveauPion; //
+                grdPlateau.Children.Add(nouveauPion);
+                DeplacerPion(imgPion, 0);
+            }
+
 
             //Coter des Cartes
             for (int iCarte = 0; iCarte < txtBCarte.Length; iCarte++)
@@ -174,25 +170,74 @@ namespace Code_Martyre_Classe.Views
                 txtBCarte[iCarte].FontWeight = FontWeights.Bold;
                 grdDroite.Children.Add(txtBCarte[iCarte]);
                 indicateurLC += 2;
-
             }
+
+            buttonLeave.Content = "Leave";
+            buttonLeave.FontSize = 25;
+            buttonLeave.Click += new RoutedEventHandler(Btn_Quitter);
         }
-  
 
-
-        private void MainWindow_KeyDown(object sender, KeyEventArgs e)
+        public void Btn_Quitter(object sender, RoutedEventArgs e)
         {
-            if (e.Key == Key.Escape)
-            {
-                MainWindow plateau = (MainWindow)App.Current.MainWindow;
-                plateau.Content = new Acceuil();
-            }
+            MainWindow plateau = (MainWindow)App.Current.MainWindow;
+            plateau.Content = new Acceuil();
         }
         public void Btn_De(object sender, RoutedEventArgs e)
         {
+            // 1. On lance le dé
             cDe.Btn_DonneUnNbrAleaD();
+
+            // 2. On affiche le résultat
             txtDe.Text = $"{cDe.Face}";
+
+            // 3. ON DÉPLACE LE PION !
+            // On récupère la valeur du dé (cDe.Face) et on fait bouger imgPion
+            JouerTour(cDe.Face, imgPion);
         }
+
+        public void DeplacerPion(Image imgPion, int caseActuelle)
+        {
+            int max = 8; // Index max (pour une grille 9x9, c'est de 0 à 8)
+            int ligne = 0;
+            int colonne = 0;
+
+            // On boucle l'index si on dépasse 31 (modulo)
+            int position = caseActuelle % 32;
+
+            if (position <= max) // Bas : de (8,0) à (8,8)
+            {
+                ligne = max;
+                colonne = max - position;
+            }
+            else if (position <= max * 2) // Gauche : remonte de (7,0) à (0,0)
+            {
+                ligne = max - (position - max);
+                colonne = 0;
+            }
+            else if (position <= max * 3) // Haut : de (0,1) à (0,8)
+            {
+                ligne = 0;
+                colonne = position - (max * 2);
+            }
+            else // Droite : descend de (1,8) à (7,8)
+            {
+                ligne = position - (max * 3);
+                colonne = max;
+            }
+
+            // Application immédiate dans la Grid
+            Grid.SetRow(imgPion, ligne);
+            Grid.SetColumn(imgPion, colonne);
+        }
+        int positionActuelle = 0;
+
+        public void JouerTour(int scoreDes, Image imgPion)
+        {
+            positionActuelle += scoreDes;
+            DeplacerPion(imgPion, positionActuelle);
+        }
+
+
 
         public void CarteMath_Click(object sender, RoutedEventArgs e)
         {
