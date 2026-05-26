@@ -39,6 +39,10 @@ namespace Code_Martyre_Classe.Views
         Image imgPion = new Image();
         Button buttonLeave = new Button();
         private Image[] pions;
+        private int nbrJoueurs;
+        private int joueurActuel = 0;
+
+
         private int currentPlayerIndex = 0; // Ajout d'un index pour le joueur courant
 
         public PlateauJeu()
@@ -118,9 +122,11 @@ namespace Code_Martyre_Classe.Views
                 nouveauPion.Source = new BitmapImage(new Uri("/assets/Pion_Bleu.png", UriKind.Relative));
                 nouveauPion.Width = 60;
                 nouveauPion.Height = 60;
-                imgPion = nouveauPion; //
+                imgPion = nouveauPion;
+                imgPion.Tag = i;
                 grdPlateau.Children.Add(nouveauPion);
                 DeplacerPion(imgPion, 0);
+                ChangerDeJoueur(joueurActuel, nbrJoueurs);
             }
 
 
@@ -192,7 +198,12 @@ namespace Code_Martyre_Classe.Views
 
             // 3. ON DÉPLACE LE PION !
             // On récupère la valeur du dé (cDe.Face) et on fait bouger imgPion
-            JouerTour(cDe.Face, imgPion);
+            JouerTour(cDe.Face);
+        }
+        public void ChangerDeJoueur(int joueurActuel, int nbrJoueur)
+        {
+            joueurActuel++;
+            if (joueurActuel > nbrJoueur) joueurActuel = 1;
         }
 
         public void DeplacerPion(Image imgPion, int caseActuelle)
@@ -229,13 +240,16 @@ namespace Code_Martyre_Classe.Views
             Grid.SetRow(imgPion, ligne);
             Grid.SetColumn(imgPion, colonne);
         }
-        int positionActuelle = 0;
+        int [] positionActuelle = [0];
 
-        public void JouerTour(int scoreDes, Image imgPion)
+        public void JouerTour(int scoreDes)
         {
-            positionActuelle += scoreDes;
-            DeplacerPion(imgPion, positionActuelle);
+            Image pionQuiDoitBouger = listePions[joueurActuel];
+            positionActuelle[joueurActuel] += scoreDes;
+            DeplacerPion(imgPion, positionActuelle[joueurActuel]);
+            ChangerDeJoueur(joueurActuel, nbrJoueurs);
         }
+
 
 
 
@@ -269,82 +283,6 @@ namespace Code_Martyre_Classe.Views
             MainWindow plateau = (MainWindow)App.Current.MainWindow;
             plateau.Content = new AfficheCarte.CSc();
         }
-
-        //public string PseudoJ(string pseudoJ)
-        // {
-
-        //     bdd.PrendrePseudo(out donnees); 
-        //     for (int i = Plateau.nbrJoueur; i < donnees.Tables[0].Rows.Count; i++)
-        //     {
-        //         pseudoJ = donnees.Tables[0].Rows[i]["joueurPseudo"].ToString();
-        //     }
-        //     return pseudoJ;
-        // }
-
-
-        ///// <summary>
-        ///// Procédure permettant de lancer un dé, et faire avancer le pion du joueur
-        ///// </summary>
-        ///// <param name="symboleJoueur">Symbole marquant la position du joueur</param>
-        ///// <param name="numeroJoueur">numero du joueur (1 ou 2)</param>
-        ///// <param name="totalJoueur">Compte cumulé des dés sortis</param>
-        ///// <param name="positionPionJoueur">Première place = numéro de ligne, seconde place = numéro de colonne</param>
-        ///// <param name="ancienneValeur">valeur numérique de la case où se trouve le joueur</param>
-        //public void TourJoueur(string symboleJoueur, int numeroJoueur, ref int totalJoueur, ref int[] positionPionJoueur, ref string ancienneValeur)
-        //{
-        //    Random alea = new Random();         // nombre aléatoire
-        //    int taille = btnCases.GetLength(0); // nombre de lignes dans le plateau
-        //    int maxCases = taille * taille;     // nombre de cases maximum
-
-        //    // dé sorti
-        //    int de = alea.Next(1, 7);
-
-        //    // modification de l'interface pour l'affichage du numéro du joueur et du dé
-        //    txtQuiJoue.Text = "Joueur " + numeroJoueur;
-        //    txtDe.Text = "Dé : " + de;
-
-        //    // calcul total déjà parcouru par le joueur
-        //    totalJoueur += de;
-
-        //    // Si on dépasse le nombre total de cases, on fixe à la dernière possible
-        //    if (totalJoueur > maxCases)
-        //    {
-        //        totalJoueur = maxCases;
-        //    }
-
-        //    // Retirer le symbole du joueur à l'ancienne position et faire apparaître le numéro qu'il cachait
-        //    btnCases[positionPionJoueur[0], positionPionJoueur[1]].Content = ancienneValeur;
-        //    btnCases[positionPionJoueur[0], positionPionJoueur[1]].Foreground = Brushes.Black;
-
-        //    // recherche de la nouvelle position du joueur
-        //    int index = totalJoueur - 1;
-
-        //    int ligneDepuisBas = index / taille;
-        //    int colonneDansLigne = index % taille;
-
-        //    positionPionJoueur[0] = taille - 1 - ligneDepuisBas;
-
-        //    bool gaucheVersDroite = ligneDepuisBas % 2 == 0;
-
-        //    positionPionJoueur[1] = gaucheVersDroite
-        //        ? colonneDansLigne
-        //        : taille - 1 - colonneDansLigne;
-
-        //    // Fin de partie
-        //    if (totalJoueur == maxCases)
-        //    {
-        //        txtQuiJoue.Text = "Fin !";
-        //        btnAvancer.IsEnabled = false;
-        //    }
-
-        //    // mémorisation du numéro de la case sur laquelle on va placer le symbole du joueur
-        //    // + affichage de ce symbole
-        //    ancienneValeur = btnCases[positionPionJoueur[0], positionPionJoueur[1]].Content.ToString();
-        //    btnCases[positionPionJoueur[0], positionPionJoueur[1]].Content = symboleJoueur;
-        //    btnCases[positionPionJoueur[0], positionPionJoueur[1]].Foreground = Brushes.Gold;
-        //}
-
-        // Ajoute une image (pion) au Grid à la position ligne/colonne
   
     }
 }
