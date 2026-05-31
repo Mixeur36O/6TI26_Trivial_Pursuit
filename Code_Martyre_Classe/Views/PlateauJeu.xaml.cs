@@ -29,31 +29,25 @@ namespace Code_Martyre_Classe.Views
     /// </summary>
     public partial class PlateauJeu : Page
     {
-        TextBlock[,] txtBlock = new TextBlock[13, 13];
         Button[] txtBCarte = new Button[6];
         TextBlock[] txtBPseudo = new TextBlock[4];
         TextBlock txtDe = new TextBlock();
         De cDe = new De(6);
         connectDB bdd = new connectDB();
         DataSet donnees = new DataSet();
-        Image imgPion = new Image();
         Button buttonLeave = new Button();
-        private Image[] pions;
-        private int nbrJoueurs;
+        private Image[] listePions;
+        private int[] positionActu;
         private int joueurActuel = 0;
-
-
-        private int currentPlayerIndex = 0; // Ajout d'un index pour le joueur courant
 
         public PlateauJeu()
         {
             InitializeComponent();
-            pions = new Image[Plateau.nbrJoueur];
+            listePions = new Image[Plateau.nbrJoueur];
+            positionActu = new int[Plateau.nbrJoueur];
             prepareInterface();
-            DeplacerPion(imgPion, 0); 
-        }
 
-        
+        }
 
 
         public void prepareInterface()
@@ -62,7 +56,7 @@ namespace Code_Martyre_Classe.Views
             int indicateurLC = 0;
             int indicateurLJ = 15;
             Button de = new Button();
-            
+
             BitmapImage itn = new BitmapImage();
             itn.BeginInit();
             itn.UriSource = new Uri("assets/ITN-Logo-quadri-DEF.jpg", UriKind.Relative);
@@ -114,19 +108,70 @@ namespace Code_Martyre_Classe.Views
                 indicateurLJ += 1;
             }
 
+
+            //// 1. Déclaration de source dans un tableau
+            //string[] imageCentr = {
+            //    "/assets/Victor_hugo.png.jpg",
+            //    "/assets/pense.png.jpg",
+            //    "/assets/ITN-Logo-quadri-DEF.jpg",
+            //    "/assets/ITN-Logo-quadri-DEF.jpg"
+            //};
+
+            //int[] rows = { 1, 5, 1, 5 };
+            //int[] cols = { 1, 5, 5, 1 };
+
+            //// 2. Boucle for pour générer les 4 images
+            //for (int i = 0; i < 4; i++)
+            //{
+            //    Image imgCentrale = new Image();
+
+            //    // Attribution de la source directement
+            //    imgCentrale.Source = new BitmapImage(new Uri(imageCentr[i], UriKind.Relative));
+
+            //    // Dimensions et style
+            //    imgCentrale.Height = 270;
+            //    imgCentrale.Width = 270;
+            //    imgCentrale.Stretch = Stretch.Uniform;
+
+            //    // Positionnement dans la Grid
+            //    Grid.SetRow(imgCentrale, rows[i]);
+            //    Grid.SetColumn(imgCentrale, cols[i]);
+            //    Grid.SetRowSpan(imgCentrale, 3);
+            //    Grid.SetColumnSpan(imgCentrale, 3);
+
+            //    // Priorité d'affichage (devant les cases)
+            //    Panel.SetZIndex(imgCentrale, 10);
+
+            //    // Ajout à l'interface
+            //    grdPlateau.Children.Add(imgCentrale);
+            //}
+
             //Pions des joueurs
 
+            //Tableau de 4 couleur différentes
+            string[] couleursPions = {
+                 "/assets/Pion_Bleu.png",
+                 "/assets/Pion_Jaune.png",
+                 "/assets/Pion_Rouge.png",
+                "/assets/Pion_Mauve.png",
+                "/assets/Pion_Orange.png",
+                "/assets/Pion_Vert.png"
+            };
+
+            // 
             for (int i = 0; i < Plateau.nbrJoueur; i++)
             {
                 Image nouveauPion = new Image();
-                nouveauPion.Source = new BitmapImage(new Uri("/assets/Pion_Bleu.png", UriKind.Relative));
+                nouveauPion.Source = new BitmapImage(new Uri(couleursPions[i], UriKind.Relative));
                 nouveauPion.Width = 60;
                 nouveauPion.Height = 60;
-                imgPion = nouveauPion;
-                imgPion.Tag = i;
+                //Le Tag sert a donner comme un id, on lui assigne un lettre ou un nombre et là c'est un nombre( i pour avoir les 4 joueurs maximum).
+                nouveauPion.Tag = i;
+
                 grdPlateau.Children.Add(nouveauPion);
-                DeplacerPion(imgPion, 0);
-                ChangerDeJoueur(joueurActuel, nbrJoueurs);
+                listePions[i] = nouveauPion; //Pour mettre les pions et les ranger sur le plateau
+                positionActu[i] = 0;
+                DeplacerPion(nouveauPion, 0);
             }
 
 
@@ -188,25 +233,12 @@ namespace Code_Martyre_Classe.Views
             MainWindow plateau = (MainWindow)App.Current.MainWindow;
             plateau.Content = new Acceuil();
         }
-        public void Btn_De(object sender, RoutedEventArgs e)
+        public void ChangerDeJoueur()
         {
-            // 1. On lance le dé
-            cDe.Btn_DonneUnNbrAleaD();
-
-            // 2. On affiche le résultat
-            txtDe.Text = $"{cDe.Face}";
-
-            // 3. ON DÉPLACE LE PION !
-            // On récupère la valeur du dé (cDe.Face) et on fait bouger imgPion
-            JouerTour(cDe.Face);
-        }
-        public void ChangerDeJoueur(int joueurActuel, int nbrJoueur)
-        {
-            joueurActuel++;
-            if (joueurActuel > nbrJoueur) joueurActuel = 1;
+            joueurActuel = (joueurActuel + 1) % Plateau.nbrJoueur;
         }
 
-        public void DeplacerPion(Image imgPion, int caseActuelle)
+        public void DeplacerPion(Image pionABouger, int caseActuelle)
         {
             int max = 8; // Index max (pour une grille 9x9, c'est de 0 à 8)
             int ligne = 0;
@@ -237,21 +269,25 @@ namespace Code_Martyre_Classe.Views
             }
 
             // Application immédiate dans la Grid
-            Grid.SetRow(imgPion, ligne);
-            Grid.SetColumn(imgPion, colonne);
+            Grid.SetRow(pionABouger, ligne);
+            Grid.SetColumn(pionABouger, colonne);
         }
-        int [] positionActuelle = [0];
 
         public void JouerTour(int scoreDes)
         {
             Image pionQuiDoitBouger = listePions[joueurActuel];
-            positionActuelle[joueurActuel] += scoreDes;
-            DeplacerPion(imgPion, positionActuelle[joueurActuel]);
-            ChangerDeJoueur(joueurActuel, nbrJoueurs);
+            positionActu[joueurActuel] += scoreDes;
+            DeplacerPion(pionQuiDoitBouger, positionActu[joueurActuel]);
+            joueurActuel = (joueurActuel + 1) % Plateau.nbrJoueur;
         }
+        public void Btn_De(object sender, RoutedEventArgs e)
+        {
+            cDe.Btn_DonneUnNbrAleaD();
+            txtDe.Text = $"{cDe.Face}";
 
-
-
+            // On lance le tour avec le score du dé
+            JouerTour(cDe.Face);
+        }
 
         public void CarteMath_Click(object sender, RoutedEventArgs e)
         {
@@ -283,6 +319,6 @@ namespace Code_Martyre_Classe.Views
             MainWindow plateau = (MainWindow)App.Current.MainWindow;
             plateau.Content = new AfficheCarte.CSc();
         }
-  
+
     }
 }
