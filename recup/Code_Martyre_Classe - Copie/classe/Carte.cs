@@ -8,16 +8,13 @@ using System.Threading.Tasks;
 
 namespace Limet_Maxence_CodagePion.Classe
 {
-    internal class CarteM
+    internal class Carte
     {
         //Attributs
 
         //Propriétées
 
         //Constructeur
-        public CarteM() 
-        { 
-        }
         connectDB bdd = new connectDB();
 
         //Méthodes
@@ -50,5 +47,22 @@ namespace Limet_Maxence_CodagePion.Classe
         {
             bdd.PrendreReponseEn(out rEn);
         }
+        public void QuestionHist(out DataSet qHist)
+        {
+            bdd.PrendreQuestionHist(out qHist);
+        }
+        public void ReponseHist(out DataSet rHist)
+        {
+            bdd.PrendreReponseHist(out rHist);
+        }
+        public void QuestionSc(out DataSet qSc)
+        {
+            bdd.PrendreQuestionSc(out qSc);
+        }
+        public void ReponseSc(out DataSet rSc)
+        {
+            bdd.PrendreReponseSc(out rSc);
+        }
+
     }
 }

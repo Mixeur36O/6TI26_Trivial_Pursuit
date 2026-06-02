@@ -30,7 +30,7 @@ namespace Code_Martyre_Classe.Views.AfficheCarte
         TextBox txtBox = new TextBox();
         int rndQ = 0;
         DataSet contenuRep = new DataSet();
-        CarteM carteM = new CarteM();
+        Carte carteA = new Carte();
         string reponseQ;
         public CAng()
         {
@@ -74,7 +74,7 @@ namespace Code_Martyre_Classe.Views.AfficheCarte
             Grid.SetRow(txtBlockTitre, 0);
 
             //TextBlock question
-            carteM.QuestionEn(out DataSet qEn);
+            carteA.QuestionEn(out DataSet qEn);
             txtBlockQ.Text = qEn.Tables[0].Rows[rndQ]["carteQ"].ToString();
             txtBlockQ.HorizontalAlignment = HorizontalAlignment.Center;
             txtBlockQ.FontWeight = FontWeights.Bold;
@@ -85,7 +85,7 @@ namespace Code_Martyre_Classe.Views.AfficheCarte
 
 
             //TextBox
-            carteM.ReponseEn(out contenuRep);
+            carteA.ReponseEn(out contenuRep);
             reponseQ = contenuRep.Tables[0].Rows[rndQ]["carteR"].ToString();
             txtBox.Height = 50;
             txtBox.Width = 300;
@@ -110,7 +110,7 @@ namespace Code_Martyre_Classe.Views.AfficheCarte
         {
             joueurR = e.Text;
             reponseComp += joueurR;
-            if (joueurR == null)
+            if (joueurR == "_")
             {
                 reponseComp = "";
                 joueurR = "";

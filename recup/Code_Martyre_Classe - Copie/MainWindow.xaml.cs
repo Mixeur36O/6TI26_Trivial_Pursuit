@@ -82,7 +82,6 @@ namespace Code_Martyre_Classe
         public void Btn_Para(object sender, RoutedEventArgs e)
         {
             this.Content = new Parametre();
-
         }
 
         public void Btn_Leave(object sender, RoutedEventArgs e)
