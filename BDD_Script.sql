@@ -43,31 +43,29 @@ values
 ('e', 1),
 ('0', 1);
 
-insert into cartequestion (carteQ, categorieID)
-values
-('', 4),
-('', 4),
-('', 4),
-('', 4),
-('', 4),
-('', 4),
-('', 4),
-('', 4),
-('', 4),
-('', 4);
+Insert into cartequestion(carteQ, categorieID) values
+("Qui est le plus grand producteur de sapin en Europe ?", 4),
+("Quel est le dernier pillier de la périurbanisation après le social et économique ?", 4),
+("Ville japonnaise qui à subi l'énorme tsunami ?", 4),
+("", 4),
+("", 4),
+("", 4),
+("", 4),
+("", 4),
+("", 4),
+("", 4);
 
-insert into cartereponse(carteR, categorieID)
-values
-('', 4),
-('', 4),
-('', 4),
-('', 4),
-('', 4),
-('', 4),
-('', 4),
-('', 4),
-('', 4),
-('', 4);
+Insert into cartereponse(carteR, categorieID) values
+("Danemark", 4),
+("L'environnement", 4),
+("Fukushima", 4),
+("", 4),
+("", 4),
+("", 4),
+("", 4),
+("", 4),
+("", 4),
+("", 4);
 
 insert into cartequestion (carteQ, categorieID)
 values
