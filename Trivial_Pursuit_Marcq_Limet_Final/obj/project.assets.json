@@ -602,11 +602,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\Code_Martyre_Classe.csproj",
+      "projectUniqueName": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\Code_Martyre_Classe.csproj",
       "projectName": "Code_Martyre_Classe",
-      "projectPath": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\Code_Martyre_Classe.csproj",
+      "projectPath": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\Code_Martyre_Classe.csproj",
       "packagesPath": "C:\\Users\\natha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\obj\\",
+      "outputPath": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

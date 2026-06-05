@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2f55vgdqXSE=",
+  "dgSpecHash": "8P7itdVum1k=",
   "success": true,
-  "projectFilePath": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\Code_Martyre_Classe.csproj",
+  "projectFilePath": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\Code_Martyre_Classe.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\natha\\.nuget\\packages\\bouncycastle.cryptography\\2.6.2\\bouncycastle.cryptography.2.6.2.nupkg.sha512",
     "C:\\Users\\natha\\.nuget\\packages\\google.protobuf\\3.32.0\\google.protobuf.3.32.0.nupkg.sha512",

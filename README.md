@@ -1,8 +1,14 @@
 # 6TI26_Trivial_Pursuit
 Projet TFE de 6TTI de Nathan Marcq et Maxence Limet
 
----------------------------------------------------
+-----------------------------------------------------------------------------------------------------
 
+Pour la connection à la BDD, il faut aller dans le fichier Config, connectDB.cs,
+et modifier la ligne 21 :
+  return "server=localhost;database=projet_tfe;port=3306;User Id=root;password=NM-Nathan2006.";
+Par rapport à la BDD utilisé.
+
+-----------------------------------------------------------------------------------------------------
 Menu principal :
 
 Jouer (Permet d'aller directement sur la partie pseudo)

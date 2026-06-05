@@ -1,73 +1,77 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\",
+  "WorkspaceRootPath": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet\\views\\affichecarte\\csc.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet_final\\config\\connectdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:config\\connectdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet_final\\views\\affichecarte\\csc.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\affichecarte\\csc.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet\\views\\plateaujeu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet_final\\views\\plateaujeu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\plateaujeu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet\\views\\affichecarte\\cmath.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet_final\\views\\affichecarte\\cmath.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\affichecarte\\cmath.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet\\views\\affichecarte\\chist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet_final\\views\\affichecarte\\chist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\affichecarte\\chist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet\\views\\affichecarte\\cgeo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet_final\\views\\affichecarte\\cgeo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\affichecarte\\cgeo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet\\views\\affichecarte\\cfr.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet_final\\views\\affichecarte\\cfr.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\affichecarte\\cfr.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet\\views\\affichecarte\\cang.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet_final\\views\\affichecarte\\cang.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\affichecarte\\cang.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet\\views\\pseudo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet_final\\views\\pseudo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\pseudo.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet\\views\\plateaujeu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet_final\\views\\plateaujeu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\plateaujeu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet_final\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet\\views\\acceuil.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet_final\\views\\acceuil.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\acceuil.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet_final\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet\\views\\acceuil.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet_final\\views\\acceuil.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\acceuil.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet\\views\\pseudo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet_final\\views\\pseudo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\pseudo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet\\views\\parametre.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet_final\\views\\parametre.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\parametre.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet\\views\\parametre.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet_final\\views\\parametre.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:views\\parametre.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|c:\\users\\natha\\desktop\\desingmartyre\\6ti26_trivial_pursuit\\trivial_pursuit_marcq_limet_final\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4DA862B6-AE14-4E80-926E-283F9AE8B96C}|Code_Martyre_Classe.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -82,11 +86,11 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Acceuil.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\Views\\Acceuil.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\Views\\Acceuil.xaml.cs",
               "RelativeDocumentMoniker": "Views\\Acceuil.xaml.cs",
-              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\Views\\Acceuil.xaml.cs",
+              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\Views\\Acceuil.xaml.cs",
               "RelativeToolTip": "Views\\Acceuil.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -95,11 +99,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Acceuil.xaml",
-              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\Views\\Acceuil.xaml",
+              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\Views\\Acceuil.xaml",
               "RelativeDocumentMoniker": "Views\\Acceuil.xaml",
-              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\Views\\Acceuil.xaml",
+              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\Views\\Acceuil.xaml",
               "RelativeToolTip": "Views\\Acceuil.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-12-15T08:06:20.613Z",
@@ -107,11 +111,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "PlateauJeu.xaml",
-              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\Views\\PlateauJeu.xaml",
+              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\Views\\PlateauJeu.xaml",
               "RelativeDocumentMoniker": "Views\\PlateauJeu.xaml",
-              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\Views\\PlateauJeu.xaml",
+              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\Views\\PlateauJeu.xaml",
               "RelativeToolTip": "Views\\PlateauJeu.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-12-08T07:36:37.045Z",
@@ -119,11 +123,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Pseudo.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\Views\\Pseudo.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\Views\\Pseudo.xaml.cs",
               "RelativeDocumentMoniker": "Views\\Pseudo.xaml.cs",
-              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\Views\\Pseudo.xaml.cs",
+              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\Views\\Pseudo.xaml.cs",
               "RelativeToolTip": "Views\\Pseudo.xaml.cs",
               "ViewState": "AgIAAK4AAAAAAAAAAAAYwMsAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -132,11 +136,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Pseudo.xaml",
-              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\Views\\Pseudo.xaml",
+              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\Views\\Pseudo.xaml",
               "RelativeDocumentMoniker": "Views\\Pseudo.xaml",
-              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\Views\\Pseudo.xaml",
+              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\Views\\Pseudo.xaml",
               "RelativeToolTip": "Views\\Pseudo.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-12-08T07:36:54.486Z",
@@ -144,25 +148,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PlateauJeu.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\Views\\PlateauJeu.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\Views\\PlateauJeu.xaml.cs",
               "RelativeDocumentMoniker": "Views\\PlateauJeu.xaml.cs",
-              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\Views\\PlateauJeu.xaml.cs",
+              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\Views\\PlateauJeu.xaml.cs",
               "RelativeToolTip": "Views\\PlateauJeu.xaml.cs",
               "ViewState": "AgIAALEAAAAAAAAAAAAowJoAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-08T07:39:16.134Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAABMAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -171,11 +174,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Parametre.xaml",
-              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\Views\\Parametre.xaml",
+              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\Views\\Parametre.xaml",
               "RelativeDocumentMoniker": "Views\\Parametre.xaml",
-              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\Views\\Parametre.xaml",
+              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\Views\\Parametre.xaml",
               "RelativeToolTip": "Views\\Parametre.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-12-08T07:36:16.099Z",
@@ -183,11 +186,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Parametre.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\Views\\Parametre.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\Views\\Parametre.xaml.cs",
               "RelativeDocumentMoniker": "Views\\Parametre.xaml.cs",
-              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\Views\\Parametre.xaml.cs",
+              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\Views\\Parametre.xaml.cs",
               "RelativeToolTip": "Views\\Parametre.xaml.cs",
               "ViewState": "AgIAAHUAAAAAAAAAAAAowEAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -196,11 +199,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-12-08T07:34:21.952Z",
@@ -209,88 +212,96 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "connectDB.cs",
+              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\Config\\connectDB.cs",
+              "RelativeDocumentMoniker": "Config\\connectDB.cs",
+              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\Config\\connectDB.cs",
+              "RelativeToolTip": "Config\\connectDB.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAABtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T14:35:09.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "CSc.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\Views\\AfficheCarte\\CSc.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\Views\\AfficheCarte\\CSc.xaml.cs",
               "RelativeDocumentMoniker": "Views\\AfficheCarte\\CSc.xaml.cs",
-              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\Views\\AfficheCarte\\CSc.xaml.cs",
+              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\Views\\AfficheCarte\\CSc.xaml.cs",
               "RelativeToolTip": "Views\\AfficheCarte\\CSc.xaml.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAwCgAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAwB4AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-05T09:47:41.048Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CMath.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\Views\\AfficheCarte\\CMath.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\Views\\AfficheCarte\\CMath.xaml.cs",
               "RelativeDocumentMoniker": "Views\\AfficheCarte\\CMath.xaml.cs",
-              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\Views\\AfficheCarte\\CMath.xaml.cs",
+              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\Views\\AfficheCarte\\CMath.xaml.cs",
               "RelativeToolTip": "Views\\AfficheCarte\\CMath.xaml.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAwDQAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-05T09:47:15.518Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CHist.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\Views\\AfficheCarte\\CHist.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\AfficheCarte\\CHist.xaml.cs",
-              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\Views\\AfficheCarte\\CHist.xaml.cs",
-              "RelativeToolTip": "Views\\AfficheCarte\\CHist.xaml.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAADIAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-05T09:46:41.948Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-05T09:47:15.518Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CGeo.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\Views\\AfficheCarte\\CGeo.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\AfficheCarte\\CGeo.xaml.cs",
-              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\Views\\AfficheCarte\\CGeo.xaml.cs",
-              "RelativeToolTip": "Views\\AfficheCarte\\CGeo.xaml.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAQwDEAAAAvAAAAAAAAAA==",
+              "Title": "CHist.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\Views\\AfficheCarte\\CHist.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\AfficheCarte\\CHist.xaml.cs",
+              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\Views\\AfficheCarte\\CHist.xaml.cs",
+              "RelativeToolTip": "Views\\AfficheCarte\\CHist.xaml.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADIAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-05T09:45:02.802Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-05T09:46:41.948Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "CFr.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\Views\\AfficheCarte\\CFr.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\AfficheCarte\\CFr.xaml.cs",
-              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\Views\\AfficheCarte\\CFr.xaml.cs",
-              "RelativeToolTip": "Views\\AfficheCarte\\CFr.xaml.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAwDAAAAAsAAAAAAAAAA==",
+              "Title": "CGeo.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\Views\\AfficheCarte\\CGeo.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\AfficheCarte\\CGeo.xaml.cs",
+              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\Views\\AfficheCarte\\CGeo.xaml.cs",
+              "RelativeToolTip": "Views\\AfficheCarte\\CGeo.xaml.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAQwDEAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-05T09:44:32.972Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-05T09:45:02.802Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "CAng.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\Views\\AfficheCarte\\CAng.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\AfficheCarte\\CAng.xaml.cs",
-              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\Views\\AfficheCarte\\CAng.xaml.cs",
-              "RelativeToolTip": "Views\\AfficheCarte\\CAng.xaml.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAA4wDAAAAAmAAAAAAAAAA==",
+              "Title": "CFr.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\Views\\AfficheCarte\\CFr.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\AfficheCarte\\CFr.xaml.cs",
+              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\Views\\AfficheCarte\\CFr.xaml.cs",
+              "RelativeToolTip": "Views\\AfficheCarte\\CFr.xaml.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAwDAAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-05T09:37:01.065Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-05T09:44:32.972Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 7,
+              "Title": "CAng.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\Views\\AfficheCarte\\CAng.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\AfficheCarte\\CAng.xaml.cs",
+              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\Views\\AfficheCarte\\CAng.xaml.cs",
+              "RelativeToolTip": "Views\\AfficheCarte\\CAng.xaml.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAA4wDAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T09:37:01.065Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\natha\\Desktop\\DesingMartyre\\6TI26_Trivial_Pursuit\\Trivial_Pursuit_Marcq_Limet_Final\\AssemblyInfo.cs",
               "RelativeToolTip": "AssemblyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

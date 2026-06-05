@@ -61,7 +61,7 @@ namespace Code_Martyre_Classe.Views.AfficheCarte {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Code_Martyre_Classe;component/views/affichecarte/chist.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Code_Martyre_Classe;V1.0.0.0;component/views/affichecarte/chist.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\AfficheCarte\CHist.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

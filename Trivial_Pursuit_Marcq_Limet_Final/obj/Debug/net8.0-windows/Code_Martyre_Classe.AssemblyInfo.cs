@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Code_Martyre_Classe")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b1780e3747c82205ad86facf31954abd4fe389e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5bdbda296be92b88b22a07ceb341ee1ffaf0a77c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Code_Martyre_Classe")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Code_Martyre_Classe")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
