@@ -15,7 +15,6 @@ namespace Limet_Maxence_CodagePion.Classe
         public int Face
         {
             get { return _face; }
-            set { _face = value; }
         }
 
         //Construct

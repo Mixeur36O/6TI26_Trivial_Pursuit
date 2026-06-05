@@ -1,8 +1,10 @@
-﻿
+﻿using Code_Martyre_Classe.Views;
+using Limet_Maxence_CodagePion.Classe;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Common;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
@@ -71,12 +73,11 @@ namespace Code_Martyre_Classe.Config
                 contenuTable = new DataSet();
                 da.Fill(contenuTable, "infoTable");
 
-                maConnection.Close();
-
                 if (contenuTable.Tables[0].Rows.Count >= 1)
                 {
                     ok = true;
                 }
+                maConnection.Close();
             }
             catch (Exception ex)
             {
@@ -85,6 +86,7 @@ namespace Code_Martyre_Classe.Config
             }
             return ok;
         }
+
         public bool SuprrimeJoueurTable()
         {
             bool ok = false;
@@ -272,6 +274,185 @@ namespace Code_Martyre_Classe.Config
                 maConnection.Open();
 
                 query = $"SELECT * FROM cartereponse Where categorieID = 3";
+
+                MySqlDataAdapter da = new MySqlDataAdapter(query, maConnection);
+                contenuTable = new DataSet();
+                MySqlCommand insertCommand = new MySqlCommand();
+                da.Fill(contenuTable, "infoTable");
+
+                if (contenuTable.Tables[0].Rows.Count >= 1)
+                {
+                    ok = true;
+                }
+                maConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+                throw;
+            }
+            return ok;
+        }
+
+        public bool PrendreQuestionHist(out DataSet contenuTable)
+        {
+            bool ok = false;
+            MySqlConnection maConnection = new MySqlConnection(DefinirCheminBD());
+            string query = "";
+            try
+            {
+                maConnection.Open();
+
+                query = $"SELECT * FROM cartequestion Where categorieID = 5";
+
+                MySqlDataAdapter da = new MySqlDataAdapter(query, maConnection);
+                contenuTable = new DataSet();
+                MySqlCommand insertCommand = new MySqlCommand();
+                da.Fill(contenuTable, "infoTable");
+
+                if (contenuTable.Tables[0].Rows.Count >= 1)
+                {
+                    ok = true;
+                }
+                maConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+                throw;
+            }
+            return ok;
+        }
+
+        public bool PrendreReponseHist(out DataSet contenuTable)
+        {
+            bool ok = false;
+            MySqlConnection maConnection = new MySqlConnection(DefinirCheminBD());
+            string query = "";
+            try
+            {
+                maConnection.Open();
+
+                query = $"SELECT * FROM cartereponse Where categorieID = 5";
+
+                MySqlDataAdapter da = new MySqlDataAdapter(query, maConnection);
+                contenuTable = new DataSet();
+                MySqlCommand insertCommand = new MySqlCommand();
+                da.Fill(contenuTable, "infoTable");
+
+                if (contenuTable.Tables[0].Rows.Count >= 1)
+                {
+                    ok = true;
+                }
+                maConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+                throw;
+            }
+            return ok;
+        }
+
+        public bool PrendreQuestionSc(out DataSet contenuTable)
+        {
+            bool ok = false;
+            MySqlConnection maConnection = new MySqlConnection(DefinirCheminBD());
+            string query = "";
+            try
+            {
+                maConnection.Open();
+
+                query = $"SELECT * FROM cartequestion Where categorieID = 6";
+
+                MySqlDataAdapter da = new MySqlDataAdapter(query, maConnection);
+                contenuTable = new DataSet();
+                MySqlCommand insertCommand = new MySqlCommand();
+                da.Fill(contenuTable, "infoTable");
+
+                if (contenuTable.Tables[0].Rows.Count >= 1)
+                {
+                    ok = true;
+                }
+                maConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+                throw;
+            }
+            return ok;
+        }
+
+        public bool PrendreReponseSc(out DataSet contenuTable)
+        {
+            bool ok = false;
+            MySqlConnection maConnection = new MySqlConnection(DefinirCheminBD());
+            string query = "";
+            try
+            {
+                maConnection.Open();
+
+                query = $"SELECT * FROM cartereponse Where categorieID = 6";
+
+                MySqlDataAdapter da = new MySqlDataAdapter(query, maConnection);
+                contenuTable = new DataSet();
+                MySqlCommand insertCommand = new MySqlCommand();
+                da.Fill(contenuTable, "infoTable");
+
+                if (contenuTable.Tables[0].Rows.Count >= 1)
+                {
+                    ok = true;
+                }
+                maConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+                throw;
+            }
+            return ok;
+        }
+        public bool PrendreQuestionGeo(out DataSet contenuTable)
+        {
+            bool ok = false;
+            MySqlConnection maConnection = new MySqlConnection(DefinirCheminBD());
+            string query = "";
+            try
+            {
+                maConnection.Open();
+
+                query = $"SELECT * FROM cartequestion Where categorieID = 4";
+
+                MySqlDataAdapter da = new MySqlDataAdapter(query, maConnection);
+                contenuTable = new DataSet();
+                MySqlCommand insertCommand = new MySqlCommand();
+                da.Fill(contenuTable, "infoTable");
+
+                if (contenuTable.Tables[0].Rows.Count >= 1)
+                {
+                    ok = true;
+                }
+                maConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+                throw;
+            }
+            return ok;
+        }
+
+        public bool PrendreReponseGeo(out DataSet contenuTable)
+        {
+            bool ok = false;
+            MySqlConnection maConnection = new MySqlConnection(DefinirCheminBD());
+            string query = "";
+            try
+            {
+                maConnection.Open();
+
+                query = $"SELECT * FROM cartereponse Where categorieID = 4";
 
                 MySqlDataAdapter da = new MySqlDataAdapter(query, maConnection);
                 contenuTable = new DataSet();

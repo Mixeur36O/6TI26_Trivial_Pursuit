@@ -146,13 +146,13 @@ namespace Code_Martyre_Classe.Views
             //    grdPlateau.Children.Add(imgCentrale);
             //}
 
-            //Pions des joueurs
 
+            //Pions des joueurs
             //Tableau de 4 couleur différentes
             string[] couleursPions = {
                  "/assets/Pion_Bleu.png",
-                 "/assets/Pion_Jaune.png",
                  "/assets/Pion_Rouge.png",
+                 "/assets/Pion_Jaune.png",
                 "/assets/Pion_Mauve.png",
                 "/assets/Pion_Orange.png",
                 "/assets/Pion_Vert.png"

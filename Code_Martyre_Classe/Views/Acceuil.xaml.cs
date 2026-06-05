@@ -16,6 +16,7 @@ using System.Windows.Shapes;
 using System.Data;
 using MySql.Data.MySqlClient;
 using System.Diagnostics;
+using Code_Martyre_Classe.Config;
 
 
 namespace Code_Martyre_Classe.Views
@@ -27,6 +28,7 @@ namespace Code_Martyre_Classe.Views
     {
 
         Button[] button = new Button[3];
+        connectDB bdd = new connectDB();
 
         public Acceuil()
         {
@@ -90,6 +92,7 @@ namespace Code_Martyre_Classe.Views
 
         public void Btn_Leave(object sender, RoutedEventArgs e)
         {
+            bdd.SuprrimeJoueurTable();
             MainWindow acceuil = (MainWindow)App.Current.MainWindow;
             acceuil.Close();
         }

@@ -32,7 +32,7 @@ namespace Code_Martyre_Classe.Views.AfficheCarte
         TextBox txtBox = new TextBox();
         int rndQ = 0;
         DataSet contenuRep = new DataSet();
-        CarteM carteM = new CarteM();
+        Carte carteM = new Carte();
         string reponseQ;
 
         public CMath()
@@ -131,8 +131,8 @@ namespace Code_Martyre_Classe.Views.AfficheCarte
                 txtBox.TextWrapping = TextWrapping.Wrap;
             }
 
-            //MainWindow carteMath = (MainWindow)App.Current.MainWindow;
-            //carteMath.Content = new PlateauJeu();
+            MainWindow carteMath = (MainWindow)App.Current.MainWindow;
+            carteMath.Content = new PlateauJeu();
 
         }
     }

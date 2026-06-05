@@ -30,7 +30,7 @@ namespace Code_Martyre_Classe.Views.AfficheCarte
         TextBox txtBox = new TextBox();
         int rndQ = 0;
         DataSet contenuRep = new DataSet();
-        CarteM carteM = new CarteM();
+        Carte carteM = new Carte();
         string reponseQ;
         public CFr()
         {
@@ -128,8 +128,8 @@ namespace Code_Martyre_Classe.Views.AfficheCarte
                 txtBox.Text = "Désoler ceci n'est pas la bonne réponse tu ne gagne pas de point";
                 txtBox.TextWrapping = TextWrapping.Wrap;
             }
-            //MainWindow carteFr = (MainWindow)App.Current.MainWindow;
-            //carteFr.Content = new PlateauJeu();
+            MainWindow carteFr = (MainWindow)App.Current.MainWindow;
+            carteFr.Content = new PlateauJeu();
         }
     }
 }

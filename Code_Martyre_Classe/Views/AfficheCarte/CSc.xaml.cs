@@ -1,5 +1,8 @@
-﻿using System;
+﻿using Code_Martyre_Classe.Config;
+using Limet_Maxence_CodagePion.Classe;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +23,15 @@ namespace Code_Martyre_Classe.Views.AfficheCarte
     /// </summary>
     public partial class CSc : Page
     {
+        string joueurR = "";
+        string reponseComp = "";
+        connectDB bdd = new connectDB();
+        DataSet qSc = new DataSet();
+        TextBox txtBox = new TextBox();
+        int rndQ = 0;
+        DataSet contenuRep = new DataSet();
+        Carte carteS = new Carte();
+        string reponseQ;
         public CSc()
         {
             InitializeComponent();
@@ -31,10 +43,11 @@ namespace Code_Martyre_Classe.Views.AfficheCarte
             //Variables
             TextBlock txtBlockQ = new TextBlock();
             TextBlock txtBlockTitre = new TextBlock();
-            TextBox txtBox = new TextBox();
             Button btnSubmit = new Button();
             ColumnDefinition[] colDef = new ColumnDefinition[2];
             RowDefinition[] rowDef = new RowDefinition[4];
+            Random rnd = new Random();
+            rndQ = rnd.Next(1, 10);
 
 
             //Faire la grille
@@ -61,12 +74,23 @@ namespace Code_Martyre_Classe.Views.AfficheCarte
             Grid.SetColumnSpan(txtBlockTitre, 2);
             Grid.SetRow(txtBlockTitre, 0);
 
-
+            //TextBlock question
+            carteS.QuestionSc(out DataSet qSc);
+            txtBlockQ.Text = qSc.Tables[0].Rows[rndQ]["carteQ"].ToString();
+            txtBlockQ.HorizontalAlignment = HorizontalAlignment.Center;
+            txtBlockQ.FontWeight = FontWeights.Bold;
+            grdSc.Children.Add(txtBlockQ);
+            Grid.SetColumn(txtBlockQ, 0);
+            Grid.SetColumnSpan(txtBlockQ, 2);
+            Grid.SetRow(txtBlockQ, 2);
 
             //TextBox
+            carteS.ReponseSc(out contenuRep);
+            reponseQ = contenuRep.Tables[0].Rows[rndQ]["carteR"].ToString();
             txtBox.Height = 50;
-            txtBox.Width = 100;
+            txtBox.Width = 300;
             txtBox.HorizontalAlignment = HorizontalAlignment.Center;
+            txtBox.PreviewTextInput += new TextCompositionEventHandler(SoumetRep_Text);
             grdSc.Children.Add(txtBox);
             Grid.SetColumn(txtBox, 0);
             Grid.SetRow(txtBox, 3);
@@ -82,8 +106,28 @@ namespace Code_Martyre_Classe.Views.AfficheCarte
             Grid.SetRow(btnSubmit, 3);
         }
 
+        public void SoumetRep_Text(object sender, TextCompositionEventArgs e)
+        {
+            joueurR = e.Text;
+            reponseComp += joueurR;
+            if (joueurR == "_")
+            {
+                reponseComp = "";
+                joueurR = "";
+            }
+        }
         public void Submit_Click(object sender, RoutedEventArgs e)
         {
+            if (reponseComp == reponseQ)
+            {
+                txtBox.Text = "Bravo c'est la bonne réponse +1 point";
+            }
+            else
+            {
+                txtBox.Text = "Désoler ceci n'est pas la bonne réponse tu ne gagne pas de point";
+                txtBox.TextWrapping = TextWrapping.Wrap;
+            }
+
             MainWindow carteSc = (MainWindow)App.Current.MainWindow;
             carteSc.Content = new PlateauJeu();
         }

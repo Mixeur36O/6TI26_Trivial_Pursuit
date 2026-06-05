@@ -26,5 +26,7 @@ namespace Limet_Maxence_CodagePion.Classe
             nbrJoueur -= 1;
             return nbrJoueur;
         }
+
+
     }
 }

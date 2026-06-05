@@ -1,4 +1,5 @@
-﻿using Code_Martyre_Classe.Views;
+﻿using Code_Martyre_Classe.Config;
+using Code_Martyre_Classe.Views;
 using System;
 using System.Windows;
 using System.Windows.Controls;
@@ -16,6 +17,7 @@ namespace Code_Martyre_Classe
     public partial class MainWindow : Window
     {
         Button[] button = new Button[3];
+        connectDB bdd = new connectDB();
         public MainWindow()
         {
             InitializeComponent();
@@ -139,6 +141,7 @@ namespace Code_Martyre_Classe
         }
         public void Btn_Leave(object sender, RoutedEventArgs e)
         {
+            bdd.SuprrimeJoueurTable();
             MainWindow acceuil = (MainWindow)App.Current.MainWindow;
             acceuil.Close();
         }
